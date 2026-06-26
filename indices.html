@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Índices Climáticos — Rivera 2026-06-26</title>
+<style>
+body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333;margin:0}
+header{background:linear-gradient(135deg,#1565C0,#42A5F5);color:white;
+        padding:20px 28px;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+header h1{font-size:1.6em;margin-bottom:4px}
+header p{opacity:.85;font-size:.9em;margin:0}
+.container{max-width:1200px;margin:20px auto;padding:0 14px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.tab{background:white;border:2px solid #1565C0;color:#1565C0;padding:8px 18px;
+      border-radius:8px;cursor:pointer;font-size:.95em;font-weight:600;transition:all .2s}
+.tab.active,.tab:hover{background:#1565C0;color:white}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.img-card{background:white;border-radius:10px;padding:16px;
+           box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.img-card h3{font-size:.95em;color:#1565C0;margin:0 0 10px;
+              padding-bottom:6px;border-bottom:2px solid #e3f2fd}
+.img-card img{width:100%;border-radius:6px}
+.back{display:inline-block;margin:16px 0;color:#1565C0;
+       text-decoration:none;font-size:.95em}
+.back:hover{text-decoration:underline}
+footer{text-align:center;padding:16px;color:#888;font-size:.82em}
+</style>
+</head>
+<body>
+<header>
+  <h1>📊 Índices Climáticos — Rivera</h1>
+  <p>Generado el 2026-06-26 — Fuente: Open-Meteo</p>
+</header>
+<div class="container">
+  <a href="index.html" class="back">← Volver al pronóstico por localidad</a>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('apicultura')" id="btn-apicultura">Apicultura</button>
+<button class="tab " onclick="showTab('empaste')" id="btn-empaste">Empaste</button>
+<button class="tab " onclick="showTab('eolica')" id="btn-eolica">Eólica</button>
+<button class="tab " onclick="showTab('garrapata')" id="btn-garrapata">Garrapata</button>
+<button class="tab " onclick="showTab('ith')" id="btn-ith">ITH</button>
+<button class="tab " onclick="showTab('utci')" id="btn-utci">UTCI</button>
+
+  </div>
+  
+        <div class="panel" id="panel-apicultura" style="display:block">
+            <div class="grid">
+            <div class="img-card">
+                <h3>Estación Ataques</h3>
+                <img src="indices_graficos/Estación_Ataques_apicultura.png" alt="Estación Ataques - Apicultura" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Minas de Corrales</h3>
+                <img src="indices_graficos/Minas_de_Corrales_apicultura.png" alt="Minas de Corrales - Apicultura" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Moirones</h3>
+                <img src="indices_graficos/Moirones_apicultura.png" alt="Moirones - Apicultura" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Paso Ataques</h3>
+                <img src="indices_graficos/Paso_Ataques_apicultura.png" alt="Paso Ataques - Apicultura" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Paso La Puente</h3>
+                <img src="indices_graficos/Paso_La_Puente_apicultura.png" alt="Paso La Puente - Apicultura" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Pueblo Nuevo</h3>
+                <img src="indices_graficos/Pueblo_Nuevo_apicultura.png" alt="Pueblo Nuevo - Apicultura" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Rivera Centro</h3>
+                <img src="indices_graficos/Rivera_Centro_apicultura.png" alt="Rivera Centro - Apicultura" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Rivera Chico</h3>
+                <img src="indices_graficos/Rivera_Chico_apicultura.png" alt="Rivera Chico - Apicultura" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Tranqueras</h3>
+                <img src="indices_graficos/Tranqueras_apicultura.png" alt="Tranqueras - Apicultura" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Villa Vichadero</h3>
+                <img src="indices_graficos/Villa_Vichadero_apicultura.png" alt="Villa Vichadero - Apicultura" loading="lazy">
+            </div>
+            </div>
+        </div>
+        <div class="panel" id="panel-empaste" style="display:none">
+            <div class="grid">
+            <div class="img-card">
+                <h3>Estación Ataques</h3>
+                <img src="indices_graficos/Estación_Ataques_empaste.png" alt="Estación Ataques - Empaste" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Minas de Corrales</h3>
+                <img src="indices_graficos/Minas_de_Corrales_empaste.png" alt="Minas de Corrales - Empaste" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Moirones</h3>
+                <img src="indices_graficos/Moirones_empaste.png" alt="Moirones - Empaste" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Paso Ataques</h3>
+                <img src="indices_graficos/Paso_Ataques_empaste.png" alt="Paso Ataques - Empaste" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Paso La Puente</h3>
+                <img src="indices_graficos/Paso_La_Puente_empaste.png" alt="Paso La Puente - Empaste" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Pueblo Nuevo</h3>
+                <img src="indices_graficos/Pueblo_Nuevo_empaste.png" alt="Pueblo Nuevo - Empaste" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Rivera Centro</h3>
+                <img src="indices_graficos/Rivera_Centro_empaste.png" alt="Rivera Centro - Empaste" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Rivera Chico</h3>
+                <img src="indices_graficos/Rivera_Chico_empaste.png" alt="Rivera Chico - Empaste" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Tranqueras</h3>
+                <img src="indices_graficos/Tranqueras_empaste.png" alt="Tranqueras - Empaste" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Villa Vichadero</h3>
+                <img src="indices_graficos/Villa_Vichadero_empaste.png" alt="Villa Vichadero - Empaste" loading="lazy">
+            </div>
+            </div>
+        </div>
+        <div class="panel" id="panel-eolica" style="display:none">
+            <div class="grid">
+            <div class="img-card">
+                <h3>Estación Ataques</h3>
+                <img src="indices_graficos/Estación_Ataques_eolica.png" alt="Estación Ataques - Eólica" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Minas de Corrales</h3>
+                <img src="indices_graficos/Minas_de_Corrales_eolica.png" alt="Minas de Corrales - Eólica" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Moirones</h3>
+                <img src="indices_graficos/Moirones_eolica.png" alt="Moirones - Eólica" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Paso Ataques</h3>
+                <img src="indices_graficos/Paso_Ataques_eolica.png" alt="Paso Ataques - Eólica" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Paso La Puente</h3>
+                <img src="indices_graficos/Paso_La_Puente_eolica.png" alt="Paso La Puente - Eólica" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Pueblo Nuevo</h3>
+                <img src="indices_graficos/Pueblo_Nuevo_eolica.png" alt="Pueblo Nuevo - Eólica" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Rivera Centro</h3>
+                <img src="indices_graficos/Rivera_Centro_eolica.png" alt="Rivera Centro - Eólica" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Rivera Chico</h3>
+                <img src="indices_graficos/Rivera_Chico_eolica.png" alt="Rivera Chico - Eólica" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Tranqueras</h3>
+                <img src="indices_graficos/Tranqueras_eolica.png" alt="Tranqueras - Eólica" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Villa Vichadero</h3>
+                <img src="indices_graficos/Villa_Vichadero_eolica.png" alt="Villa Vichadero - Eólica" loading="lazy">
+            </div>
+            </div>
+        </div>
+        <div class="panel" id="panel-garrapata" style="display:none">
+            <div class="grid">
+            <div class="img-card">
+                <h3>Estación Ataques</h3>
+                <img src="indices_graficos/Estación_Ataques_garrapata.png" alt="Estación Ataques - Garrapata" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Minas de Corrales</h3>
+                <img src="indices_graficos/Minas_de_Corrales_garrapata.png" alt="Minas de Corrales - Garrapata" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Moirones</h3>
+                <img src="indices_graficos/Moirones_garrapata.png" alt="Moirones - Garrapata" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Paso Ataques</h3>
+                <img src="indices_graficos/Paso_Ataques_garrapata.png" alt="Paso Ataques - Garrapata" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Paso La Puente</h3>
+                <img src="indices_graficos/Paso_La_Puente_garrapata.png" alt="Paso La Puente - Garrapata" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Pueblo Nuevo</h3>
+                <img src="indices_graficos/Pueblo_Nuevo_garrapata.png" alt="Pueblo Nuevo - Garrapata" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Rivera Centro</h3>
+                <img src="indices_graficos/Rivera_Centro_garrapata.png" alt="Rivera Centro - Garrapata" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Rivera Chico</h3>
+                <img src="indices_graficos/Rivera_Chico_garrapata.png" alt="Rivera Chico - Garrapata" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Tranqueras</h3>
+                <img src="indices_graficos/Tranqueras_garrapata.png" alt="Tranqueras - Garrapata" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Villa Vichadero</h3>
+                <img src="indices_graficos/Villa_Vichadero_garrapata.png" alt="Villa Vichadero - Garrapata" loading="lazy">
+            </div>
+            </div>
+        </div>
+        <div class="panel" id="panel-ith" style="display:none">
+            <div class="grid">
+            <div class="img-card">
+                <h3>Estación Ataques</h3>
+                <img src="indices_graficos/Estación_Ataques_ith.png" alt="Estación Ataques - ITH" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Minas de Corrales</h3>
+                <img src="indices_graficos/Minas_de_Corrales_ith.png" alt="Minas de Corrales - ITH" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Moirones</h3>
+                <img src="indices_graficos/Moirones_ith.png" alt="Moirones - ITH" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Paso Ataques</h3>
+                <img src="indices_graficos/Paso_Ataques_ith.png" alt="Paso Ataques - ITH" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Paso La Puente</h3>
+                <img src="indices_graficos/Paso_La_Puente_ith.png" alt="Paso La Puente - ITH" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Pueblo Nuevo</h3>
+                <img src="indices_graficos/Pueblo_Nuevo_ith.png" alt="Pueblo Nuevo - ITH" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Rivera Centro</h3>
+                <img src="indices_graficos/Rivera_Centro_ith.png" alt="Rivera Centro - ITH" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Rivera Chico</h3>
+                <img src="indices_graficos/Rivera_Chico_ith.png" alt="Rivera Chico - ITH" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Tranqueras</h3>
+                <img src="indices_graficos/Tranqueras_ith.png" alt="Tranqueras - ITH" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Villa Vichadero</h3>
+                <img src="indices_graficos/Villa_Vichadero_ith.png" alt="Villa Vichadero - ITH" loading="lazy">
+            </div>
+            </div>
+        </div>
+        <div class="panel" id="panel-utci" style="display:none">
+            <div class="grid">
+            <div class="img-card">
+                <h3>Estación Ataques</h3>
+                <img src="indices_graficos/Estación_Ataques_utci.png" alt="Estación Ataques - UTCI" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Minas de Corrales</h3>
+                <img src="indices_graficos/Minas_de_Corrales_utci.png" alt="Minas de Corrales - UTCI" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Moirones</h3>
+                <img src="indices_graficos/Moirones_utci.png" alt="Moirones - UTCI" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Paso Ataques</h3>
+                <img src="indices_graficos/Paso_Ataques_utci.png" alt="Paso Ataques - UTCI" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Paso La Puente</h3>
+                <img src="indices_graficos/Paso_La_Puente_utci.png" alt="Paso La Puente - UTCI" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Pueblo Nuevo</h3>
+                <img src="indices_graficos/Pueblo_Nuevo_utci.png" alt="Pueblo Nuevo - UTCI" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Rivera Centro</h3>
+                <img src="indices_graficos/Rivera_Centro_utci.png" alt="Rivera Centro - UTCI" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Rivera Chico</h3>
+                <img src="indices_graficos/Rivera_Chico_utci.png" alt="Rivera Chico - UTCI" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Tranqueras</h3>
+                <img src="indices_graficos/Tranqueras_utci.png" alt="Tranqueras - UTCI" loading="lazy">
+            </div>
+            <div class="img-card">
+                <h3>Villa Vichadero</h3>
+                <img src="indices_graficos/Villa_Vichadero_utci.png" alt="Villa Vichadero - UTCI" loading="lazy">
+            </div>
+            </div>
+        </div>
+</div>
+<footer>División de Desarrollo Rural · Intendencia de Rivera</footer>
+<script>
+function showTab(id) {
+  document.querySelectorAll('.panel').forEach(p => p.style.display='none');
+  document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-'+id).style.display='block';
+  document.getElementById('btn-'+id).classList.add('active');
+}
+</script>
+</body>
+</html>
