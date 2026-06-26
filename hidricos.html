@@ -3,84 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Indicadores Hídricos — Rivera</title>
-<style>
-
-*{box-sizing:border-box;margin:0;padding:0}
+<title>Indicadores Hidricos — Rivera</title>
+<style>*{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333}
-header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);
-       color:white;padding:20px 28px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
-header h1{font-size:1.6em;margin-bottom:4px}
-header .sub{opacity:.85;font-size:.9em;margin-bottom:8px}
-nav.top{display:flex;align-items:center;flex-wrap:wrap;gap:6px;
-         margin-top:10px;font-size:.82em;opacity:.85}
-nav.top a{color:white;text-decoration:none;background:rgba(255,255,255,.15);
-           padding:4px 10px;border-radius:12px;transition:background .2s}
-nav.top a:hover{background:rgba(255,255,255,.3)}
-
-.container{width:100%;padding:0 16px;margin:20px 0}
-.back{display:inline-flex;align-items:center;gap:6px;margin-bottom:18px;
-       color:#1565C0;text-decoration:none;font-size:.93em;
-       background:white;padding:8px 14px;border-radius:8px;
-       box-shadow:0 1px 5px rgba(0,0,0,.1);transition:box-shadow .2s}
-.back:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
-.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
-.tab{background:white;border:2px solid #ccc;color:#555;padding:9px 18px;
-      border-radius:10px;cursor:pointer;font-size:.93em;font-weight:600;
-      transition:all .2s}
-.tab:hover{box-shadow:0 3px 10px rgba(0,0,0,.12)}
-.tab.active{box-shadow:0 3px 12px rgba(0,0,0,.15)}
-.idx-box{background:white;border-radius:10px;padding:20px 24px;
-           margin-bottom:18px;box-shadow:0 2px 8px rgba(0,0,0,.07)}
-.idx-head{display:flex;align-items:baseline;gap:12px;margin-bottom:10px;flex-wrap:wrap}
-.idx-sig{font-size:1.35em;font-weight:800}
-.idx-nom{font-size:1.05em;font-weight:600;color:#333}
-.idx-dsc{font-size:.94em;line-height:1.7;color:#444;margin-bottom:12px}
-.form-box{background:#f5f7fa;border-radius:7px;padding:12px 16px;
-            font-size:.88em;line-height:1.65;margin-bottom:8px}
-.cat-box{font-size:.88em;color:#555;padding:6px 0}
-.loc-row{background:white;border-radius:10px;padding:14px 18px;
-           margin-bottom:14px;box-shadow:0 2px 7px rgba(0,0,0,.07)}
-.loc-row h3{font-size:.95em;color:#1565C0;margin-bottom:10px;
-              padding-bottom:7px;border-bottom:2px solid #e3f2fd}
-.loc-row img{width:100%;display:block;border-radius:6px}
-.prep{background:white;border-radius:10px;padding:40px;text-align:center;
-       color:#999;margin-bottom:14px;box-shadow:0 2px 7px rgba(0,0,0,.07)}
-.prep h3{margin:10px 0 6px;color:#666}
-.prep p{font-size:.9em}
-@media(max-width:600px){header h1{font-size:1.25em}}
-</style>
+header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);color:white;
+       padding:18px 24px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
+header h1{font-size:1.5em;margin-bottom:4px}
+header p{opacity:.85;font-size:.88em}
+nav a{color:white;opacity:.8;text-decoration:none;font-size:.85em}
+nav a:hover{opacity:1}
+.container{max-width:1300px;margin:16px auto;padding:0 14px}
+.seccion{margin-bottom:28px}
+.seccion h2{color:#1565C0;font-size:1.1em;border-bottom:2px solid #e3f2fd;
+            padding-bottom:6px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{background:white;border-radius:8px;padding:10px;
+      box-shadow:0 2px 7px rgba(0,0,0,.07);text-align:center}
+.card img{width:100%;border-radius:5px}
+.card p{font-size:.82em;color:#555;margin-top:6px;font-weight:600}
+footer{text-align:center;padding:16px;color:#888;font-size:.8em}</style>
 </head>
 <body>
 <header>
-  <h1>💧 Indicadores Hídricos</h1>
-  <p class="sub">Departamento de Rivera · Generado el 2026-06-26 · Fuente: Open-Meteo</p>
-  <div class="inst" style="font-size:.76em;opacity:.78;line-height:1.85"><strong>Ing. Agro. Gerardo Díaz Romeo</strong> &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Dirección de Desarrollo Económico Productivo &nbsp;·&nbsp; Intendencia de Rivera</div>
-  <nav class="top"><a href="index.html">🏠 Inicio</a>&nbsp;·&nbsp; <a href="localidades.html">📍 Localidades</a> &nbsp;·&nbsp; <a href="agricultura.html">🌾 Agricultura</a> &nbsp;·&nbsp; <a href="ganaderia.html">🐄 Ganadería</a> &nbsp;·&nbsp; <a href="hidricos.html">💧 Hídricos</a></nav>
+  <h1>💧 Indicadores Hidricos</h1>
+  <p>Actualizado: 2026-06-26 &nbsp;·&nbsp; Fuente: Open-Meteo</p>
+  <nav style="margin-top:6px"><a href="index.html">← Inicio</a></nav>
 </header>
 <div class="container">
-  <a href="index.html" class="back">← Inicio</a>
-  <div class="tabs">
-<button class="tab active" style="background:#0277BD;color:white;border-color:#0277BD" onclick="showTab('eto','#0277BD')" id="btn-eto">💧 ETo</button>
-<button class="tab "  onclick="showTab('balance_hidrico','#00695C')" id="btn-balance_hidrico">⚖️ BH</button>
-<button class="tab "  onclick="showTab('spi','#01579B')" id="btn-spi">📊 SPEI</button>
-<button class="tab "  onclick="showTab('recarga','#0097A7')" id="btn-recarga">🏔️ REA</button>
-  </div>
-<div class="panel" id="panel-eto" style="display:block"><div class="idx-box" style="border-left:5px solid #0277BD"><div class="idx-head"><span class="idx-sig" style="color:#0277BD">💧 ETo</span><span class="idx-nom">Evapotranspiración vs Precipitación</span></div><p class="idx-dsc">Compara la evapotranspiración de referencia (ETo, línea azul) con la precipitación horaria (área verde). Cuando ETo supera la lluvia se genera demanda hídrica insatisfecha en el cultivo.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>ETo Penman-Monteith FAO-56: ET₀ = [0.408Δ(R<sub>n</sub>−G) + γ(900/(T+273))·u₂·(e<sub>s</sub>−e<sub>a</sub>)] / [Δ + γ(1+0.34·u₂)]. ETR = ET₀ × Kc × Ks.</div><div class="cat-box"><b>Categorías:</b> Línea azul = ETo · Área verde = Lluvia · Diferencia = Demanda hídrica</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_eto.png" alt="Estación Ataques — Evapotranspiración vs Precipitación" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_eto.png" alt="Minas de Corrales — Evapotranspiración vs Precipitación" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_eto.png" alt="Moirones — Evapotranspiración vs Precipitación" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_eto.png" alt="Paso Ataques — Evapotranspiración vs Precipitación" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_eto.png" alt="Paso La Puente — Evapotranspiración vs Precipitación" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_eto.png" alt="Pueblo Nuevo — Evapotranspiración vs Precipitación" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_eto.png" alt="Rivera Centro — Evapotranspiración vs Precipitación" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_eto.png" alt="Rivera Chico — Evapotranspiración vs Precipitación" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_eto.png" alt="Tranqueras — Evapotranspiración vs Precipitación" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_eto.png" alt="Villa Vichadero — Evapotranspiración vs Precipitación" loading="lazy"></div></div><div class="panel" id="panel-balance_hidrico" style="display:none"><div class="idx-box" style="border-left:5px solid #00695C"><div class="idx-head"><span class="idx-sig" style="color:#00695C">⚖️ BH</span><span class="idx-nom">Balance Hídrico Diario</span></div><p class="idx-dsc">Balance diario entre precipitación y evapotranspiración (P − ETo). Barras azules indican superávit hídrico (recarga); barras rojas indican déficit (demanda insatisfecha).</p><div class="form-box"><b>Fórmula / Metodología:</b><br>BH<sub>día</sub> = P<sub>día</sub> − ETo<sub>día</sub> (mm). Superávit: BH &gt;0 → recarga de suelo y acuíferos. Déficit: BH &lt;0 → estrés hídrico del cultivo.</div><div class="cat-box"><b>Categorías:</b> Azul = Superávit (recarga) &nbsp;·&nbsp; Rojo = Déficit hídrico</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_bh_balance.png" alt="Estación Ataques — Balance Hídrico Diario" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_bh_balance.png" alt="Minas de Corrales — Balance Hídrico Diario" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_bh_balance.png" alt="Moirones — Balance Hídrico Diario" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_bh_balance.png" alt="Paso Ataques — Balance Hídrico Diario" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_bh_balance.png" alt="Paso La Puente — Balance Hídrico Diario" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_bh_balance.png" alt="Pueblo Nuevo — Balance Hídrico Diario" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_bh_balance.png" alt="Rivera Centro — Balance Hídrico Diario" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_bh_balance.png" alt="Rivera Chico — Balance Hídrico Diario" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_bh_balance.png" alt="Tranqueras — Balance Hídrico Diario" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_bh_balance.png" alt="Villa Vichadero — Balance Hídrico Diario" loading="lazy"></div></div><div class="panel" id="panel-spi" style="display:none"><div class="idx-box" style="border-left:5px solid #01579B"><div class="idx-head"><span class="idx-sig" style="color:#01579B">📊 SPEI</span><span class="idx-nom">Índice Estandarizado de Precip. y Evapotranspiración</span></div><p class="idx-dsc">El SPEI (Vicente-Serrano et al., 2010) es más robusto que el SPI porque incorpora la demanda evapotranspirativa (P − ETo). Barras azules = superávit hídrico; barras rojas = déficit. La línea naranja muestra el acumulado del período.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>SPEI ≈ (D − μ<sub>D</sub>) / σ<sub>D</sub> donde D = P − ETo acumulada (mm). Referencia Rivera: μ<sub>D</sub> = 0 mm/sem, σ<sub>D</sub> = 30 mm/sem. Vicente-Serrano et al. (2010), Climate Research 41:1–12.</div><div class="cat-box"><b>Categorías:</b> &gt;2 Muy húmedo · 1–2 Húmedo · −1 a 1 Normal · −1 a −2 Seco · &lt;−2 Sequía extrema</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_spei.png" alt="Estación Ataques — Índice Estandarizado de Precip. y Evapotranspiración" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_spei.png" alt="Minas de Corrales — Índice Estandarizado de Precip. y Evapotranspiración" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_spei.png" alt="Moirones — Índice Estandarizado de Precip. y Evapotranspiración" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_spei.png" alt="Paso Ataques — Índice Estandarizado de Precip. y Evapotranspiración" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_spei.png" alt="Paso La Puente — Índice Estandarizado de Precip. y Evapotranspiración" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_spei.png" alt="Pueblo Nuevo — Índice Estandarizado de Precip. y Evapotranspiración" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_spei.png" alt="Rivera Centro — Índice Estandarizado de Precip. y Evapotranspiración" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_spei.png" alt="Rivera Chico — Índice Estandarizado de Precip. y Evapotranspiración" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_spei.png" alt="Tranqueras — Índice Estandarizado de Precip. y Evapotranspiración" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_spei.png" alt="Villa Vichadero — Índice Estandarizado de Precip. y Evapotranspiración" loading="lazy"></div></div><div class="panel" id="panel-recarga" style="display:none"><div class="idx-box" style="border-left:5px solid #0097A7"><div class="idx-head"><span class="idx-sig" style="color:#0097A7">🏔️ REA</span><span class="idx-nom">Recarga Estimada de Acuíferos</span></div><p class="idx-dsc">Fracción de la precipitación que percola hacia los acuíferos superficiales y profundos. Fundamental para la gestión del Sistema Acuífero Guaraní presente en el departamento de Rivera.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>REA = P − ETR − Escorrentía superficial − ΔS. Balance hídrico con Ksat del suelo y capacidad de campo. Expresado en mm/día y mm acumulado mensual.</div><div class="cat-box"><b>Categorías:</b> Positivo = recarga activa &nbsp;·&nbsp; Negativo = descarga del acuífero</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_recarga.png" alt="Estación Ataques — Recarga Estimada de Acuíferos" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_recarga.png" alt="Minas de Corrales — Recarga Estimada de Acuíferos" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_recarga.png" alt="Moirones — Recarga Estimada de Acuíferos" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_recarga.png" alt="Paso Ataques — Recarga Estimada de Acuíferos" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_recarga.png" alt="Paso La Puente — Recarga Estimada de Acuíferos" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_recarga.png" alt="Pueblo Nuevo — Recarga Estimada de Acuíferos" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_recarga.png" alt="Rivera Centro — Recarga Estimada de Acuíferos" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_recarga.png" alt="Rivera Chico — Recarga Estimada de Acuíferos" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_recarga.png" alt="Tranqueras — Recarga Estimada de Acuíferos" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_recarga.png" alt="Villa Vichadero — Recarga Estimada de Acuíferos" loading="lazy"></div></div>
-</div>
-<footer style="text-align:center;padding:22px 16px;color:#888;font-size:.8em;line-height:1.8">Open-Meteo API · QGIS 4.x<br>Ing. Agro. Gerardo Díaz Romeo · División de Desarrollo Rural · Dirección de Desarrollo Económico Productivo · Intendencia de Rivera</footer>
-<script>
-function showTab(id,color){
-  document.querySelectorAll('.panel').forEach(p=>p.style.display='none');
-  document.querySelectorAll('.tab').forEach(b=>{
-    b.classList.remove('active');
-    b.style.background='';b.style.color='';b.style.borderColor='';
-  });
-  document.getElementById('panel-'+id).style.display='block';
-  var b=document.getElementById('btn-'+id);
-  b.classList.add('active');
-  b.style.background=color;b.style.color='white';b.style.borderColor=color;
-}
-</script>
+<div class="seccion"><h2>Evapotranspiracion (ETo)</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_eto.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_eto.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_eto.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_eto.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_eto.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_eto.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_eto.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_eto.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_eto.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_eto.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Sequia Meteorologica (SPI)</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_spi.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_spi.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_spi.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_spi.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_spi.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_spi.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_spi.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_spi.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_spi.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_spi.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>SPEI</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_spei.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_spei.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_spei.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_spei.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_spei.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_spei.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_spei.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_spei.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_spei.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_spei.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Recarga de Acuiferos</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_recarga.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_recarga.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_recarga.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_recarga.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_recarga.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_recarga.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_recarga.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_recarga.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_recarga.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_recarga.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Balance Hidrico</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_bh_balance.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_bh_balance.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_bh_balance.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_bh_balance.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_bh_balance.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_bh_balance.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_bh_balance.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_bh_balance.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_bh_balance.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_bh_balance.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Generacion Eolica</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_eolica.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_eolica.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_eolica.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_eolica.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_eolica.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_eolica.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_eolica.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_eolica.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_eolica.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_eolica.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div></div>
+<footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>
 </body>
 </html>

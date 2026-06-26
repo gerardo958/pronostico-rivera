@@ -3,86 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Índices para la Agricultura — Rivera</title>
-<style>
-
-*{box-sizing:border-box;margin:0;padding:0}
+<title>Indices para la Agricultura — Rivera</title>
+<style>*{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333}
-header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);
-       color:white;padding:20px 28px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
-header h1{font-size:1.6em;margin-bottom:4px}
-header .sub{opacity:.85;font-size:.9em;margin-bottom:8px}
-nav.top{display:flex;align-items:center;flex-wrap:wrap;gap:6px;
-         margin-top:10px;font-size:.82em;opacity:.85}
-nav.top a{color:white;text-decoration:none;background:rgba(255,255,255,.15);
-           padding:4px 10px;border-radius:12px;transition:background .2s}
-nav.top a:hover{background:rgba(255,255,255,.3)}
-
-.container{width:100%;padding:0 16px;margin:20px 0}
-.back{display:inline-flex;align-items:center;gap:6px;margin-bottom:18px;
-       color:#1565C0;text-decoration:none;font-size:.93em;
-       background:white;padding:8px 14px;border-radius:8px;
-       box-shadow:0 1px 5px rgba(0,0,0,.1);transition:box-shadow .2s}
-.back:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
-.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
-.tab{background:white;border:2px solid #ccc;color:#555;padding:9px 18px;
-      border-radius:10px;cursor:pointer;font-size:.93em;font-weight:600;
-      transition:all .2s}
-.tab:hover{box-shadow:0 3px 10px rgba(0,0,0,.12)}
-.tab.active{box-shadow:0 3px 12px rgba(0,0,0,.15)}
-.idx-box{background:white;border-radius:10px;padding:20px 24px;
-           margin-bottom:18px;box-shadow:0 2px 8px rgba(0,0,0,.07)}
-.idx-head{display:flex;align-items:baseline;gap:12px;margin-bottom:10px;flex-wrap:wrap}
-.idx-sig{font-size:1.35em;font-weight:800}
-.idx-nom{font-size:1.05em;font-weight:600;color:#333}
-.idx-dsc{font-size:.94em;line-height:1.7;color:#444;margin-bottom:12px}
-.form-box{background:#f5f7fa;border-radius:7px;padding:12px 16px;
-            font-size:.88em;line-height:1.65;margin-bottom:8px}
-.cat-box{font-size:.88em;color:#555;padding:6px 0}
-.loc-row{background:white;border-radius:10px;padding:14px 18px;
-           margin-bottom:14px;box-shadow:0 2px 7px rgba(0,0,0,.07)}
-.loc-row h3{font-size:.95em;color:#1565C0;margin-bottom:10px;
-              padding-bottom:7px;border-bottom:2px solid #e3f2fd}
-.loc-row img{width:100%;display:block;border-radius:6px}
-.prep{background:white;border-radius:10px;padding:40px;text-align:center;
-       color:#999;margin-bottom:14px;box-shadow:0 2px 7px rgba(0,0,0,.07)}
-.prep h3{margin:10px 0 6px;color:#666}
-.prep p{font-size:.9em}
-@media(max-width:600px){header h1{font-size:1.25em}}
-</style>
+header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);color:white;
+       padding:18px 24px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
+header h1{font-size:1.5em;margin-bottom:4px}
+header p{opacity:.85;font-size:.88em}
+nav a{color:white;opacity:.8;text-decoration:none;font-size:.85em}
+nav a:hover{opacity:1}
+.container{max-width:1300px;margin:16px auto;padding:0 14px}
+.seccion{margin-bottom:28px}
+.seccion h2{color:#1565C0;font-size:1.1em;border-bottom:2px solid #e3f2fd;
+            padding-bottom:6px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{background:white;border-radius:8px;padding:10px;
+      box-shadow:0 2px 7px rgba(0,0,0,.07);text-align:center}
+.card img{width:100%;border-radius:5px}
+.card p{font-size:.82em;color:#555;margin-top:6px;font-weight:600}
+footer{text-align:center;padding:16px;color:#888;font-size:.8em}</style>
 </head>
 <body>
 <header>
-  <h1>🌾 Índices para la Agricultura</h1>
-  <p class="sub">Departamento de Rivera · Generado el 2026-06-26 · Fuente: Open-Meteo</p>
-  <div class="inst" style="font-size:.76em;opacity:.78;line-height:1.85"><strong>Ing. Agro. Gerardo Díaz Romeo</strong> &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Dirección de Desarrollo Económico Productivo &nbsp;·&nbsp; Intendencia de Rivera</div>
-  <nav class="top"><a href="index.html">🏠 Inicio</a>&nbsp;·&nbsp; <a href="localidades.html">📍 Localidades</a> &nbsp;·&nbsp; <a href="agricultura.html">🌾 Agricultura</a> &nbsp;·&nbsp; <a href="ganaderia.html">🐄 Ganadería</a> &nbsp;·&nbsp; <a href="hidricos.html">💧 Hídricos</a></nav>
+  <h1>🌾 Indices para la Agricultura</h1>
+  <p>Actualizado: 2026-06-26 &nbsp;·&nbsp; Fuente: Open-Meteo</p>
+  <nav style="margin-top:6px"><a href="index.html">← Inicio</a></nav>
 </header>
 <div class="container">
-  <a href="index.html" class="back">← Inicio</a>
-  <div class="tabs">
-<button class="tab active" style="background:#F57F17;color:white;border-color:#F57F17" onclick="showTab('apicultura','#F57F17')" id="btn-apicultura">🐝 IAA</button>
-<button class="tab "  onclick="showTab('gdd','#33691E')" id="btn-gdd">🌱 GDD</button>
-<button class="tab "  onclick="showTab('horas_frio','#0288D1')" id="btn-horas_frio">❄️ HFC</button>
-<button class="tab "  onclick="showTab('helada','#29B6F6')" id="btn-helada">🌡️ RH</button>
-<button class="tab "  onclick="showTab('agroquimicos','#558B2F')" id="btn-agroquimicos">🚜 CAQ</button>
-<button class="tab "  onclick="showTab('fwi','#BF360C')" id="btn-fwi">🔥 FWI</button>
-  </div>
-<div class="panel" id="panel-apicultura" style="display:block"><div class="idx-box" style="border-left:5px solid #F57F17"><div class="idx-head"><span class="idx-sig" style="color:#F57F17">🐝 IAA</span><span class="idx-nom">Índice de Aptitud Apícola</span></div><p class="idx-dsc">Evalúa las condiciones meteorológicas para el vuelo de las abejas y la producción de miel, integrando temperatura, humedad relativa, velocidad del viento y precipitación.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>IAA = f(T, HR, V, P). T óptima 18–32 °C · HR óptima 40–75 % · Viento &lt;25 km/h · Sin precipitación.</div><div class="cat-box"><b>Categorías:</b> &lt;30 Adverso &nbsp;·&nbsp; 31–60 Regular &nbsp;·&nbsp; 61–80 Bueno &nbsp;·&nbsp; &gt;80 Excelente</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_apicultura.png" alt="Estación Ataques — Índice de Aptitud Apícola" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_apicultura.png" alt="Minas de Corrales — Índice de Aptitud Apícola" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_apicultura.png" alt="Moirones — Índice de Aptitud Apícola" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_apicultura.png" alt="Paso Ataques — Índice de Aptitud Apícola" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_apicultura.png" alt="Paso La Puente — Índice de Aptitud Apícola" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_apicultura.png" alt="Pueblo Nuevo — Índice de Aptitud Apícola" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_apicultura.png" alt="Rivera Centro — Índice de Aptitud Apícola" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_apicultura.png" alt="Rivera Chico — Índice de Aptitud Apícola" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_apicultura.png" alt="Tranqueras — Índice de Aptitud Apícola" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_apicultura.png" alt="Villa Vichadero — Índice de Aptitud Apícola" loading="lazy"></div></div><div class="panel" id="panel-gdd" style="display:none"><div class="idx-box" style="border-left:5px solid #33691E"><div class="idx-head"><span class="idx-sig" style="color:#33691E">🌱 GDD</span><span class="idx-nom">Grados Día de Crecimiento</span></div><p class="idx-dsc">Acumula el calor disponible sobre una temperatura base para estimar el desarrollo fenológico de cultivos y pasturas: floración, madurez y cosecha.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>GDD = Σ [(T<sub>max</sub> + T<sub>min</sub>) / 2 − T<sub>base</sub>] cuando el promedio &gt; T<sub>base</sub>. T<sub>base</sub>: 10 °C maíz/sorgo · 5 °C trigo/cebada · 0 °C pasturas.</div><div class="cat-box"><b>Categorías:</b> Barras diarias + línea de acumulado desde el inicio del período</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_gdd.png" alt="Estación Ataques — Grados Día de Crecimiento" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_gdd.png" alt="Minas de Corrales — Grados Día de Crecimiento" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_gdd.png" alt="Moirones — Grados Día de Crecimiento" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_gdd.png" alt="Paso Ataques — Grados Día de Crecimiento" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_gdd.png" alt="Paso La Puente — Grados Día de Crecimiento" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_gdd.png" alt="Pueblo Nuevo — Grados Día de Crecimiento" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_gdd.png" alt="Rivera Centro — Grados Día de Crecimiento" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_gdd.png" alt="Rivera Chico — Grados Día de Crecimiento" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_gdd.png" alt="Tranqueras — Grados Día de Crecimiento" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_gdd.png" alt="Villa Vichadero — Grados Día de Crecimiento" loading="lazy"></div></div><div class="panel" id="panel-horas_frio" style="display:none"><div class="idx-box" style="border-left:5px solid #0288D1"><div class="idx-head"><span class="idx-sig" style="color:#0288D1">❄️ HFC</span><span class="idx-nom">Horas de Frío Acumuladas</span></div><p class="idx-dsc">Cuantifica el frío invernal necesario para que frutales y pasturas perennes rompan la dormición. El déficit de horas frío reduce la productividad.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>HFC = Σ horas con T ≤ 7.2 °C (Modelo Weinberger). La línea roja marca el umbral de 7.2 °C.</div><div class="cat-box"><b>Categorías:</b> Referencia: manzano 1200–1500 h · durazno 400–1200 h (acumulado desde mayo)</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_horas_frio.png" alt="Estación Ataques — Horas de Frío Acumuladas" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_horas_frio.png" alt="Minas de Corrales — Horas de Frío Acumuladas" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_horas_frio.png" alt="Moirones — Horas de Frío Acumuladas" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_horas_frio.png" alt="Paso Ataques — Horas de Frío Acumuladas" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_horas_frio.png" alt="Paso La Puente — Horas de Frío Acumuladas" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_horas_frio.png" alt="Pueblo Nuevo — Horas de Frío Acumuladas" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_horas_frio.png" alt="Rivera Centro — Horas de Frío Acumuladas" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_horas_frio.png" alt="Rivera Chico — Horas de Frío Acumuladas" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_horas_frio.png" alt="Tranqueras — Horas de Frío Acumuladas" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_horas_frio.png" alt="Villa Vichadero — Horas de Frío Acumuladas" loading="lazy"></div></div><div class="panel" id="panel-helada" style="display:none"><div class="idx-box" style="border-left:5px solid #29B6F6"><div class="idx-head"><span class="idx-sig" style="color:#29B6F6">🌡️ RH</span><span class="idx-nom">Riesgo de Helada</span></div><p class="idx-dsc">Temperatura mínima pronosticada para los próximos 7 días. Identifica episodios de helada para protección de cultivos hortícolas, frutales y pasturas en implantación.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>Sin riesgo: T &gt;2 °C · Riesgo bajo: 0–2 °C · Helada leve: 0 a −2 °C · Moderada: −2 a −5 °C · Fuerte: &lt;−5 °C. Línea de referencia en 0 °C.</div><div class="cat-box"><b>Categorías:</b> Sin riesgo &nbsp;·&nbsp; Leve &nbsp;·&nbsp; Moderada &nbsp;·&nbsp; Fuerte</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_helada.png" alt="Estación Ataques — Riesgo de Helada" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_helada.png" alt="Minas de Corrales — Riesgo de Helada" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_helada.png" alt="Moirones — Riesgo de Helada" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_helada.png" alt="Paso Ataques — Riesgo de Helada" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_helada.png" alt="Paso La Puente — Riesgo de Helada" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_helada.png" alt="Pueblo Nuevo — Riesgo de Helada" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_helada.png" alt="Rivera Centro — Riesgo de Helada" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_helada.png" alt="Rivera Chico — Riesgo de Helada" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_helada.png" alt="Tranqueras — Riesgo de Helada" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_helada.png" alt="Villa Vichadero — Riesgo de Helada" loading="lazy"></div></div><div class="panel" id="panel-agroquimicos" style="display:none"><div class="idx-box" style="border-left:5px solid #558B2F"><div class="idx-head"><span class="idx-sig" style="color:#558B2F">🚜 CAQ</span><span class="idx-nom">Ventanas para Aplicación de Agroquímicos</span></div><p class="idx-dsc">Horas del período con condiciones óptimas para la aplicación de herbicidas, fungicidas e insecticidas, minimizando deriva y maximizando eficacia.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>Hora apta si: Viento 3–15 km/h · HR 40–80 % · T 15–30 °C · Prob. lluvia &lt;30 %. El gráfico muestra bandas verdes en horas aptas.</div><div class="cat-box"><b>Categorías:</b> Verde = hora apta para aplicación</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_agroquimicos.png" alt="Estación Ataques — Ventanas para Aplicación de Agroquímicos" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_agroquimicos.png" alt="Minas de Corrales — Ventanas para Aplicación de Agroquímicos" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_agroquimicos.png" alt="Moirones — Ventanas para Aplicación de Agroquímicos" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_agroquimicos.png" alt="Paso Ataques — Ventanas para Aplicación de Agroquímicos" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_agroquimicos.png" alt="Paso La Puente — Ventanas para Aplicación de Agroquímicos" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_agroquimicos.png" alt="Pueblo Nuevo — Ventanas para Aplicación de Agroquímicos" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_agroquimicos.png" alt="Rivera Centro — Ventanas para Aplicación de Agroquímicos" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_agroquimicos.png" alt="Rivera Chico — Ventanas para Aplicación de Agroquímicos" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_agroquimicos.png" alt="Tranqueras — Ventanas para Aplicación de Agroquímicos" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_agroquimicos.png" alt="Villa Vichadero — Ventanas para Aplicación de Agroquímicos" loading="lazy"></div></div><div class="panel" id="panel-fwi" style="display:none"><div class="idx-box" style="border-left:5px solid #BF360C"><div class="idx-head"><span class="idx-sig" style="color:#BF360C">🔥 FWI</span><span class="idx-nom">Índice de Riesgo de Incendio Forestal</span></div><p class="idx-dsc">Estima el riesgo de incendio forestal y rural basado en temperatura y humedad relativa. Alta temperatura con baja humedad aumenta la inflamabilidad del material vegetal seco.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>FWI simplificado = f(T, HR, V, P<sub>24h</sub>). FFMC = 101 − 0.8×HR + 0.3×T − 2×P. ISI = FFMC × (V/10) × 0.05. FWI = ISI × max(1, (T−10)/10). &lt;5 Bajo · 5–11 Mod. · 11–17 Alto · &gt;17 Muy alto.</div><div class="cat-box"><b>Categorías:</b> &lt;5 Bajo · 5–11 Moderado · 11–17 Alto · &gt;17 Muy alto</div></div><div class="prep"><div style="font-size:2em">🔧</div><h3>Datos en preparación</h3><p>Verifique que este módulo esté activado en AdminRivera y que el sistema haya generado los archivos PNG correspondientes.</p></div></div>
-</div>
-<footer style="text-align:center;padding:22px 16px;color:#888;font-size:.8em;line-height:1.8">Open-Meteo API · QGIS 4.x<br>Ing. Agro. Gerardo Díaz Romeo · División de Desarrollo Rural · Dirección de Desarrollo Económico Productivo · Intendencia de Rivera</footer>
-<script>
-function showTab(id,color){
-  document.querySelectorAll('.panel').forEach(p=>p.style.display='none');
-  document.querySelectorAll('.tab').forEach(b=>{
-    b.classList.remove('active');
-    b.style.background='';b.style.color='';b.style.borderColor='';
-  });
-  document.getElementById('panel-'+id).style.display='block';
-  var b=document.getElementById('btn-'+id);
-  b.classList.add('active');
-  b.style.background=color;b.style.color='white';b.style.borderColor=color;
-}
-</script>
+<div class="seccion"><h2>Grados Dia (GDD)</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_gdd.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_gdd.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_gdd.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_gdd.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_gdd.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_gdd.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_gdd.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_gdd.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_gdd.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_gdd.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Horas de Frio</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_horas_frio.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_horas_frio.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_horas_frio.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_horas_frio.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_horas_frio.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_horas_frio.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_horas_frio.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_horas_frio.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_horas_frio.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_horas_frio.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Riesgo de Helada</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_helada.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_helada.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_helada.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_helada.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_helada.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_helada.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_helada.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_helada.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_helada.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_helada.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Aptitud Agroquimicos</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_agroquimicos.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_agroquimicos.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_agroquimicos.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_agroquimicos.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_agroquimicos.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_agroquimicos.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_agroquimicos.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_agroquimicos.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_agroquimicos.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_agroquimicos.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Indice Apicola (IAD)</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_apicultura.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_apicultura.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_apicultura.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_apicultura.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_apicultura.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_apicultura.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_apicultura.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_apicultura.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_apicultura.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_apicultura.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div></div>
+<footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>
 </body>
 </html>

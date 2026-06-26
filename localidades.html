@@ -3,58 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pronóstico por Localidad — Rivera</title>
-<style>
-
-*{box-sizing:border-box;margin:0;padding:0}
+<title>Pronostico por Localidad — Rivera</title>
+<style>*{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333}
-header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);
-       color:white;padding:20px 28px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
-header h1{font-size:1.6em;margin-bottom:4px}
-header .sub{opacity:.85;font-size:.9em;margin-bottom:8px}
-nav.top{display:flex;align-items:center;flex-wrap:wrap;gap:6px;
-         margin-top:10px;font-size:.82em;opacity:.85}
-nav.top a{color:white;text-decoration:none;background:rgba(255,255,255,.15);
-           padding:4px 10px;border-radius:12px;transition:background .2s}
-nav.top a:hover{background:rgba(255,255,255,.3)}
-
-.container{max-width:580px;margin:26px auto;padding:0 16px}
-.back{display:inline-flex;align-items:center;gap:6px;margin-bottom:20px;
-       color:#1565C0;text-decoration:none;font-size:.93em;
-       background:white;padding:8px 14px;border-radius:8px;
-       box-shadow:0 1px 5px rgba(0,0,0,.1);transition:box-shadow .2s}
-.back:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
-ul{list-style:none}
-li{margin-bottom:10px}
-a.loc{color:#1565C0;text-decoration:none;font-size:1.05em;
-       padding:12px 16px;display:flex;align-items:center;gap:10px;
-       border-radius:10px;background:white;
-       box-shadow:0 1px 5px rgba(0,0,0,.08);border:1px solid transparent;
-       transition:all .2s}
-a.loc:hover{box-shadow:0 5px 16px rgba(0,0,0,.12);border-color:#90CAF9;
-              transform:translateX(5px)}
-</style>
+header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);color:white;
+       padding:18px 24px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
+header h1{font-size:1.5em;margin-bottom:4px}
+header p{opacity:.85;font-size:.88em}
+nav a{color:white;opacity:.8;text-decoration:none;font-size:.85em}
+nav a:hover{opacity:1}
+.container{max-width:1300px;margin:16px auto;padding:0 14px}
+.seccion{margin-bottom:28px}
+.seccion h2{color:#1565C0;font-size:1.1em;border-bottom:2px solid #e3f2fd;
+            padding-bottom:6px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{background:white;border-radius:8px;padding:10px;
+      box-shadow:0 2px 7px rgba(0,0,0,.07);text-align:center}
+.card img{width:100%;border-radius:5px}
+.card p{font-size:.82em;color:#555;margin-top:6px;font-weight:600}
+footer{text-align:center;padding:16px;color:#888;font-size:.8em}</style>
 </head>
 <body>
 <header>
-  <h1>📍 Pronóstico por Localidad</h1>
-  <p class="sub">Datos horarios · Generado el 2026-06-26 · Fuente: Open-Meteo</p>
-  <div class="inst" style="font-size:.76em;opacity:.78;line-height:1.85"><strong>Ing. Agro. Gerardo Díaz Romeo</strong> &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Dirección de Desarrollo Económico Productivo &nbsp;·&nbsp; Intendencia de Rivera</div>
-  <nav class="top"><a href="index.html">🏠 Inicio</a>&nbsp;·&nbsp; <a href="localidades.html">📍 Localidades</a> &nbsp;·&nbsp; <a href="agricultura.html">🌾 Agricultura</a> &nbsp;·&nbsp; <a href="ganaderia.html">🐄 Ganadería</a> &nbsp;·&nbsp; <a href="hidricos.html">💧 Hídricos</a></nav>
+  <h1>📍 Pronostico por Localidad</h1>
+  <p>Actualizado: 2026-06-26 &nbsp;·&nbsp; Fuente: Open-Meteo</p>
+  <nav style="margin-top:6px"><a href="index.html">← Inicio</a></nav>
 </header>
 <div class="container">
-  <a href="index.html" class="back">← Inicio</a>
-  <ul><li><a class="loc" href="html_graficos/Estación_Ataques.html">📍 Estación Ataques</a></li>
-<li><a class="loc" href="html_graficos/Minas_de_Corrales.html">📍 Minas de Corrales</a></li>
-<li><a class="loc" href="html_graficos/Moirones.html">📍 Moirones</a></li>
-<li><a class="loc" href="html_graficos/Paso_Ataques.html">📍 Paso Ataques</a></li>
-<li><a class="loc" href="html_graficos/Paso_La_Puente.html">📍 Paso La Puente</a></li>
-<li><a class="loc" href="html_graficos/Pueblo_Nuevo.html">📍 Pueblo Nuevo</a></li>
-<li><a class="loc" href="html_graficos/Rivera_Centro.html">📍 Rivera Centro</a></li>
-<li><a class="loc" href="html_graficos/Rivera_Chico.html">📍 Rivera Chico</a></li>
-<li><a class="loc" href="html_graficos/Tranqueras.html">📍 Tranqueras</a></li>
-<li><a class="loc" href="html_graficos/Villa_Vichadero.html">📍 Villa Vichadero</a></li></ul>
-</div>
-<footer style="text-align:center;padding:22px 16px;color:#888;font-size:.8em;line-height:1.8">Open-Meteo API · QGIS 4.x<br>Ing. Agro. Gerardo Díaz Romeo · División de Desarrollo Rural · Dirección de Desarrollo Económico Productivo · Intendencia de Rivera</footer>
+<div class="grid" style="margin-top:8px">
+<a href="html_graficos/Estacion_Ataques.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Estación Ataques</div></a>
+<a href="html_graficos/Minas_de_Corrales.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Minas de Corrales</div></a>
+<a href="html_graficos/Moirones.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Moirones</div></a>
+<a href="html_graficos/Paso_Ataques.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Paso Ataques</div></a>
+<a href="html_graficos/Paso_La_Puente.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Paso La Puente</div></a>
+<a href="html_graficos/Pueblo_Nuevo.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Pueblo Nuevo</div></a>
+<a href="html_graficos/Rivera_Centro.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Rivera Centro</div></a>
+<a href="html_graficos/Rivera_Chico.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Rivera Chico</div></a>
+<a href="html_graficos/Tranqueras.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Tranqueras</div></a>
+<a href="html_graficos/Villa_Vichadero.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Villa Vichadero</div></a>
+</div></div>
+<footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>
 </body>
 </html>

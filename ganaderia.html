@@ -3,162 +3,129 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Índices para la Ganadería — Rivera</title>
-<style>
-
-*{box-sizing:border-box;margin:0;padding:0}
+<title>Indices para la Ganaderia — Rivera</title>
+<style>*{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333}
-header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);
-       color:white;padding:20px 28px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
-header h1{font-size:1.6em;margin-bottom:4px}
-header .sub{opacity:.85;font-size:.9em;margin-bottom:8px}
-nav.top{display:flex;align-items:center;flex-wrap:wrap;gap:6px;
-         margin-top:10px;font-size:.82em;opacity:.85}
-nav.top a{color:white;text-decoration:none;background:rgba(255,255,255,.15);
-           padding:4px 10px;border-radius:12px;transition:background .2s}
-nav.top a:hover{background:rgba(255,255,255,.3)}
-
-.container{width:100%;padding:0 16px;margin:20px 0}
-.back{display:inline-flex;align-items:center;gap:6px;margin-bottom:18px;
-       color:#1565C0;text-decoration:none;font-size:.93em;
-       background:white;padding:8px 14px;border-radius:8px;
-       box-shadow:0 1px 5px rgba(0,0,0,.1);transition:box-shadow .2s}
-.back:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
-.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
-.tab{background:white;border:2px solid #ccc;color:#555;padding:9px 18px;
-      border-radius:10px;cursor:pointer;font-size:.93em;font-weight:600;
-      transition:all .2s}
-.tab:hover{box-shadow:0 3px 10px rgba(0,0,0,.12)}
-.tab.active{box-shadow:0 3px 12px rgba(0,0,0,.15)}
-.idx-box{background:white;border-radius:10px;padding:20px 24px;
-           margin-bottom:18px;box-shadow:0 2px 8px rgba(0,0,0,.07)}
-.idx-head{display:flex;align-items:baseline;gap:12px;margin-bottom:10px;flex-wrap:wrap}
-.idx-sig{font-size:1.35em;font-weight:800}
-.idx-nom{font-size:1.05em;font-weight:600;color:#333}
-.idx-dsc{font-size:.94em;line-height:1.7;color:#444;margin-bottom:12px}
-.form-box{background:#f5f7fa;border-radius:7px;padding:12px 16px;
-            font-size:.88em;line-height:1.65;margin-bottom:8px}
-.cat-box{font-size:.88em;color:#555;padding:6px 0}
-.loc-row{background:white;border-radius:10px;padding:14px 18px;
-           margin-bottom:14px;box-shadow:0 2px 7px rgba(0,0,0,.07)}
-.loc-row h3{font-size:.95em;color:#1565C0;margin-bottom:10px;
-              padding-bottom:7px;border-bottom:2px solid #e3f2fd}
-.loc-row img{width:100%;display:block;border-radius:6px}
-.prep{background:white;border-radius:10px;padding:40px;text-align:center;
-       color:#999;margin-bottom:14px;box-shadow:0 2px 7px rgba(0,0,0,.07)}
-.prep h3{margin:10px 0 6px;color:#666}
-.prep p{font-size:.9em}
-@media(max-width:600px){header h1{font-size:1.25em}}
-</style>
+header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);color:white;
+       padding:18px 24px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
+header h1{font-size:1.5em;margin-bottom:4px}
+header p{opacity:.85;font-size:.88em}
+nav a{color:white;opacity:.8;text-decoration:none;font-size:.85em}
+nav a:hover{opacity:1}
+.container{max-width:1300px;margin:16px auto;padding:0 14px}
+.seccion{margin-bottom:28px}
+.seccion h2{color:#1565C0;font-size:1.1em;border-bottom:2px solid #e3f2fd;
+            padding-bottom:6px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{background:white;border-radius:8px;padding:10px;
+      box-shadow:0 2px 7px rgba(0,0,0,.07);text-align:center}
+.card img{width:100%;border-radius:5px}
+.card p{font-size:.82em;color:#555;margin-top:6px;font-weight:600}
+footer{text-align:center;padding:16px;color:#888;font-size:.8em}</style>
 </head>
 <body>
 <header>
-  <h1>🐄 Índices para la Ganadería</h1>
-  <p class="sub">Departamento de Rivera · Generado el 2026-06-26 · Fuente: Open-Meteo</p>
-  <div class="inst" style="font-size:.76em;opacity:.78;line-height:1.85"><strong>Ing. Agro. Gerardo Díaz Romeo</strong> &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Dirección de Desarrollo Económico Productivo &nbsp;·&nbsp; Intendencia de Rivera</div>
-  <nav class="top"><a href="index.html">🏠 Inicio</a>&nbsp;·&nbsp; <a href="localidades.html">📍 Localidades</a> &nbsp;·&nbsp; <a href="agricultura.html">🌾 Agricultura</a> &nbsp;·&nbsp; <a href="ganaderia.html">🐄 Ganadería</a> &nbsp;·&nbsp; <a href="hidricos.html">💧 Hídricos</a></nav>
+  <h1>🐄 Indices para la Ganaderia</h1>
+  <p>Actualizado: 2026-06-26 &nbsp;·&nbsp; Fuente: Open-Meteo</p>
+  <nav style="margin-top:6px"><a href="index.html">← Inicio</a></nav>
 </header>
 <div class="container">
-  <a href="index.html" class="back">← Inicio</a>
-  <div class="tabs">
-<button class="tab active" style="background:#E65100;color:white;border-color:#E65100" onclick="showTab('ith','#E65100')" id="btn-ith">🐄 ITH</button>
-<button class="tab "  onclick="showTab('estres_ovino','#6A1B9A')" id="btn-estres_ovino">🐑 ETO</button>
-<button class="tab "  onclick="showTab('empaste','#1B5E20')" id="btn-empaste">🌿 IRE</button>
-<button class="tab "  onclick="showTab('garrapata','#BF360C')" id="btn-garrapata">🦟 IRGG</button>
-<button class="tab "  onclick="showTab('pietin','#4E342E')" id="btn-pietin">🦶 RPO</button>
-<button class="tab "  onclick="showTab('bano_biologico','#880E4F')" id="btn-bano_biologico">🍄 HEG</button>
-  </div>
-<div class="panel" id="panel-ith" style="display:block"><div class="idx-box" style="border-left:5px solid #E65100"><div class="idx-head"><span class="idx-sig" style="color:#E65100">🐄 ITH</span><span class="idx-nom">Índice de Temperatura y Humedad — Bovinos</span></div><p class="idx-dsc">Evalúa el estrés calórico en bovinos de leche y carne. Afecta producción de leche, fertilidad y ganancia de peso. La línea roja marca el umbral de alerta (ITH=72). Indicador de bienestar animal más usado mundialmente.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>ITH = 0.8 × T<sub>bs</sub> + (HR/100) × (T<sub>bs</sub> − 14.3) + 46.4 [Thom 1959 / Cruz-Saravia 2008]. T<sub>bs</sub> = temperatura bulbo seco (°C), HR = humedad relativa (%).</div><div class="cat-box"><b>Categorías:</b> &lt;68 Sin estrés · 68–72 Leve · 72–75 Alerta leche · 75–79 Alerta carne · 79–84 Peligro · &gt;84 Emergencia</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_ith.png" alt="Estación Ataques — Índice de Temperatura y Humedad — Bovinos" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_ith.png" alt="Minas de Corrales — Índice de Temperatura y Humedad — Bovinos" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_ith.png" alt="Moirones — Índice de Temperatura y Humedad — Bovinos" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_ith.png" alt="Paso Ataques — Índice de Temperatura y Humedad — Bovinos" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_ith.png" alt="Paso La Puente — Índice de Temperatura y Humedad — Bovinos" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_ith.png" alt="Pueblo Nuevo — Índice de Temperatura y Humedad — Bovinos" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_ith.png" alt="Rivera Centro — Índice de Temperatura y Humedad — Bovinos" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_ith.png" alt="Rivera Chico — Índice de Temperatura y Humedad — Bovinos" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_ith.png" alt="Tranqueras — Índice de Temperatura y Humedad — Bovinos" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_ith.png" alt="Villa Vichadero — Índice de Temperatura y Humedad — Bovinos" loading="lazy"></div></div><div class="panel" id="panel-estres_ovino" style="display:none"><div class="idx-box" style="border-left:5px solid #6A1B9A"><div class="idx-head"><span class="idx-sig" style="color:#6A1B9A">🐑 ETO</span><span class="idx-nom">Estrés Térmico en Ovinos y Caprinos</span></div><p class="idx-dsc">Temperatura del aire como indicador de estrés térmico en ovinos y caprinos. La línea marca el umbral de 26 °C a partir del cual se observan signos de estrés calórico que afectan la producción y la reproducción.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>Clasificación por T<sub>media</sub>: &lt;10 °C Estrés por frío · 10–26 °C Confort · 26–30 °C Estrés leve · 30–35 °C Estrés severo · &gt;35 °C Riesgo de mortalidad.</div><div class="cat-box"><b>Categorías:</b> &lt;10 Estrés frío · 10–26 Confort · 26–30 Leve · 30–35 Severo · &gt;35 Riesgo mortalidad</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_estres_ovino.png" alt="Estación Ataques — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_estres_ovino.png" alt="Minas de Corrales — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_estres_ovino.png" alt="Moirones — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_estres_ovino.png" alt="Paso Ataques — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_estres_ovino.png" alt="Paso La Puente — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_estres_ovino.png" alt="Pueblo Nuevo — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_estres_ovino.png" alt="Rivera Centro — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_estres_ovino.png" alt="Rivera Chico — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_estres_ovino.png" alt="Tranqueras — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_estres_ovino.png" alt="Villa Vichadero — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div></div><div class="panel" id="panel-empaste" style="display:none"><div class="idx-box" style="border-left:5px solid #1B5E20"><div class="idx-head"><span class="idx-sig" style="color:#1B5E20">🌿 IRE</span><span class="idx-nom">Índice de Riesgo de Empaste</span></div><p class="idx-dsc">Estima el riesgo de timpanismo espumoso (empaste) en bovinos en pastoreo de leguminosas. La línea marca el umbral de riesgo alto (IRE=50).</p><div class="form-box"><b>Fórmula / Metodología:</b><br>IRE = f(T, HR, Nubosidad, Lluvia acumulada). T 15–28 °C → +30 · T 10–15 o 28–32 °C → +15 · HR &gt;80 % → +25 · Lluvia &gt;0.5 mm → +30 · Nube &gt;75 % → +15.</div><div class="cat-box"><b>Categorías:</b> 0–30 Bajo · 31–50 Moderado · 51–80 Alto · &gt;80 Muy alto</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_empaste.png" alt="Estación Ataques — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_empaste.png" alt="Minas de Corrales — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_empaste.png" alt="Moirones — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_empaste.png" alt="Paso Ataques — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_empaste.png" alt="Paso La Puente — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_empaste.png" alt="Pueblo Nuevo — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_empaste.png" alt="Rivera Centro — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_empaste.png" alt="Rivera Chico — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_empaste.png" alt="Tranqueras — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_empaste.png" alt="Villa Vichadero — Índice de Riesgo de Empaste" loading="lazy"></div></div><div class="panel" id="panel-garrapata" style="display:none"><div class="idx-box" style="border-left:5px solid #BF360C"><div class="idx-head"><span class="idx-sig" style="color:#BF360C">🦟 IRGG</span><span class="idx-nom">Índice de Riesgo Generacional de Garrapata</span></div><p class="idx-dsc">Acumulado horario de días grado de desarrollo de Rhipicephalus (Boophilus) microplus ponderado por humedad relativa. Permite anticipar picos de infestación y planificar tratamientos.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>IRG horario = max(0, T − 14.5) × factor_HR. factor_HR: HR ≥ 70 % → 1.0 · HR 50–70 % → 0.5 · HR &lt;50 % → 0.0. Acumulado: &lt;50 Bajo · 50–100 Mod. · 100–180 Alto · &gt;180 Muy alto.</div><div class="cat-box"><b>Categorías:</b> &lt;50 Bajo · 50–100 Moderado · 100–180 Alto · &gt;180 Muy alto</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_garrapata.png" alt="Estación Ataques — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_garrapata.png" alt="Minas de Corrales — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_garrapata.png" alt="Moirones — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_garrapata.png" alt="Paso Ataques — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_garrapata.png" alt="Paso La Puente — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_garrapata.png" alt="Pueblo Nuevo — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_garrapata.png" alt="Rivera Centro — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_garrapata.png" alt="Rivera Chico — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_garrapata.png" alt="Tranqueras — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_garrapata.png" alt="Villa Vichadero — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div></div><div class="panel" id="panel-pietin" style="display:none"><div class="idx-box" style="border-left:5px solid #4E342E"><div class="idx-head"><span class="idx-sig" style="color:#4E342E">🦶 RPO</span><span class="idx-nom">Índice de Riesgo de Pietín Ovino</span></div><p class="idx-dsc">Temperatura del aire como indicador de riesgo de pietín (Dichelobacter nodosus) en ovinos. La línea marca el umbral de 18 °C óptimo para el patógeno, especialmente con suelo húmedo.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>RPO = Cond_T × Cond_H × 100. Cond_T: T &gt;18 °C → 1.0 · T 10–18 °C → 0.5 · T &lt;10 °C → 0. Cond_H: Hs &gt;70% y P_7d ≥ 40 mm → 1.0 · Hs &gt;55% o P_7d ≥ 25 mm → 0.5.</div><div class="cat-box"><b>Categorías:</b> 0–25 Bajo · 25–50 Moderado · 50–75 Alto · &gt;75 Muy alto</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_pietin.png" alt="Estación Ataques — Índice de Riesgo de Pietín Ovino" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_pietin.png" alt="Minas de Corrales — Índice de Riesgo de Pietín Ovino" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_pietin.png" alt="Moirones — Índice de Riesgo de Pietín Ovino" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_pietin.png" alt="Paso Ataques — Índice de Riesgo de Pietín Ovino" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_pietin.png" alt="Paso La Puente — Índice de Riesgo de Pietín Ovino" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_pietin.png" alt="Pueblo Nuevo — Índice de Riesgo de Pietín Ovino" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_pietin.png" alt="Rivera Centro — Índice de Riesgo de Pietín Ovino" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_pietin.png" alt="Rivera Chico — Índice de Riesgo de Pietín Ovino" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_pietin.png" alt="Tranqueras — Índice de Riesgo de Pietín Ovino" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_pietin.png" alt="Villa Vichadero — Índice de Riesgo de Pietín Ovino" loading="lazy"></div></div><div class="panel" id="panel-bano_biologico" style="display:none"><div class="idx-box" style="border-left:5px solid #880E4F"><div class="idx-head"><span class="idx-sig" style="color:#880E4F">🍄 HEG</span><span class="idx-nom">Aptitud para Baño con Hongos Entomopatógenos contra Garrapata</span></div><p class="idx-dsc">Estima las horas con condiciones óptimas para aplicar formulaciones biológicas formulaciones a base de <i>Akanthomyces muscarius</i> (ex <i>Lecanicillium / Verticillium lecanii</i>), <i>Beauveria bassiana</i> y <i>Metarhizium anisopliae</i>. Dato clave del informe DGSG/MGAP: <i>Akanthomyces</i> actúa a T más bajas (17–23 °C) que <i>Metarhizium</i> (20–25 °C). La zona óptima para las tres cepas simultáneamente es 20–23 °C. Aplicar siempre de tardecita para evitar degradación UV de las conidias.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>HEG = f(T, HR, Rad<sub>solar</sub>, V, Prob. lluvia 24h). T 20–23 °C → +30 (tres cepas activas) · T 17–20 °C o 23–25 °C → +20 (dos cepas) · HR ≥ 80 % → +35 (umbral del informe MGAP, factor más crítico) · Rad &lt;150 W/m² → +25 (tardecita/nublado) · Viento 3–15 km/h → +10. Descuento: prob. lluvia ≥ 60 % → −40 (lavado del producto).</div><div class="cat-box"><b>Categorías:</b> &lt;30 No apto &nbsp;·&nbsp; 30–50 Marginal &nbsp;·&nbsp; 50–70 Apto &nbsp;·&nbsp; &gt;70 Óptimo</div></div>
-<div style="background:white;border-left:5px solid #880E4F;border-radius:10px;
-     padding:18px 22px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.07)">
-  <h4 style="color:#880E4F;margin-bottom:14px;font-size:1em">
-    🍄 Protocolo de Aplicación — Hongos Entomopatógenos contra Garrapata
-  </h4>
-
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-bottom:14px">
-
-    <div style="background:#f9f0f5;border-radius:8px;padding:12px 16px">
-      <div style="font-weight:700;color:#880E4F;margin-bottom:6px">⏰ Momento de aplicación</div>
-      <div style="font-size:.88em;line-height:1.7;color:#444">
-        Aplicar siempre <b>de tardecita o en días nublados</b>, evitando la alta irradiación
-        solar. La luz UV degrada rápidamente las conidias de los tres hongos.
-        Nunca aplicar en horas de sol intenso (10:00–16:00 h).
-      </div>
-    </div>
-
-    <div style="background:#f9f0f5;border-radius:8px;padding:12px 16px">
-      <div style="font-weight:700;color:#880E4F;margin-bottom:6px">🌡️ Temperatura óptima</div>
-      <div style="font-size:.88em;line-height:1.7;color:#444">
-        La zona donde las <b>tres cepas son simultáneamente activas</b> es <b>17–25 °C</b>.
-        <i>Akanthomyces muscarius</i> actúa a T más bajas (17–23 °C) que
-        <i>Metarhizium anisopliae</i> (20–25 °C) y <i>Beauveria bassiana</i> (20–28 °C).
-      </div>
-    </div>
-
-    <div style="background:#f9f0f5;border-radius:8px;padding:12px 16px">
-      <div style="font-weight:700;color:#880E4F;margin-bottom:6px">💧 Humedad relativa</div>
-      <div style="font-size:.88em;line-height:1.7;color:#444">
-        Factor más crítico: <b>HR &gt; 80 %</b> es la condición mínima para la germinación
-        de conidias (Informe DGSG/MGAP, 2023). Por debajo de este umbral la eficacia
-        cae drásticamente. Los gráficos horarios muestran las horas aptas.
-      </div>
-    </div>
-
-    <div style="background:#f9f0f5;border-radius:8px;padding:12px 16px">
-      <div style="font-weight:700;color:#880E4F;margin-bottom:6px">🔄 Frecuencia y ciclo</div>
-      <div style="font-size:.88em;line-height:1.7;color:#444">
-        Aplicar <b>cada 21 días</b> acompañando la fase parasitaria de la garrapata.
-        <b>El efecto acumulativo se activa a partir del 3er baño</b> — una sola
-        aplicación no es suficiente. La reducción significativa del nivel de
-        infestación se evidencia a partir de la 3ª aplicación
-        (Rodríguez dos Santos, Batovi Instituto Orgánico, 2023).
-      </div>
-    </div>
-
-    <div style="background:#f9f0f5;border-radius:8px;padding:12px 16px">
-      <div style="font-weight:700;color:#880E4F;margin-bottom:6px">★ Aplicación combinada</div>
-      <div style="font-size:.88em;line-height:1.7;color:#444">
-        El tratamiento <b>animal + suelo es significativamente más eficaz</b> que
-        solo sobre los animales. La aplicación al suelo (500 cc/ha) incorpora
-        ~15×10<sup>11</sup> conidias/ha que se multiplican y controlan las larvas
-        antes de que suban al ganado (Ensayo MGAP, Tacuarembó, 2023).
-      </div>
-    </div>
-
-    <div style="background:#f9f0f5;border-radius:8px;padding:12px 16px">
-      <div style="font-weight:700;color:#880E4F;margin-bottom:6px">🌧️ Lluvia y viento</div>
-      <div style="font-size:.88em;line-height:1.7;color:#444">
-        No aplicar si hay lluvia prevista en las próximas <b>24 horas</b> — el agua
-        lava el producto antes de que las conidias contacten la garrapata.
-        Viento recomendado: <b>3–15 km/h</b> para buena cobertura sin deriva excesiva.
-      </div>
-    </div>
-
-  </div>
-
-  <div style="font-size:.82em;color:#666;border-top:1px solid #f0f0f0;padding-top:10px;line-height:1.7">
-    <b>Referencia:</b> Rodríguez dos Santos, A. (2023). <i>Control de la garrapata
-    Rhipicephalus microplus con hongos entomopatógenos.</i>
-    Informe de eficiencia técnica — DGSG/MGAP. Batovi Instituto Orgánico, Uruguay. ·
-    Los gráficos horarios por localidad muestran el índice de aptitud (0–100) hora a hora
-    para elegir el momento óptimo de aplicación del día.
-  </div>
-</div>
-<div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_bano_biologico.png" alt="Estación Ataques — Aptitud para Baño con Hongos Entomopatógenos contra Garrapata" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_bano_biologico.png" alt="Minas de Corrales — Aptitud para Baño con Hongos Entomopatógenos contra Garrapata" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_bano_biologico.png" alt="Moirones — Aptitud para Baño con Hongos Entomopatógenos contra Garrapata" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_bano_biologico.png" alt="Paso Ataques — Aptitud para Baño con Hongos Entomopatógenos contra Garrapata" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_bano_biologico.png" alt="Paso La Puente — Aptitud para Baño con Hongos Entomopatógenos contra Garrapata" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_bano_biologico.png" alt="Pueblo Nuevo — Aptitud para Baño con Hongos Entomopatógenos contra Garrapata" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_bano_biologico.png" alt="Rivera Centro — Aptitud para Baño con Hongos Entomopatógenos contra Garrapata" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_bano_biologico.png" alt="Rivera Chico — Aptitud para Baño con Hongos Entomopatógenos contra Garrapata" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_bano_biologico.png" alt="Tranqueras — Aptitud para Baño con Hongos Entomopatógenos contra Garrapata" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_bano_biologico.png" alt="Villa Vichadero — Aptitud para Baño con Hongos Entomopatógenos contra Garrapata" loading="lazy"></div></div>
-</div>
-<footer style="text-align:center;padding:22px 16px;color:#888;font-size:.8em;line-height:1.8">Open-Meteo API · QGIS 4.x<br>Ing. Agro. Gerardo Díaz Romeo · División de Desarrollo Rural · Dirección de Desarrollo Económico Productivo · Intendencia de Rivera</footer>
-<script>
-function showTab(id,color){
-  document.querySelectorAll('.panel').forEach(p=>p.style.display='none');
-  document.querySelectorAll('.tab').forEach(b=>{
-    b.classList.remove('active');
-    b.style.background='';b.style.color='';b.style.borderColor='';
-  });
-  document.getElementById('panel-'+id).style.display='block';
-  var b=document.getElementById('btn-'+id);
-  b.classList.add('active');
-  b.style.background=color;b.style.color='white';b.style.borderColor=color;
-}
-</script>
+<div class="seccion"><h2>Estres Termico (ITH)</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_ith.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_ith.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_ith.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_ith.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_ith.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_ith.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_ith.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_ith.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_ith.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_ith.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Riesgo Garrapata</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_garrapata.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_garrapata.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_garrapata.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_garrapata.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_garrapata.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_garrapata.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_garrapata.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_garrapata.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_garrapata.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_garrapata.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Riesgo Empaste</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_empaste.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_empaste.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_empaste.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_empaste.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_empaste.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_empaste.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_empaste.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_empaste.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_empaste.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_empaste.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Bano Biologico</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_bano_biologico.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_bano_biologico.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_bano_biologico.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_bano_biologico.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_bano_biologico.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_bano_biologico.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_bano_biologico.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_bano_biologico.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_bano_biologico.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_bano_biologico.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Confort Humano (UTCI)</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_utci.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_utci.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_utci.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_utci.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_utci.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_utci.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_utci.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_utci.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_utci.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_utci.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Riesgo Pietin</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_pietin.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_pietin.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_pietin.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_pietin.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_pietin.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_pietin.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_pietin.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_pietin.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_pietin.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_pietin.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Estres Ovino</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_estres_ovino.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_estres_ovino.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_estres_ovino.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_estres_ovino.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_estres_ovino.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_estres_ovino.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_estres_ovino.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_estres_ovino.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_estres_ovino.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_estres_ovino.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div>
+<div class="seccion"><h2>Riesgo Vectorial</h2><div class="grid">
+<div class="card"><img src="indices/graficos/Estación_Ataques_dengue.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
+<div class="card"><img src="indices/graficos/Minas_de_Corrales_dengue.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
+<div class="card"><img src="indices/graficos/Moirones_dengue.png" alt="Moirones"><p>Moirones</p></div>
+<div class="card"><img src="indices/graficos/Paso_Ataques_dengue.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
+<div class="card"><img src="indices/graficos/Paso_La_Puente_dengue.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
+<div class="card"><img src="indices/graficos/Pueblo_Nuevo_dengue.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Centro_dengue.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
+<div class="card"><img src="indices/graficos/Rivera_Chico_dengue.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
+<div class="card"><img src="indices/graficos/Tranqueras_dengue.png" alt="Tranqueras"><p>Tranqueras</p></div>
+<div class="card"><img src="indices/graficos/Villa_Vichadero_dengue.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
+</div></div></div>
+<footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>
 </body>
 </html>
