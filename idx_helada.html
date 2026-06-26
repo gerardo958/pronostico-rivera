@@ -26,6 +26,11 @@ nav a:hover{opacity:1;text-decoration:underline}
 .graf-card h3{color:#1565C0;font-size:.95em;margin-bottom:10px;
                border-bottom:2px solid #e3f2fd;padding-bottom:6px}
 .graf-card img{width:100%;border-radius:6px;display:block}
+.btn-dl{display:inline-block;margin-top:10px;padding:6px 18px;
+         background:#1565C0;color:white;border-radius:20px;
+         font-size:.82em;font-weight:600;cursor:pointer;
+         border:none;font-family:'Segoe UI',sans-serif}
+.btn-dl:hover{background:#0D47A1}
 footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}</style>
 </head>
 <body>
@@ -37,52 +42,83 @@ footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}<
     <a href="agricultura.html">← Indices para la Agricultura</a>
   </nav>
 </header>
+
+<script>
+function descargarJPG(src, nombre) {
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function() {
+        var canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+        var a = document.createElement('a');
+        a.download = nombre;
+        a.href = canvas.toDataURL('image/jpeg', 0.95);
+        a.click();
+    };
+    img.src = src;
+}
+</script>
 <div class="container">
 <div class="info-box">
   <h2>Riesgo de Helada</h2>
   <p class="desc">Clasifica el riesgo de helada segun la temperatura minima pronosticada. Critico para cultivos horticolas, frutales en floracion y pasturas recientemente sembradas.</p>
   <div class="formula">Calculo: Clasificacion por temperatura minima del periodo analizado.</div>
-  <p class="interp">Interpretacion: > 2 C: Sin riesgo  |  0-2 C: Riesgo bajo  |  0 a -2 C: Helada leve  |  -2 a -5 C: Moderada  |  < -5 C: Fuerte - dano severo</p>
+  <p class="interp">Interpretacion: > 2 C: Sin riesgo  |  0-2 C: Riesgo bajo  |  0 a -2 C: Leve  |  -2 a -5 C: Moderada  |  < -5 C: Fuerte</p>
 </div>
 <div class="graf-card">
   <h3>📍 Estación Ataques</h3>
   <img src="indices/graficos/Estación_Ataques_helada.png" alt="Estación Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Estación_Ataques_helada.png','Estación_Ataques_helada_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Minas de Corrales</h3>
   <img src="indices/graficos/Minas_de_Corrales_helada.png" alt="Minas de Corrales">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Minas_de_Corrales_helada.png','Minas_de_Corrales_helada_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Moirones</h3>
   <img src="indices/graficos/Moirones_helada.png" alt="Moirones">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Moirones_helada.png','Moirones_helada_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Paso Ataques</h3>
   <img src="indices/graficos/Paso_Ataques_helada.png" alt="Paso Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_Ataques_helada.png','Paso_Ataques_helada_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Paso La Puente</h3>
   <img src="indices/graficos/Paso_La_Puente_helada.png" alt="Paso La Puente">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_La_Puente_helada.png','Paso_La_Puente_helada_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Pueblo Nuevo</h3>
   <img src="indices/graficos/Pueblo_Nuevo_helada.png" alt="Pueblo Nuevo">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Pueblo_Nuevo_helada.png','Pueblo_Nuevo_helada_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Rivera Centro</h3>
   <img src="indices/graficos/Rivera_Centro_helada.png" alt="Rivera Centro">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Centro_helada.png','Rivera_Centro_helada_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Rivera Chico</h3>
   <img src="indices/graficos/Rivera_Chico_helada.png" alt="Rivera Chico">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Chico_helada.png','Rivera_Chico_helada_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Tranqueras</h3>
   <img src="indices/graficos/Tranqueras_helada.png" alt="Tranqueras">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Tranqueras_helada.png','Tranqueras_helada_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Villa Vichadero</h3>
   <img src="indices/graficos/Villa_Vichadero_helada.png" alt="Villa Vichadero">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Villa_Vichadero_helada.png','Villa_Vichadero_helada_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 </div>
 <footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>

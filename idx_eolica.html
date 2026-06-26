@@ -26,6 +26,11 @@ nav a:hover{opacity:1;text-decoration:underline}
 .graf-card h3{color:#1565C0;font-size:.95em;margin-bottom:10px;
                border-bottom:2px solid #e3f2fd;padding-bottom:6px}
 .graf-card img{width:100%;border-radius:6px;display:block}
+.btn-dl{display:inline-block;margin-top:10px;padding:6px 18px;
+         background:#1565C0;color:white;border-radius:20px;
+         font-size:.82em;font-weight:600;cursor:pointer;
+         border:none;font-family:'Segoe UI',sans-serif}
+.btn-dl:hover{background:#0D47A1}
 footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}</style>
 </head>
 <body>
@@ -37,52 +42,83 @@ footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}<
     <a href="agricultura.html">← Indices para la Agricultura</a>
   </nav>
 </header>
+
+<script>
+function descargarJPG(src, nombre) {
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function() {
+        var canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+        var a = document.createElement('a');
+        a.download = nombre;
+        a.href = canvas.toDataURL('image/jpeg', 0.95);
+        a.click();
+    };
+    img.src = src;
+}
+</script>
 <div class="container">
 <div class="info-box">
   <h2>Generacion Eolica Potencial</h2>
   <p class="desc">Estima el porcentaje de la potencia nominal que generaria un aerogenerador tipico segun la velocidad del viento disponible.</p>
-  <div class="formula">Calculo: Generacion (%) = (V3 / Vnom3) x 100  para 3 <= V <= 12 m/s. 100% para V > 12 m/s. 0% fuera de rango.</div>
-  <p class="interp">Interpretacion: < 20%: Baja  |  20-60%: Moderada  |  > 60%: Alta - buenas condiciones de generacion</p>
+  <div class="formula">Calculo: Generacion (%) = (V3 / Vnom3) x 100  para 3 <= V <= 12 m/s. 100% para V > 12 m/s.</div>
+  <p class="interp">Interpretacion: < 20%: Baja  |  20-60%: Moderada  |  > 60%: Alta</p>
 </div>
 <div class="graf-card">
   <h3>📍 Estación Ataques</h3>
   <img src="indices/graficos/Estación_Ataques_eolica.png" alt="Estación Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Estación_Ataques_eolica.png','Estación_Ataques_eolica_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Minas de Corrales</h3>
   <img src="indices/graficos/Minas_de_Corrales_eolica.png" alt="Minas de Corrales">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Minas_de_Corrales_eolica.png','Minas_de_Corrales_eolica_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Moirones</h3>
   <img src="indices/graficos/Moirones_eolica.png" alt="Moirones">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Moirones_eolica.png','Moirones_eolica_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Paso Ataques</h3>
   <img src="indices/graficos/Paso_Ataques_eolica.png" alt="Paso Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_Ataques_eolica.png','Paso_Ataques_eolica_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Paso La Puente</h3>
   <img src="indices/graficos/Paso_La_Puente_eolica.png" alt="Paso La Puente">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_La_Puente_eolica.png','Paso_La_Puente_eolica_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Pueblo Nuevo</h3>
   <img src="indices/graficos/Pueblo_Nuevo_eolica.png" alt="Pueblo Nuevo">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Pueblo_Nuevo_eolica.png','Pueblo_Nuevo_eolica_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Rivera Centro</h3>
   <img src="indices/graficos/Rivera_Centro_eolica.png" alt="Rivera Centro">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Centro_eolica.png','Rivera_Centro_eolica_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Rivera Chico</h3>
   <img src="indices/graficos/Rivera_Chico_eolica.png" alt="Rivera Chico">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Chico_eolica.png','Rivera_Chico_eolica_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Tranqueras</h3>
   <img src="indices/graficos/Tranqueras_eolica.png" alt="Tranqueras">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Tranqueras_eolica.png','Tranqueras_eolica_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Villa Vichadero</h3>
   <img src="indices/graficos/Villa_Vichadero_eolica.png" alt="Villa Vichadero">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Villa_Vichadero_eolica.png','Villa_Vichadero_eolica_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 </div>
 <footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>

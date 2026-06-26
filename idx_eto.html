@@ -26,6 +26,11 @@ nav a:hover{opacity:1;text-decoration:underline}
 .graf-card h3{color:#1565C0;font-size:.95em;margin-bottom:10px;
                border-bottom:2px solid #e3f2fd;padding-bottom:6px}
 .graf-card img{width:100%;border-radius:6px;display:block}
+.btn-dl{display:inline-block;margin-top:10px;padding:6px 18px;
+         background:#1565C0;color:white;border-radius:20px;
+         font-size:.82em;font-weight:600;cursor:pointer;
+         border:none;font-family:'Segoe UI',sans-serif}
+.btn-dl:hover{background:#0D47A1}
 footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}</style>
 </head>
 <body>
@@ -37,52 +42,83 @@ footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}<
     <a href="hidricos.html">← Indicadores Hidricos</a>
   </nav>
 </header>
+
+<script>
+function descargarJPG(src, nombre) {
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function() {
+        var canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+        var a = document.createElement('a');
+        a.download = nombre;
+        a.href = canvas.toDataURL('image/jpeg', 0.95);
+        a.click();
+    };
+    img.src = src;
+}
+</script>
 <div class="container">
 <div class="info-box">
   <h2>Evapotranspiracion de Referencia (ETo)</h2>
-  <p class="desc">Cuantifica la demanda hidrica atmosferica sobre una superficie vegetal estandar. Comparar con la precipitacion permite dimensionar el deficit o superavit hidrico real.</p>
-  <div class="formula">Calculo: ETo horaria aprox = metodo Penman-Monteith simplificado con radiacion, temperatura, humedad y viento.</div>
+  <p class="desc">Cuantifica la demanda hidrica atmosferica sobre una superficie vegetal estandar. Permite dimensionar el deficit o superavit hidrico real.</p>
+  <div class="formula">Calculo: ETo horaria aprox = metodo Penman-Monteith simplificado.</div>
   <p class="interp">Interpretacion: Comparar con precipitacion: P > ETo = superavit hidrico  |  P < ETo = deficit hidrico</p>
 </div>
 <div class="graf-card">
   <h3>📍 Estación Ataques</h3>
   <img src="indices/graficos/Estación_Ataques_eto.png" alt="Estación Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Estación_Ataques_eto.png','Estación_Ataques_eto_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Minas de Corrales</h3>
   <img src="indices/graficos/Minas_de_Corrales_eto.png" alt="Minas de Corrales">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Minas_de_Corrales_eto.png','Minas_de_Corrales_eto_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Moirones</h3>
   <img src="indices/graficos/Moirones_eto.png" alt="Moirones">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Moirones_eto.png','Moirones_eto_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Paso Ataques</h3>
   <img src="indices/graficos/Paso_Ataques_eto.png" alt="Paso Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_Ataques_eto.png','Paso_Ataques_eto_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Paso La Puente</h3>
   <img src="indices/graficos/Paso_La_Puente_eto.png" alt="Paso La Puente">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_La_Puente_eto.png','Paso_La_Puente_eto_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Pueblo Nuevo</h3>
   <img src="indices/graficos/Pueblo_Nuevo_eto.png" alt="Pueblo Nuevo">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Pueblo_Nuevo_eto.png','Pueblo_Nuevo_eto_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Rivera Centro</h3>
   <img src="indices/graficos/Rivera_Centro_eto.png" alt="Rivera Centro">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Centro_eto.png','Rivera_Centro_eto_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Rivera Chico</h3>
   <img src="indices/graficos/Rivera_Chico_eto.png" alt="Rivera Chico">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Chico_eto.png','Rivera_Chico_eto_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Tranqueras</h3>
   <img src="indices/graficos/Tranqueras_eto.png" alt="Tranqueras">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Tranqueras_eto.png','Tranqueras_eto_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Villa Vichadero</h3>
   <img src="indices/graficos/Villa_Vichadero_eto.png" alt="Villa Vichadero">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Villa_Vichadero_eto.png','Villa_Vichadero_eto_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 </div>
 <footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>

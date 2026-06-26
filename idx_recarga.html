@@ -26,6 +26,11 @@ nav a:hover{opacity:1;text-decoration:underline}
 .graf-card h3{color:#1565C0;font-size:.95em;margin-bottom:10px;
                border-bottom:2px solid #e3f2fd;padding-bottom:6px}
 .graf-card img{width:100%;border-radius:6px;display:block}
+.btn-dl{display:inline-block;margin-top:10px;padding:6px 18px;
+         background:#1565C0;color:white;border-radius:20px;
+         font-size:.82em;font-weight:600;cursor:pointer;
+         border:none;font-family:'Segoe UI',sans-serif}
+.btn-dl:hover{background:#0D47A1}
 footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}</style>
 </head>
 <body>
@@ -37,52 +42,83 @@ footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}<
     <a href="hidricos.html">← Indicadores Hidricos</a>
   </nav>
 </header>
+
+<script>
+function descargarJPG(src, nombre) {
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function() {
+        var canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+        var a = document.createElement('a');
+        a.download = nombre;
+        a.href = canvas.toDataURL('image/jpeg', 0.95);
+        a.click();
+    };
+    img.src = src;
+}
+</script>
 <div class="container">
 <div class="info-box">
   <h2>Recarga Estimada de Acuiferos</h2>
-  <p class="desc">Estima el volumen de agua que percola hacia los acuiferos como fraccion del excedente hidrico diario. Valores altos indican condiciones favorables para la reposicion de agua subterranea.</p>
-  <div class="formula">Calculo: Recarga (mm) = max(0, P - ETo) x 0,25  [factor percolacion: 25% del excedente llega al acuifero]</div>
+  <p class="desc">Estima el volumen de agua que percola hacia los acuiferos como fraccion del excedente hidrico diario.</p>
+  <div class="formula">Calculo: Recarga (mm) = max(0, P - ETo) x 0,25  [25% del excedente llega al acuifero]</div>
   <p class="interp">Interpretacion: 0 mm: Nula  |  1-5 mm: Baja  |  5-15 mm: Moderada  |  > 15 mm: Alta</p>
 </div>
 <div class="graf-card">
   <h3>📍 Estación Ataques</h3>
   <img src="indices/graficos/Estación_Ataques_recarga.png" alt="Estación Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Estación_Ataques_recarga.png','Estación_Ataques_recarga_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Minas de Corrales</h3>
   <img src="indices/graficos/Minas_de_Corrales_recarga.png" alt="Minas de Corrales">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Minas_de_Corrales_recarga.png','Minas_de_Corrales_recarga_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Moirones</h3>
   <img src="indices/graficos/Moirones_recarga.png" alt="Moirones">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Moirones_recarga.png','Moirones_recarga_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Paso Ataques</h3>
   <img src="indices/graficos/Paso_Ataques_recarga.png" alt="Paso Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_Ataques_recarga.png','Paso_Ataques_recarga_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Paso La Puente</h3>
   <img src="indices/graficos/Paso_La_Puente_recarga.png" alt="Paso La Puente">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_La_Puente_recarga.png','Paso_La_Puente_recarga_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Pueblo Nuevo</h3>
   <img src="indices/graficos/Pueblo_Nuevo_recarga.png" alt="Pueblo Nuevo">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Pueblo_Nuevo_recarga.png','Pueblo_Nuevo_recarga_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Rivera Centro</h3>
   <img src="indices/graficos/Rivera_Centro_recarga.png" alt="Rivera Centro">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Centro_recarga.png','Rivera_Centro_recarga_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Rivera Chico</h3>
   <img src="indices/graficos/Rivera_Chico_recarga.png" alt="Rivera Chico">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Chico_recarga.png','Rivera_Chico_recarga_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Tranqueras</h3>
   <img src="indices/graficos/Tranqueras_recarga.png" alt="Tranqueras">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Tranqueras_recarga.png','Tranqueras_recarga_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Villa Vichadero</h3>
   <img src="indices/graficos/Villa_Vichadero_recarga.png" alt="Villa Vichadero">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Villa_Vichadero_recarga.png','Villa_Vichadero_recarga_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 </div>
 <footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>

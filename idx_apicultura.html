@@ -26,6 +26,11 @@ nav a:hover{opacity:1;text-decoration:underline}
 .graf-card h3{color:#1565C0;font-size:.95em;margin-bottom:10px;
                border-bottom:2px solid #e3f2fd;padding-bottom:6px}
 .graf-card img{width:100%;border-radius:6px;display:block}
+.btn-dl{display:inline-block;margin-top:10px;padding:6px 18px;
+         background:#1565C0;color:white;border-radius:20px;
+         font-size:.82em;font-weight:600;cursor:pointer;
+         border:none;font-family:'Segoe UI',sans-serif}
+.btn-dl:hover{background:#0D47A1}
 footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}</style>
 </head>
 <body>
@@ -37,52 +42,83 @@ footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}<
     <a href="agricultura.html">← Indices para la Agricultura</a>
   </nav>
 </header>
+
+<script>
+function descargarJPG(src, nombre) {
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function() {
+        var canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+        var a = document.createElement('a');
+        a.download = nombre;
+        a.href = canvas.toDataURL('image/jpeg', 0.95);
+        a.click();
+    };
+    img.src = src;
+}
+</script>
 <div class="container">
 <div class="info-box">
   <h2>Indice de Actividad Apicola Diaria (IAD)</h2>
-  <p class="desc">Cuantifica las condiciones meteorologicas favorables para el pecoreo de las abejas meliferas. Integra temperatura, viento, presencia de lluvia y radiacion solar.</p>
+  <p class="desc">Cuantifica las condiciones meteorologicas favorables para el pecoreo de las abejas meliferas. Integra temperatura, viento, lluvia y radiacion solar.</p>
   <div class="formula">Calculo: IAD = (sT x 0,35 + sV x 0,25 + sR x 0,25 + sS x 0,15) x 100</div>
-  <p class="interp">Interpretacion: < 25: Desfavorable - abejas en colmena  |  25-50: Regular  |  50-75: Bueno  |  > 75: Excelente - maxima actividad</p>
+  <p class="interp">Interpretacion: < 25: Desfavorable  |  25-50: Regular  |  50-75: Bueno  |  > 75: Excelente</p>
 </div>
 <div class="graf-card">
   <h3>📍 Estación Ataques</h3>
   <img src="indices/graficos/Estación_Ataques_apicultura.png" alt="Estación Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Estación_Ataques_apicultura.png','Estación_Ataques_apicultura_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Minas de Corrales</h3>
   <img src="indices/graficos/Minas_de_Corrales_apicultura.png" alt="Minas de Corrales">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Minas_de_Corrales_apicultura.png','Minas_de_Corrales_apicultura_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Moirones</h3>
   <img src="indices/graficos/Moirones_apicultura.png" alt="Moirones">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Moirones_apicultura.png','Moirones_apicultura_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Paso Ataques</h3>
   <img src="indices/graficos/Paso_Ataques_apicultura.png" alt="Paso Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_Ataques_apicultura.png','Paso_Ataques_apicultura_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Paso La Puente</h3>
   <img src="indices/graficos/Paso_La_Puente_apicultura.png" alt="Paso La Puente">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_La_Puente_apicultura.png','Paso_La_Puente_apicultura_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Pueblo Nuevo</h3>
   <img src="indices/graficos/Pueblo_Nuevo_apicultura.png" alt="Pueblo Nuevo">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Pueblo_Nuevo_apicultura.png','Pueblo_Nuevo_apicultura_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Rivera Centro</h3>
   <img src="indices/graficos/Rivera_Centro_apicultura.png" alt="Rivera Centro">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Centro_apicultura.png','Rivera_Centro_apicultura_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Rivera Chico</h3>
   <img src="indices/graficos/Rivera_Chico_apicultura.png" alt="Rivera Chico">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Chico_apicultura.png','Rivera_Chico_apicultura_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Tranqueras</h3>
   <img src="indices/graficos/Tranqueras_apicultura.png" alt="Tranqueras">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Tranqueras_apicultura.png','Tranqueras_apicultura_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Villa Vichadero</h3>
   <img src="indices/graficos/Villa_Vichadero_apicultura.png" alt="Villa Vichadero">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Villa_Vichadero_apicultura.png','Villa_Vichadero_apicultura_2026-06-26.jpg')">⬇ Descargar JPG</button>
 </div>
 </div>
 <footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>

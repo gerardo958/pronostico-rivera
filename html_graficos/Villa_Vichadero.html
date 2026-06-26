@@ -328,5 +328,34 @@ footer{text-align:center;padding:16px;color:#888;font-size:.82em}
         </div>
 </div>
 <footer>Open-Meteo API · QGIS 4.x · 2026-06-26</footer>
+
+<script>
+window.addEventListener('load', function() {
+    document.querySelectorAll('.chart-card').forEach(function(card) {
+        var chartDiv = card.querySelector('[id^="g_"]');
+        if (!chartDiv) return;
+        var titulo = card.querySelector('h3') ? card.querySelector('h3').textContent.trim() : chartDiv.id;
+        var btn = document.createElement('button');
+        btn.innerHTML = '&#11015; Descargar JPG';
+        btn.title = 'Descargar grafico como imagen JPG';
+        btn.style.cssText = 'margin:8px 0 4px;padding:6px 18px;background:#1565C0;color:white;' +
+            'border:none;border-radius:20px;font-size:.82em;font-weight:600;cursor:pointer;' +
+            'font-family:Segoe UI,sans-serif';
+        btn.onmouseover = function(){this.style.background='#0D47A1'};
+        btn.onmouseout  = function(){this.style.background='#1565C0'};
+        btn.onclick = function() {
+            var nombre = chartDiv.id.replace('g_','').replace(/_/g,' ');
+            Plotly.downloadImage(chartDiv, {
+                format: 'jpeg',
+                filename: chartDiv.id.replace('g_',''),
+                width: 1200,
+                height: 500,
+                scale: 2
+            });
+        };
+        card.appendChild(btn);
+    });
+});
+</script>
 </body>
 </html>
