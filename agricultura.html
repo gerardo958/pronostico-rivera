@@ -10,29 +10,22 @@ header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);color:white;
        padding:18px 24px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
 header h1{font-size:1.5em;margin-bottom:4px}
 header p{opacity:.85;font-size:.88em;margin-bottom:6px}
-nav a{color:white;opacity:.8;text-decoration:none;font-size:.85em;margin-right:16px}
+nav a{color:white;opacity:.8;text-decoration:none;font-size:.85em;margin-right:14px}
 nav a:hover{opacity:1;text-decoration:underline}
-.menu-idx{background:white;padding:10px 24px;box-shadow:0 1px 4px rgba(0,0,0,.08);
-           display:flex;flex-wrap:wrap;gap:8px}
-.menu-idx a{color:#1565C0;text-decoration:none;font-size:.82em;padding:4px 10px;
-             border:1px solid #bbdefb;border-radius:12px;transition:all .2s}
-.menu-idx a:hover{background:#1565C0;color:white}
-.container{max-width:1300px;margin:16px auto;padding:0 14px}
-.seccion{margin-bottom:32px;scroll-margin-top:80px}
-.seccion-header{background:white;border-radius:8px;padding:14px 18px;
-                margin-bottom:14px;box-shadow:0 2px 7px rgba(0,0,0,.07)}
-.seccion-header h2{color:#1565C0;font-size:1.05em;margin-bottom:8px}
-.desc{font-size:.87em;line-height:1.65;color:#444;margin-bottom:8px}
-.formula{font-family:'Courier New',monospace;font-size:.8em;background:#e8f4fd;
-          padding:8px 12px;border-left:3px solid #1565C0;border-radius:4px;
-          margin-bottom:6px;color:#0D47A1}
-.interp{font-size:.8em;color:#666;font-style:italic}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
-.card{background:white;border-radius:8px;padding:10px;
-      box-shadow:0 2px 7px rgba(0,0,0,.07);text-align:center}
-.card img{width:100%;border-radius:5px}
-.card p{font-size:.82em;color:#1565C0;margin-top:6px;font-weight:600}
-footer{text-align:center;padding:16px;color:#888;font-size:.8em;margin-top:8px}</style>
+.container{max-width:1000px;margin:20px auto;padding:0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:white;border-radius:10px;padding:20px;
+      box-shadow:0 2px 8px rgba(0,0,0,.08);text-decoration:none;color:#333;
+      display:flex;flex-direction:column;transition:all .2s;border:2px solid transparent}
+.card:hover{border-color:#1565C0;transform:translateY(-3px);
+             box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.card h2{color:#1565C0;font-size:1em;margin-bottom:8px}
+.card p{font-size:.85em;line-height:1.6;color:#666;flex-grow:1}
+.card .btn{margin-top:14px;font-size:.82em;font-weight:600;color:#1565C0;
+            background:#e3f2fd;padding:6px 14px;border-radius:20px;
+            align-self:flex-start}
+.card:hover .btn{background:#1565C0;color:white}
+footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}</style>
 </head>
 <body>
 <header>
@@ -40,129 +33,39 @@ footer{text-align:center;padding:16px;color:#888;font-size:.8em;margin-top:8px}<
   <p>Actualizado: 2026-06-26 &nbsp;·&nbsp; Fuente: Open-Meteo</p>
   <nav><a href="index.html">← Inicio</a></nav>
 </header>
-<div class="menu-idx">
-  <a href="#idx-gdd">Grados Dia de Crecimiento (GDD)</a>
-  <a href="#idx-horas_frio">Horas de Frio Acumuladas (Fruticultura)</a>
-  <a href="#idx-helada">Riesgo de Helada</a>
-  <a href="#idx-agroquimicos">Condiciones para Aplicacion de Agroquimicos</a>
-  <a href="#idx-apicultura">Indice de Actividad Apicola Diaria (IAD)</a>
-  <a href="#idx-eolica">Generacion Eolica Potencial</a>
-</div>
 <div class="container">
-<div class="seccion" id="idx-gdd">
-<div class="seccion-header">
-<h2>Grados Dia de Crecimiento (GDD)</h2>
-<p class="desc">Cuantifica la acumulacion de calor disponible para el desarrollo de los cultivos. Permite predecir etapas fenologicas (emergencia, floracion, madurez).</p>
-<div class="formula">Calculo: GDD diario = max(0, (Tmax + Tmin) / 2 - Tbase)  [Tbase maiz: 10 C  |  Tbase trigo: 0 C]</div>
-<p class="interp">Interpretacion: Ref. maiz - siembra a floracion: ~850 GDD  |  Ref. trigo - emergencia a espigado: ~1.600 GDD</p>
-</div>
 <div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_gdd.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_gdd.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_gdd.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_gdd.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_gdd.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_gdd.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_gdd.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_gdd.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_gdd.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_gdd.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
-<div class="seccion" id="idx-horas_frio">
-<div class="seccion-header">
-<h2>Horas de Frio Acumuladas (Fruticultura)</h2>
-<p class="desc">Registra las horas con temperatura <= 7 C, necesarias para la ruptura de dormancia invernal en frutales de hoja caduca.</p>
-<div class="formula">Calculo: Horas de frio = Suma de horas con T <= 7 C en el periodo analizado.</div>
-<p class="interp">Interpretacion: Manzano: 400-1.000 h  |  Peral: 400-900 h  |  Durazno: 200-900 h  |  Vid: 100-400 h</p>
+<a href="idx_gdd.html" class="card">
+  <h2>Grados Dia de Crecimiento (GDD)</h2>
+  <p>Cuantifica la acumulacion de calor disponible para el desarrollo de los cultivos. Permite predecir etapas fenologicas (e...</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
+<a href="idx_horas_frio.html" class="card">
+  <h2>Horas de Frio Acumuladas (Fruticultura)</h2>
+  <p>Registra las horas con temperatura <= 7 C, necesarias para la ruptura de dormancia invernal en frutales de hoja caduca. ...</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
+<a href="idx_helada.html" class="card">
+  <h2>Riesgo de Helada</h2>
+  <p>Clasifica el riesgo de helada segun la temperatura minima pronosticada. Critico para cultivos horticolas, frutales en fl...</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
+<a href="idx_agroquimicos.html" class="card">
+  <h2>Aptitud para Aplicacion de Agroquimicos</h2>
+  <p>Identifica horas con condiciones aptas para la aplicacion eficiente y segura de herbicidas, fungicidas e insecticidas, m...</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
+<a href="idx_apicultura.html" class="card">
+  <h2>Indice de Actividad Apicola Diaria (IAD)</h2>
+  <p>Cuantifica las condiciones meteorologicas favorables para el pecoreo de las abejas meliferas. Integra temperatura, vient...</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
+<a href="idx_eolica.html" class="card">
+  <h2>Generacion Eolica Potencial</h2>
+  <p>Estima el porcentaje de la potencia nominal que generaria un aerogenerador tipico segun la velocidad del viento disponib...</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
 </div>
-<div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_horas_frio.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_horas_frio.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_horas_frio.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_horas_frio.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_horas_frio.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_horas_frio.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_horas_frio.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_horas_frio.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_horas_frio.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_horas_frio.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
-<div class="seccion" id="idx-helada">
-<div class="seccion-header">
-<h2>Riesgo de Helada</h2>
-<p class="desc">Clasifica el riesgo de helada segun la temperatura minima pronosticada. Critico para cultivos horticolas, frutales en floracion y pasturas recientemente sembradas.</p>
-<div class="formula">Calculo: Clasificacion por temperatura minima del periodo analizado.</div>
-<p class="interp">Interpretacion: > 2 C: Sin riesgo  |  0-2 C: Riesgo bajo  |  0 a -2 C: Helada leve  |  -2 a -5 C: Moderada  |  < -5 C: Fuerte</p>
-</div>
-<div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_helada.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_helada.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_helada.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_helada.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_helada.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_helada.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_helada.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_helada.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_helada.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_helada.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
-<div class="seccion" id="idx-agroquimicos">
-<div class="seccion-header">
-<h2>Condiciones para Aplicacion de Agroquimicos</h2>
-<p class="desc">Identifica horas con condiciones aptas para la aplicacion eficiente de herbicidas, fungicidas e insecticidas, minimizando la deriva y maximizando la absorcion foliar.</p>
-<div class="formula">Calculo: Apto: T 15-30 C  AND  HR 40-80%  AND  Viento 3-15 km/h  AND  Prob. lluvia < 30%</div>
-<p class="interp">Interpretacion: % tiempo apto: > 50% excelente  |  30-50% bueno  |  < 30% desfavorable</p>
-</div>
-<div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_agroquimicos.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_agroquimicos.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_agroquimicos.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_agroquimicos.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_agroquimicos.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_agroquimicos.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_agroquimicos.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_agroquimicos.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_agroquimicos.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_agroquimicos.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
-<div class="seccion" id="idx-apicultura">
-<div class="seccion-header">
-<h2>Indice de Actividad Apicola Diaria (IAD)</h2>
-<p class="desc">Cuantifica las condiciones meteorologicas favorables para el pecoreo de las abejas meliferas. Integra temperatura, viento, presencia de lluvia y radiacion solar.</p>
-<div class="formula">Calculo: IAD = (sT x 0,35 + sV x 0,25 + sR x 0,25 + sS x 0,15) x 100</div>
-<p class="interp">Interpretacion: < 25: Desfavorable  |  25-50: Regular  |  50-75: Bueno  |  > 75: Excelente</p>
-</div>
-<div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_apicultura.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_apicultura.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_apicultura.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_apicultura.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_apicultura.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_apicultura.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_apicultura.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_apicultura.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_apicultura.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_apicultura.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
-<div class="seccion" id="idx-eolica">
-<div class="seccion-header">
-<h2>Generacion Eolica Potencial</h2>
-<p class="desc">Estima el porcentaje de la potencia nominal que generaria un aerogenerador tipico segun la velocidad del viento disponible.</p>
-<div class="formula">Calculo: Generacion (%) = (V3 / Vnom3) x 100  para 3 <= V <= 12 m/s  |  100% para V > 12 m/s</div>
-<p class="interp">Interpretacion: < 20%: Baja  |  20-60%: Moderada  |  > 60%: Alta</p>
-</div>
-<div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_eolica.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_eolica.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_eolica.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_eolica.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_eolica.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_eolica.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_eolica.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_eolica.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_eolica.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_eolica.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
 </div>
 <footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>
 </body>

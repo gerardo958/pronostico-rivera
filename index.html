@@ -7,25 +7,24 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',sans-serif;min-height:100vh;
-     background:linear-gradient(160deg,#0D47A1 0%,#1565C0 45%,#1976D2 100%);
-     color:white}
+background:linear-gradient(160deg,#0D47A1 0%,#1565C0 45%,#1976D2 100%);color:white}
 .hero{text-align:center;padding:44px 24px 28px;max-width:820px;margin:0 auto}
 .hero h1{font-size:2.1em;font-weight:800;margin-bottom:8px}
 .dep{font-size:1.05em;opacity:.82;margin-bottom:14px;font-weight:500}
 .intro{font-size:.95em;line-height:1.75;opacity:.82;margin-bottom:18px}
 .cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));
-       gap:18px;max-width:1200px;margin:0 auto;padding:0 20px 48px}
+gap:18px;max-width:1200px;margin:0 auto;padding:0 20px 48px}
 .cat{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.18);
-      border-radius:15px;padding:28px 22px;text-decoration:none;color:white;
-      display:flex;flex-direction:column;transition:all .25s}
+border-radius:15px;padding:28px 22px;text-decoration:none;color:white;
+display:flex;flex-direction:column;transition:all .25s}
 .cat:hover{background:rgba(255,255,255,.2);transform:translateY(-5px);
-             box-shadow:0 18px 45px rgba(0,0,0,.28)}
+box-shadow:0 18px 45px rgba(0,0,0,.28)}
 .cat-ico{font-size:2.3em;margin-bottom:12px}
 .cat h2{font-size:1.13em;font-weight:700;margin-bottom:9px}
 .cat p{font-size:.88em;line-height:1.65;opacity:.80;flex-grow:1}
 .cat .btn{margin-top:18px;font-size:.82em;font-weight:600;
-           background:rgba(255,255,255,.18);padding:6px 14px;
-           border-radius:20px;align-self:flex-start;opacity:.85}
+background:rgba(255,255,255,.18);padding:6px 14px;
+border-radius:20px;align-self:flex-start;opacity:.85}
 .cat:hover .btn{opacity:1}
 .pie{text-align:center;padding:0 0 32px;font-size:.8em;opacity:.55}
 </style>
@@ -34,40 +33,32 @@ body{font-family:'Segoe UI',sans-serif;min-height:100vh;
 <div class="hero">
   <h1>🌦 Sistema de Pronostico Climatico</h1>
   <div class="dep">Departamento de Rivera — Uruguay</div>
-  <p class="intro">Informacion meteorologica y agropecuaria actualizada diariamente
-  para apoyar la toma de decisiones en produccion agricola, ganadera e hidrica
-  del departamento.</p>
-  <div style="font-size:.76em;opacity:.65;line-height:1.85">
-  <strong>Ing. Agro. Gerardo Díaz Romeo</strong> &nbsp;·&nbsp;
-  División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</div>
+  <p class="intro">Informacion meteorologica y agropecuaria actualizada diariamente para apoyar la toma de decisiones en produccion agricola, ganadera e hidrica del departamento.</p>
+  <div style="font-size:.76em;opacity:.65;line-height:1.85"><strong>Ing. Agro. Gerardo Díaz Romeo</strong> &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</div>
 </div>
 <div class="cats">
   <a href="localidades.html" class="cat">
     <div class="cat-ico">📍</div>
     <h2>Pronostico por Localidad</h2>
-    <p>Temperatura, lluvia, viento, humedad y radiacion en graficos horarios
-    para las 10 localidades del departamento.</p>
+    <p>Temperatura, lluvia, viento, humedad y radiacion en graficos horarios para las 10 localidades del departamento.</p>
     <span class="btn">Ver las 10 localidades →</span>
   </a>
   <a href="agricultura.html" class="cat">
     <div class="cat-ico">🌾</div>
     <h2>Indices para la Agricultura</h2>
-    <p>Grados dia, horas de frio, riesgo de helada, apicultura,
-    agroquimicos e indice de riesgo de incendio forestal (FWI).</p>
+    <p>Grados dia, horas de frio, riesgo de helada, apicultura, agroquimicos e indice FWI.</p>
     <span class="btn">Ver indices agricolas →</span>
   </a>
   <a href="ganaderia.html" class="cat">
     <div class="cat-ico">🐄</div>
     <h2>Indices para la Ganaderia</h2>
-    <p>Estres termico bovino (ITH), garrapata, empaste, bano biologico,
-    ovinos, pietin, confort humano (UTCI) y riesgo vectorial.</p>
+    <p>Estres termico bovino (ITH), garrapata, empaste, bano biologico, ovinos, pietin, UTCI y riesgo vectorial.</p>
     <span class="btn">Ver indices ganaderos →</span>
   </a>
   <a href="hidricos.html" class="cat">
     <div class="cat-ico">💧</div>
     <h2>Indicadores Hidricos</h2>
-    <p>Evapotranspiracion (ETo), balance hidrico, sequia (SPI y SPEI)
-    y recarga estimada de acuiferos.</p>
+    <p>Evapotranspiracion (ETo), balance hidrico, sequia (SPI y SPEI) y recarga estimada de acuiferos.</p>
     <span class="btn">Ver indicadores hidricos →</span>
   </a>
 </div>

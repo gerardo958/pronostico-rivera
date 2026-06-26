@@ -10,29 +10,22 @@ header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);color:white;
        padding:18px 24px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
 header h1{font-size:1.5em;margin-bottom:4px}
 header p{opacity:.85;font-size:.88em;margin-bottom:6px}
-nav a{color:white;opacity:.8;text-decoration:none;font-size:.85em;margin-right:16px}
+nav a{color:white;opacity:.8;text-decoration:none;font-size:.85em;margin-right:14px}
 nav a:hover{opacity:1;text-decoration:underline}
-.menu-idx{background:white;padding:10px 24px;box-shadow:0 1px 4px rgba(0,0,0,.08);
-           display:flex;flex-wrap:wrap;gap:8px}
-.menu-idx a{color:#1565C0;text-decoration:none;font-size:.82em;padding:4px 10px;
-             border:1px solid #bbdefb;border-radius:12px;transition:all .2s}
-.menu-idx a:hover{background:#1565C0;color:white}
-.container{max-width:1300px;margin:16px auto;padding:0 14px}
-.seccion{margin-bottom:32px;scroll-margin-top:80px}
-.seccion-header{background:white;border-radius:8px;padding:14px 18px;
-                margin-bottom:14px;box-shadow:0 2px 7px rgba(0,0,0,.07)}
-.seccion-header h2{color:#1565C0;font-size:1.05em;margin-bottom:8px}
-.desc{font-size:.87em;line-height:1.65;color:#444;margin-bottom:8px}
-.formula{font-family:'Courier New',monospace;font-size:.8em;background:#e8f4fd;
-          padding:8px 12px;border-left:3px solid #1565C0;border-radius:4px;
-          margin-bottom:6px;color:#0D47A1}
-.interp{font-size:.8em;color:#666;font-style:italic}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
-.card{background:white;border-radius:8px;padding:10px;
-      box-shadow:0 2px 7px rgba(0,0,0,.07);text-align:center}
-.card img{width:100%;border-radius:5px}
-.card p{font-size:.82em;color:#1565C0;margin-top:6px;font-weight:600}
-footer{text-align:center;padding:16px;color:#888;font-size:.8em;margin-top:8px}</style>
+.container{max-width:1000px;margin:20px auto;padding:0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:white;border-radius:10px;padding:20px;
+      box-shadow:0 2px 8px rgba(0,0,0,.08);text-decoration:none;color:#333;
+      display:flex;flex-direction:column;transition:all .2s;border:2px solid transparent}
+.card:hover{border-color:#1565C0;transform:translateY(-3px);
+             box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.card h2{color:#1565C0;font-size:1em;margin-bottom:8px}
+.card p{font-size:.85em;line-height:1.6;color:#666;flex-grow:1}
+.card .btn{margin-top:14px;font-size:.82em;font-weight:600;color:#1565C0;
+            background:#e3f2fd;padding:6px 14px;border-radius:20px;
+            align-self:flex-start}
+.card:hover .btn{background:#1565C0;color:white}
+footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}</style>
 </head>
 <body>
 <header>
@@ -40,169 +33,49 @@ footer{text-align:center;padding:16px;color:#888;font-size:.8em;margin-top:8px}<
   <p>Actualizado: 2026-06-26 &nbsp;·&nbsp; Fuente: Open-Meteo</p>
   <nav><a href="index.html">← Inicio</a></nav>
 </header>
-<div class="menu-idx">
-  <a href="#idx-ith">Estres Termico Bovino (ITH)</a>
-  <a href="#idx-garrapata">Riesgo Generacional de Garrapata (IRG) - Rhipicephalus microplus</a>
-  <a href="#idx-empaste">Riesgo de Empaste / Timpanismo</a>
-  <a href="#idx-bano_biologico">Aptitud para Bano con Hongos Entomopatogenos</a>
-  <a href="#idx-estres_ovino">Estres Termico en Ovinos y Caprinos</a>
-  <a href="#idx-pietin">Riesgo de Pietin Ovino (IRP) - Foot rot</a>
-  <a href="#idx-utci">Indice Universal de Clima Termico (UTCI)</a>
-  <a href="#idx-dengue">Riesgo Vectorial: Dengue y Leishmaniasis</a>
-</div>
 <div class="container">
-<div class="seccion" id="idx-ith">
-<div class="seccion-header">
-<h2>Estres Termico Bovino (ITH)</h2>
-<p class="desc">Combina temperatura y humedad relativa para estimar el estres termico en ganado vacuno. A mayor ITH, los animales destinan mas energia a termorregulacion y menos a produccion.</p>
-<div class="formula">Calculo: ITH = 0,8 x T + (HR/100) x (T - 14,3) + 46,4   [Thom 1959]</div>
-<p class="interp">Interpretacion: < 68: Sin estres  |  68-72: Leve  |  72-75: Alerta lechero  |  75-79: Alerta carne  |  79-84: Peligro  |  > 84: Emergencia</p>
-</div>
 <div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_ith.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_ith.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_ith.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_ith.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_ith.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_ith.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_ith.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_ith.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_ith.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_ith.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
-<div class="seccion" id="idx-garrapata">
-<div class="seccion-header">
-<h2>Riesgo Generacional de Garrapata (IRG) - Rhipicephalus microplus</h2>
-<p class="desc">Acumula los grados-dia favorables para el desarrollo del ciclo de vida de la garrapata bovina. Temperatura base: 14,5 C. La humedad actua como multiplicador.</p>
-<div class="formula">Calculo: IRG horario = max(0, T - 14,5) x factor_HR  [HR >= 70%: 1,0  |  HR 50-70%: 0,5  |  HR < 50%: 0]</div>
-<p class="interp">Interpretacion: < 50: Bajo  |  50-100: Moderado  |  100-180: Alto  |  > 180: Muy alto</p>
+<a href="idx_ith.html" class="card">
+  <h2>Estres Termico Bovino (ITH)</h2>
+  <p>Combina temperatura y humedad relativa para estimar el estres termico en ganado vacuno. A mayor ITH, los animales destin...</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
+<a href="idx_garrapata.html" class="card">
+  <h2>Riesgo Generacional de Garrapata (IRG)</h2>
+  <p>Acumula los grados-dia favorables para el desarrollo del ciclo de vida de la garrapata bovina (Rhipicephalus microplus)....</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
+<a href="idx_empaste.html" class="card">
+  <h2>Riesgo de Empaste / Timpanismo</h2>
+  <p>Predice condiciones meteorologicas favorables para el timpanismo espumoso en bovinos pastoreando leguminosas. La combina...</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
+<a href="idx_bano_biologico.html" class="card">
+  <h2>Aptitud para Bano con Hongos Entomopatogenos</h2>
+  <p>Evalua condiciones para aplicar hongos entomopatogenos (Metarhizium anisopliae, Beauveria bassiana, Akanthomyces muscari...</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
+<a href="idx_estres_ovino.html" class="card">
+  <h2>Estres Termico en Ovinos y Caprinos</h2>
+  <p>Evalua el confort termico de ovinos y caprinos en funcion de la temperatura del aire. Las razas de lana presentan mayor ...</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
+<a href="idx_pietin.html" class="card">
+  <h2>Riesgo de Pietin Ovino (IRP) - Foot rot</h2>
+  <p>Evalua la probabilidad de brotes de pietin (Dichelobacter nodosus) en majadas. La enfermedad prospera con suelo saturado...</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
+<a href="idx_utci.html" class="card">
+  <h2>Confort Humano - Indice UTCI</h2>
+  <p>Temperatura equivalente percibida por el cuerpo humano en reposo, integrando temperatura, humedad, viento y radiacion so...</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
+<a href="idx_dengue.html" class="card">
+  <h2>Riesgo Vectorial: Dengue y Leishmaniasis</h2>
+  <p>Evalua condiciones favorables para la proliferacion del mosquito Aedes aegypti (dengue) y del flebotomo Lutzomyia (leish...</p>
+  <span class="btn">Ver 10 localidades →</span>
+</a>
 </div>
-<div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_garrapata.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_garrapata.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_garrapata.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_garrapata.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_garrapata.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_garrapata.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_garrapata.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_garrapata.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_garrapata.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_garrapata.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
-<div class="seccion" id="idx-empaste">
-<div class="seccion-header">
-<h2>Riesgo de Empaste / Timpanismo</h2>
-<p class="desc">Predice condiciones meteorologicas favorables para el timpanismo espumoso en bovinos pastoreando leguminosas. La combinacion de temperatura moderada, alta humedad, lluvia reciente y alta nubosidad favorece la formacion de espuma.</p>
-<div class="formula">Calculo: Score = puntajes por T (0-30) + HR (0-25) + lluvia (0-30) + nube (0-15). Maximo 100.</div>
-<p class="interp">Interpretacion: < 25: Bajo  |  25-50: Moderado - vigilar  |  50-75: Alto - limitar pastoreo  |  > 75: Muy alto</p>
-</div>
-<div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_empaste.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_empaste.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_empaste.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_empaste.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_empaste.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_empaste.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_empaste.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_empaste.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_empaste.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_empaste.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
-<div class="seccion" id="idx-bano_biologico">
-<div class="seccion-header">
-<h2>Aptitud para Bano con Hongos Entomopatogenos</h2>
-<p class="desc">Evalua las condiciones para aplicar hongos entomopatogenos (Metarhizium anisopliae, Beauveria bassiana, Akanthomyces muscarius) como alternativa biologica al bano quimico acaricida. Requiere HR > 80%, temperatura moderada y baja radiacion UV.</p>
-<div class="formula">Calculo: Score (0-100) = T (0-30) + HR (0-35) + Radiacion (0-25) + Viento (0-10) - descuento por lluvia. Zona optima: 20-23 C, HR >= 80%, rad < 150 W/m2.</div>
-<p class="interp">Interpretacion: < 30: No apto  |  30-50: Marginal  |  50-70: Apto - aplicar de tardecita  |  > 70: Optimo</p>
-</div>
-<div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_bano_biologico.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_bano_biologico.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_bano_biologico.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_bano_biologico.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_bano_biologico.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_bano_biologico.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_bano_biologico.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_bano_biologico.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_bano_biologico.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_bano_biologico.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
-<div class="seccion" id="idx-estres_ovino">
-<div class="seccion-header">
-<h2>Estres Termico en Ovinos y Caprinos</h2>
-<p class="desc">Evalua el confort termico de ovinos y caprinos en funcion de la temperatura del aire. Las razas de lana presentan mayor sensibilidad al calor que las razas de pelo.</p>
-<div class="formula">Calculo: Basado en temperatura media y maxima del periodo analizado.</div>
-<p class="interp">Interpretacion: < 10 C: Estres frio  |  10-26 C: Confort  |  26-30 C: Estres leve  |  30-35 C: Estres severo  |  > 35 C: Riesgo mortalidad</p>
-</div>
-<div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_estres_ovino.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_estres_ovino.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_estres_ovino.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_estres_ovino.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_estres_ovino.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_estres_ovino.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_estres_ovino.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_estres_ovino.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_estres_ovino.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_estres_ovino.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
-<div class="seccion" id="idx-pietin">
-<div class="seccion-header">
-<h2>Riesgo de Pietin Ovino (IRP) - Foot rot</h2>
-<p class="desc">Evalua la probabilidad de brotes de pietin (Dichelobacter nodosus) en majadas. Prospera con suelo saturado, temperaturas superiores a 10 C y precipitaciones elevadas.</p>
-<div class="formula">Calculo: IRP = condicion_T x condicion_humedad x 100</div>
-<p class="interp">Interpretacion: < 25: Bajo  |  25-50: Moderado  |  50-75: Alto - banos podales  |  > 75: Muy alto</p>
-</div>
-<div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_pietin.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_pietin.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_pietin.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_pietin.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_pietin.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_pietin.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_pietin.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_pietin.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_pietin.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_pietin.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
-<div class="seccion" id="idx-utci">
-<div class="seccion-header">
-<h2>Indice Universal de Clima Termico (UTCI)</h2>
-<p class="desc">Temperatura equivalente percibida por el cuerpo humano, integrando temperatura, humedad, viento y radiacion solar. Recomendado por la OMM para aplicaciones en salud publica.</p>
-<div class="formula">Calculo: UTCI aprox = T + 0,33 x Pv - 0,7 x V^0,6 + 0,07 x (Tmrt - T) - 4</div>
-<p class="interp">Interpretacion: < 9 C: Estres frio  |  9-26 C: Confort  |  26-32 C: Estres moderado  |  > 32 C: Estres fuerte</p>
-</div>
-<div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_utci.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_utci.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_utci.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_utci.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_utci.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_utci.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_utci.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_utci.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_utci.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_utci.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
-<div class="seccion" id="idx-dengue">
-<div class="seccion-header">
-<h2>Riesgo Vectorial: Dengue y Leishmaniasis</h2>
-<p class="desc">Evalua condiciones favorables para la proliferacion del mosquito Aedes aegypti (dengue) y del flebotomo Lutzomyia (leishmaniasis).</p>
-<div class="formula">Calculo: Score = puntaje_T (0-40) + puntaje_HR (0-30) + puntaje_lluvia_7d (0-30). Maximo 100.</div>
-<p class="interp">Interpretacion: < 25: Bajo  |  25-50: Moderado  |  50-75: Alto  |  > 75: Muy alto</p>
-</div>
-<div class="grid">
-<div class="card"><img src="indices/graficos/Estación_Ataques_dengue.png" alt="Estación Ataques"><p>Estación Ataques</p></div>
-<div class="card"><img src="indices/graficos/Minas_de_Corrales_dengue.png" alt="Minas de Corrales"><p>Minas de Corrales</p></div>
-<div class="card"><img src="indices/graficos/Moirones_dengue.png" alt="Moirones"><p>Moirones</p></div>
-<div class="card"><img src="indices/graficos/Paso_Ataques_dengue.png" alt="Paso Ataques"><p>Paso Ataques</p></div>
-<div class="card"><img src="indices/graficos/Paso_La_Puente_dengue.png" alt="Paso La Puente"><p>Paso La Puente</p></div>
-<div class="card"><img src="indices/graficos/Pueblo_Nuevo_dengue.png" alt="Pueblo Nuevo"><p>Pueblo Nuevo</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Centro_dengue.png" alt="Rivera Centro"><p>Rivera Centro</p></div>
-<div class="card"><img src="indices/graficos/Rivera_Chico_dengue.png" alt="Rivera Chico"><p>Rivera Chico</p></div>
-<div class="card"><img src="indices/graficos/Tranqueras_dengue.png" alt="Tranqueras"><p>Tranqueras</p></div>
-<div class="card"><img src="indices/graficos/Villa_Vichadero_dengue.png" alt="Villa Vichadero"><p>Villa Vichadero</p></div>
-</div></div>
 </div>
 <footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>
 </body>
