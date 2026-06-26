@@ -3,45 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pronostico por Localidad — Rivera</title>
+<title>Pronostico por Localidad - Rivera</title>
 <style>*{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333}
 header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);color:white;
        padding:18px 24px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
 header h1{font-size:1.5em;margin-bottom:4px}
-header p{opacity:.85;font-size:.88em}
-nav a{color:white;opacity:.8;text-decoration:none;font-size:.85em}
-nav a:hover{opacity:1}
+header p{opacity:.85;font-size:.88em;margin-bottom:6px}
+nav a{color:white;opacity:.8;text-decoration:none;font-size:.85em;margin-right:16px}
+nav a:hover{opacity:1;text-decoration:underline}
+.menu-idx{background:white;padding:10px 24px;box-shadow:0 1px 4px rgba(0,0,0,.08);
+           display:flex;flex-wrap:wrap;gap:8px}
+.menu-idx a{color:#1565C0;text-decoration:none;font-size:.82em;padding:4px 10px;
+             border:1px solid #bbdefb;border-radius:12px;transition:all .2s}
+.menu-idx a:hover{background:#1565C0;color:white}
 .container{max-width:1300px;margin:16px auto;padding:0 14px}
-.seccion{margin-bottom:28px}
-.seccion h2{color:#1565C0;font-size:1.1em;border-bottom:2px solid #e3f2fd;
-            padding-bottom:6px;margin-bottom:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.seccion{margin-bottom:32px;scroll-margin-top:80px}
+.seccion-header{background:white;border-radius:8px;padding:14px 18px;
+                margin-bottom:14px;box-shadow:0 2px 7px rgba(0,0,0,.07)}
+.seccion-header h2{color:#1565C0;font-size:1.05em;margin-bottom:8px}
+.desc{font-size:.87em;line-height:1.65;color:#444;margin-bottom:8px}
+.formula{font-family:'Courier New',monospace;font-size:.8em;background:#e8f4fd;
+          padding:8px 12px;border-left:3px solid #1565C0;border-radius:4px;
+          margin-bottom:6px;color:#0D47A1}
+.interp{font-size:.8em;color:#666;font-style:italic}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
 .card{background:white;border-radius:8px;padding:10px;
       box-shadow:0 2px 7px rgba(0,0,0,.07);text-align:center}
 .card img{width:100%;border-radius:5px}
-.card p{font-size:.82em;color:#555;margin-top:6px;font-weight:600}
-footer{text-align:center;padding:16px;color:#888;font-size:.8em}</style>
+.card p{font-size:.82em;color:#1565C0;margin-top:6px;font-weight:600}
+footer{text-align:center;padding:16px;color:#888;font-size:.8em;margin-top:8px}</style>
 </head>
 <body>
 <header>
   <h1>📍 Pronostico por Localidad</h1>
-  <p>Actualizado: 2026-06-26 &nbsp;·&nbsp; Fuente: Open-Meteo</p>
-  <nav style="margin-top:6px"><a href="index.html">← Inicio</a></nav>
+  <p>Actualizado: 2026-06-26</p>
+  <nav><a href="index.html">← Inicio</a></nav>
 </header>
 <div class="container">
 <div class="grid" style="margin-top:8px">
-<a href="html_graficos/Estacion_Ataques.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Estación Ataques</div></a>
-<a href="html_graficos/Minas_de_Corrales.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Minas de Corrales</div></a>
-<a href="html_graficos/Moirones.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Moirones</div></a>
-<a href="html_graficos/Paso_Ataques.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Paso Ataques</div></a>
-<a href="html_graficos/Paso_La_Puente.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Paso La Puente</div></a>
-<a href="html_graficos/Pueblo_Nuevo.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Pueblo Nuevo</div></a>
-<a href="html_graficos/Rivera_Centro.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Rivera Centro</div></a>
-<a href="html_graficos/Rivera_Chico.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Rivera Chico</div></a>
-<a href="html_graficos/Tranqueras.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Tranqueras</div></a>
-<a href="html_graficos/Villa_Vichadero.html" style="text-decoration:none"><div class="card" style="padding:18px;font-size:1em;font-weight:600;color:#1565C0">📍 Villa Vichadero</div></a>
-</div></div>
+<a href="html_graficos/EstaÌión_Ataques.html" style="text-decoration:none">
+<div class="card" style="padding:20px;font-size:1em;font-weight:600;color:#1565C0">📍 Estación Ataques</div></a>
+<a href="html_graficos/Minas_de_Corrales.html" style="text-decoration:none">
+<div class="card" style="padding:20px;font-size:1em;font-weight:600;color:#1565C0">📍 Minas de Corrales</div></a>
+<a href="html_graficos/Moirones.html" style="text-decoration:none">
+<div class="card" style="padding:20px;font-size:1em;font-weight:600;color:#1565C0">📍 Moirones</div></a>
+<a href="html_graficos/Paso_Ataques.html" style="text-decoration:none">
+<div class="card" style="padding:20px;font-size:1em;font-weight:600;color:#1565C0">📍 Paso Ataques</div></a>
+<a href="html_graficos/Paso_La_Puente.html" style="text-decoration:none">
+<div class="card" style="padding:20px;font-size:1em;font-weight:600;color:#1565C0">📍 Paso La Puente</div></a>
+<a href="html_graficos/Pueblo_Nuevo.html" style="text-decoration:none">
+<div class="card" style="padding:20px;font-size:1em;font-weight:600;color:#1565C0">📍 Pueblo Nuevo</div></a>
+<a href="html_graficos/Rivera_Centro.html" style="text-decoration:none">
+<div class="card" style="padding:20px;font-size:1em;font-weight:600;color:#1565C0">📍 Rivera Centro</div></a>
+<a href="html_graficos/Rivera_Chico.html" style="text-decoration:none">
+<div class="card" style="padding:20px;font-size:1em;font-weight:600;color:#1565C0">📍 Rivera Chico</div></a>
+<a href="html_graficos/Tranqueras.html" style="text-decoration:none">
+<div class="card" style="padding:20px;font-size:1em;font-weight:600;color:#1565C0">📍 Tranqueras</div></a>
+<a href="html_graficos/Villa_Vichadero.html" style="text-decoration:none">
+<div class="card" style="padding:20px;font-size:1em;font-weight:600;color:#1565C0">📍 Villa Vichadero</div></a>
+</div>
+</div>
 <footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>
 </body>
 </html>
