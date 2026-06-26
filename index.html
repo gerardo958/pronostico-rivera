@@ -4,23 +4,47 @@
 <meta charset="UTF-8">
 <title>Pronóstico Rivera — 2026-06-26</title>
 <style>
-body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;
-     display:flex;justify-content:center;padding:40px}
-.card{background:white;border-radius:12px;padding:32px 40px;
-       box-shadow:0 2px 12px rgba(0,0,0,.1);min-width:300px}
-h1{color:#1565C0;margin-bottom:6px}
-p{color:#888;margin-bottom:20px;font-size:.9em}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',sans-serif;background:#e8f0fe;
+     display:flex;flex-direction:column;min-height:100vh;align-items:center;padding:0}
+header{width:100%;background:linear-gradient(135deg,#0D47A1,#1976D2,#42A5F5);
+       color:white;padding:22px 32px;box-shadow:0 3px 12px rgba(0,0,0,.2);
+       text-align:center}
+header h1{font-size:1.8em;margin-bottom:6px;letter-spacing:.02em}
+header .subtitulo{opacity:.85;font-size:.92em;margin-bottom:10px}
+.inst{font-size:.75em;opacity:.78;line-height:1.8;letter-spacing:.01em}
+.inst-autor{font-weight:700}
+.inst-sep{margin:0 6px;opacity:.5}
+.card{background:white;border-radius:14px;padding:32px 40px;margin:36px 16px;
+      box-shadow:0 4px 20px rgba(0,0,0,.1);min-width:300px;max-width:480px;width:100%}
+h2{color:#0D47A1;margin-bottom:6px;font-size:1.1em}
+.fecha{color:#888;margin-bottom:22px;font-size:.88em}
 ul{list-style:none}
-li{margin-bottom:10px}
+li{margin-bottom:8px}
 a{color:#1565C0;text-decoration:none;font-size:1.05em;
-   padding:8px 10px;display:block;border-radius:8px;transition:background .2s}
-a:hover{background:#e3f2fd}
+  padding:10px 14px;display:flex;align-items:center;gap:8px;
+  border-radius:8px;transition:background .2s;border:1px solid transparent}
+a:hover{background:#e3f2fd;border-color:#90CAF9}
+.sep{border-top:2px solid #e3f2fd;margin:16px 0}
+.link-indices{background:#E8F5E9;border-color:#A5D6A7 !important;
+              color:#2E7D32 !important;font-weight:600}
+.link-indices:hover{background:#C8E6C9 !important}
+footer{text-align:center;padding:20px;color:#888;font-size:.8em;line-height:1.7}
 </style>
 </head>
 <body>
 <div class="card">
-  <h1>🌦 Pronóstico Rivera</h1>
-  <p>Generado el 2026-06-26 — Fuente: Open-Meteo</p>
+  <h1>🌦 Pronóstico Climático — Rivera</h1>
+  <p class="subtitulo">Generado el 2026-06-26 — Fuente: Open-Meteo</p>
+  <div class="inst">
+  <span class="inst-autor">Ing. Agro. Gerardo Díaz Romeo</span>
+  <span class="inst-sep">·</span>
+  <span>División de Desarrollo Rural</span>
+  <span class="inst-sep">·</span>
+  <span>Dirección de Desarrollo Económico Productivo</span>
+  <span class="inst-sep">·</span>
+  <span>Intendencia de Rivera</span>
+</div>
   <ul><li><a href="html_graficos/Estación_Ataques.html">📍 Estación Ataques</a></li>
 <li><a href="html_graficos/Minas_de_Corrales.html">📍 Minas de Corrales</a></li>
 <li><a href="html_graficos/Moirones.html">📍 Moirones</a></li>
@@ -30,7 +54,9 @@ a:hover{background:#e3f2fd}
 <li><a href="html_graficos/Rivera_Centro.html">📍 Rivera Centro</a></li>
 <li><a href="html_graficos/Rivera_Chico.html">📍 Rivera Chico</a></li>
 <li><a href="html_graficos/Tranqueras.html">📍 Tranqueras</a></li>
-<li><a href="html_graficos/Villa_Vichadero.html">📍 Villa Vichadero</a></li><li><a href="indices.html">📊 Índices Climáticos Especializados</a></li>
+<li><a href="html_graficos/Villa_Vichadero.html">📍 Villa Vichadero</a></li>
+<li><div class="sep"></div></li>
+<li><a href="indices.html" class="link-indices">📊 Índices Climáticos Especializados</a></li>
 </ul>
 </div>
 </body>

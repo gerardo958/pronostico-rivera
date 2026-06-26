@@ -17,18 +17,33 @@ header p{opacity:.85;font-size:.9em}
              margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
 .chart-card h3{font-size:1em;color:#1565C0;margin-bottom:10px;
                 padding-bottom:6px;border-bottom:2px solid #e3f2fd}
-.chart{width:100%;height:300px}
+.chart{width:100%;height:480px}
 footer{text-align:center;padding:16px;color:#888;font-size:.82em}
 @media(max-width:600px){
-  .chart{height:260px}
+  .chart{height:420px}
   header h1{font-size:1.2em}
 }
+
+.inst{font-size:.78em;opacity:.82;margin-top:6px;line-height:1.6;letter-spacing:.01em}
+.inst-autor{font-weight:700}
+.inst-sep{margin:0 5px;opacity:.6}
+
 </style>
 </head>
 <body>
 <header>
   <h1>📍 Moirones</h1>
   <p>Pronóstico climático horario — Generado el 2026-06-26 | Fuente: Open-Meteo</p>
+
+<div class="inst">
+  <span class="inst-autor">Ing. Agro. Gerardo Díaz Romeo</span>
+  <span class="inst-sep">·</span>
+  <span>División de Desarrollo Rural</span>
+  <span class="inst-sep">·</span>
+  <span>Dirección de Desarrollo Económico Productivo</span>
+  <span class="inst-sep">·</span>
+  <span>Intendencia de Rivera</span>
+</div>
 </header>
 <div class="container">
 
@@ -327,6 +342,10 @@ footer{text-align:center;padding:16px;color:#888;font-size:.82em}
             </script>
         </div>
 </div>
-<footer>Open-Meteo API · QGIS 4.x · 2026-06-26</footer>
+<footer>
+  <div>Open-Meteo API · QGIS 4.x</div>
+  <div style="margin-top:4px">Ing. Agro. Gerardo Díaz Romeo · División de Desarrollo Rural ·
+  Dirección de Desarrollo Económico Productivo · Intendencia de Rivera</div>
+</footer>
 </body>
 </html>
