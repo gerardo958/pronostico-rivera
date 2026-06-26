@@ -2,62 +2,75 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Pronóstico Rivera — 2026-06-26</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pronóstico Climático Rivera</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI',sans-serif;background:#e8f0fe;
-     display:flex;flex-direction:column;min-height:100vh;align-items:center;padding:0}
-header{width:100%;background:linear-gradient(135deg,#0D47A1,#1976D2,#42A5F5);
-       color:white;padding:22px 32px;box-shadow:0 3px 12px rgba(0,0,0,.2);
-       text-align:center}
-header h1{font-size:1.8em;margin-bottom:6px;letter-spacing:.02em}
-header .subtitulo{opacity:.85;font-size:.92em;margin-bottom:10px}
-.inst{font-size:.75em;opacity:.78;line-height:1.8;letter-spacing:.01em}
-.inst-autor{font-weight:700}
-.inst-sep{margin:0 6px;opacity:.5}
-.card{background:white;border-radius:14px;padding:32px 40px;margin:36px 16px;
-      box-shadow:0 4px 20px rgba(0,0,0,.1);min-width:300px;max-width:480px;width:100%}
-h2{color:#0D47A1;margin-bottom:6px;font-size:1.1em}
-.fecha{color:#888;margin-bottom:22px;font-size:.88em}
-ul{list-style:none}
-li{margin-bottom:8px}
-a{color:#1565C0;text-decoration:none;font-size:1.05em;
-  padding:10px 14px;display:flex;align-items:center;gap:8px;
-  border-radius:8px;transition:background .2s;border:1px solid transparent}
-a:hover{background:#e3f2fd;border-color:#90CAF9}
-.sep{border-top:2px solid #e3f2fd;margin:16px 0}
-.link-indices{background:#E8F5E9;border-color:#A5D6A7 !important;
-              color:#2E7D32 !important;font-weight:600}
-.link-indices:hover{background:#C8E6C9 !important}
-footer{text-align:center;padding:20px;color:#888;font-size:.8em;line-height:1.7}
+body{font-family:'Segoe UI',sans-serif;min-height:100vh;
+     background:linear-gradient(160deg,#0D47A1 0%,#1565C0 45%,#1976D2 100%);
+     color:white}
+.hero{text-align:center;padding:44px 24px 28px;max-width:820px;margin:0 auto}
+.hero h1{font-size:2.1em;font-weight:800;margin-bottom:8px;letter-spacing:.01em}
+.hero .dep{font-size:1.05em;opacity:.82;margin-bottom:14px;font-weight:500}
+.hero .intro{font-size:.95em;line-height:1.75;opacity:.82;margin-bottom:18px}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));
+       gap:18px;max-width:1200px;margin:0 auto;padding:0 20px 48px}
+.cat{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.18);
+      border-radius:15px;padding:28px 22px;text-decoration:none;color:white;
+      display:flex;flex-direction:column;transition:all .25s}
+.cat:hover{background:rgba(255,255,255,.2);transform:translateY(-5px);
+             box-shadow:0 18px 45px rgba(0,0,0,.28)}
+.cat-ico{font-size:2.3em;margin-bottom:12px}
+.cat h2{font-size:1.13em;font-weight:700;margin-bottom:9px}
+.cat p{font-size:.88em;line-height:1.65;opacity:.80;flex-grow:1}
+.cat .btn{margin-top:18px;font-size:.82em;font-weight:600;
+           background:rgba(255,255,255,.18);padding:6px 14px;
+           border-radius:20px;align-self:flex-start;opacity:.85}
+.cat:hover .btn{opacity:1}
+.pie{text-align:center;padding:0 0 32px;font-size:.8em;opacity:.55}
 </style>
 </head>
 <body>
-<div class="card">
-  <h1>🌦 Pronóstico Climático — Rivera</h1>
-  <p class="subtitulo">Generado el 2026-06-26 — Fuente: Open-Meteo</p>
-  <div class="inst">
-  <span class="inst-autor">Ing. Agro. Gerardo Díaz Romeo</span>
-  <span class="inst-sep">·</span>
-  <span>División de Desarrollo Rural</span>
-  <span class="inst-sep">·</span>
-  <span>Dirección de Desarrollo Económico Productivo</span>
-  <span class="inst-sep">·</span>
-  <span>Intendencia de Rivera</span>
+<div class="hero">
+  <h1>🌦 Sistema de Pronóstico Climático</h1>
+  <div class="dep">Departamento de Rivera — Uruguay</div>
+  <p class="intro">Información meteorológica y agropecuaria actualizada diariamente
+  para apoyar la toma de decisiones en producción agrícola, ganadera e hídrica
+  del departamento.</p>
+  <div class="inst" style="font-size:.76em;opacity:.65;line-height:1.85"><strong>Ing. Agro. Gerardo Díaz Romeo</strong> &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Dirección de Desarrollo Económico Productivo &nbsp;·&nbsp; Intendencia de Rivera</div>
 </div>
-  <ul><li><a href="html_graficos/Estación_Ataques.html">📍 Estación Ataques</a></li>
-<li><a href="html_graficos/Minas_de_Corrales.html">📍 Minas de Corrales</a></li>
-<li><a href="html_graficos/Moirones.html">📍 Moirones</a></li>
-<li><a href="html_graficos/Paso_Ataques.html">📍 Paso Ataques</a></li>
-<li><a href="html_graficos/Paso_La_Puente.html">📍 Paso La Puente</a></li>
-<li><a href="html_graficos/Pueblo_Nuevo.html">📍 Pueblo Nuevo</a></li>
-<li><a href="html_graficos/Rivera_Centro.html">📍 Rivera Centro</a></li>
-<li><a href="html_graficos/Rivera_Chico.html">📍 Rivera Chico</a></li>
-<li><a href="html_graficos/Tranqueras.html">📍 Tranqueras</a></li>
-<li><a href="html_graficos/Villa_Vichadero.html">📍 Villa Vichadero</a></li>
-<li><div class="sep"></div></li>
-<li><a href="indices.html" class="link-indices">📊 Índices Climáticos Especializados</a></li>
-</ul>
+
+<div class="cats">
+  <a href="localidades.html" class="cat">
+    <div class="cat-ico">📍</div>
+    <h2>Pronóstico por Localidad</h2>
+    <p>Temperatura, lluvia, viento, humedad y radiación en gráficos horarios
+    para las 10 localidades del departamento.</p>
+    <span class="btn">Ver las 10 localidades →</span>
+  </a>
+  <a href="agricultura.html" class="cat">
+    <div class="cat-ico">🌾</div>
+    <h2>Índices para la Agricultura</h2>
+    <p>Grados día de crecimiento, horas de frío acumuladas, riesgo de helada,
+    aptitud apícola y condiciones para la aplicación de agroquímicos.</p>
+    <span class="btn">Ver índices agrícolas →</span>
+  </a>
+  <a href="ganaderia.html" class="cat">
+    <div class="cat-ico">🐄</div>
+    <h2>Índices para la Ganadería</h2>
+    <p>Estrés térmico bovino (ITH), ovinos y caprinos (UTCI), riesgo de empaste,
+    garrapata, pietín ovino y condiciones para baño biológico.</p>
+    <span class="btn">Ver índices ganaderos →</span>
+  </a>
+  <a href="hidricos.html" class="cat">
+    <div class="cat-ico">💧</div>
+    <h2>Indicadores Hídricos</h2>
+    <p>Evapotranspiración real vs potencial, SPEI, recarga estimada de acuíferos
+    y balance y déficit hídrico departamental.</p>
+    <span class="btn">Ver indicadores hídricos →</span>
+  </a>
 </div>
+
+<p class="pie">Actualizado: 2026-06-26 &nbsp;·&nbsp; Fuente: Open-Meteo (GFS / ECMWF IFS)</p>
 </body>
 </html>

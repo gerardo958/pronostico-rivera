@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Índices para la Ganadería — Rivera</title>
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333}
+header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);
+       color:white;padding:20px 28px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
+header h1{font-size:1.6em;margin-bottom:4px}
+header .sub{opacity:.85;font-size:.9em;margin-bottom:8px}
+nav.top{display:flex;align-items:center;flex-wrap:wrap;gap:6px;
+         margin-top:10px;font-size:.82em;opacity:.85}
+nav.top a{color:white;text-decoration:none;background:rgba(255,255,255,.15);
+           padding:4px 10px;border-radius:12px;transition:background .2s}
+nav.top a:hover{background:rgba(255,255,255,.3)}
+
+.container{width:100%;padding:0 16px;margin:20px 0}
+.back{display:inline-flex;align-items:center;gap:6px;margin-bottom:18px;
+       color:#1565C0;text-decoration:none;font-size:.93em;
+       background:white;padding:8px 14px;border-radius:8px;
+       box-shadow:0 1px 5px rgba(0,0,0,.1);transition:box-shadow .2s}
+.back:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.tab{background:white;border:2px solid #ccc;color:#555;padding:9px 18px;
+      border-radius:10px;cursor:pointer;font-size:.93em;font-weight:600;
+      transition:all .2s}
+.tab:hover{box-shadow:0 3px 10px rgba(0,0,0,.12)}
+.tab.active{box-shadow:0 3px 12px rgba(0,0,0,.15)}
+.idx-box{background:white;border-radius:10px;padding:20px 24px;
+           margin-bottom:18px;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.idx-head{display:flex;align-items:baseline;gap:12px;margin-bottom:10px;flex-wrap:wrap}
+.idx-sig{font-size:1.35em;font-weight:800}
+.idx-nom{font-size:1.05em;font-weight:600;color:#333}
+.idx-dsc{font-size:.94em;line-height:1.7;color:#444;margin-bottom:12px}
+.form-box{background:#f5f7fa;border-radius:7px;padding:12px 16px;
+            font-size:.88em;line-height:1.65;margin-bottom:8px}
+.cat-box{font-size:.88em;color:#555;padding:6px 0}
+.loc-row{background:white;border-radius:10px;padding:14px 18px;
+           margin-bottom:14px;box-shadow:0 2px 7px rgba(0,0,0,.07)}
+.loc-row h3{font-size:.95em;color:#1565C0;margin-bottom:10px;
+              padding-bottom:7px;border-bottom:2px solid #e3f2fd}
+.loc-row img{width:100%;display:block;border-radius:6px}
+.prep{background:white;border-radius:10px;padding:40px;text-align:center;
+       color:#999;margin-bottom:14px;box-shadow:0 2px 7px rgba(0,0,0,.07)}
+.prep h3{margin:10px 0 6px;color:#666}
+.prep p{font-size:.9em}
+@media(max-width:600px){header h1{font-size:1.25em}}
+</style>
+</head>
+<body>
+<header>
+  <h1>🐄 Índices para la Ganadería</h1>
+  <p class="sub">Departamento de Rivera · Generado el 2026-06-26 · Fuente: Open-Meteo</p>
+  <div class="inst" style="font-size:.76em;opacity:.78;line-height:1.85"><strong>Ing. Agro. Gerardo Díaz Romeo</strong> &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Dirección de Desarrollo Económico Productivo &nbsp;·&nbsp; Intendencia de Rivera</div>
+  <nav class="top"><a href="index.html">🏠 Inicio</a>&nbsp;·&nbsp; <a href="localidades.html">📍 Localidades</a> &nbsp;·&nbsp; <a href="agricultura.html">🌾 Agricultura</a> &nbsp;·&nbsp; <a href="ganaderia.html">🐄 Ganadería</a> &nbsp;·&nbsp; <a href="hidricos.html">💧 Hídricos</a></nav>
+</header>
+<div class="container">
+  <a href="index.html" class="back">← Inicio</a>
+  <div class="tabs">
+<button class="tab active" style="background:#E65100;color:white;border-color:#E65100" onclick="showTab('ith','#E65100')" id="btn-ith">🐄 ITH</button>
+<button class="tab "  onclick="showTab('utci','#6A1B9A')" id="btn-utci">🐑 UTCI-OC</button>
+<button class="tab "  onclick="showTab('empaste','#1B5E20')" id="btn-empaste">🌿 IRE</button>
+<button class="tab "  onclick="showTab('garrapata','#BF360C')" id="btn-garrapata">🦟 IRGG</button>
+<button class="tab "  onclick="showTab('bano_biologico','#880E4F')" id="btn-bano_biologico">💊 CBG</button>
+<button class="tab "  onclick="showTab('pietil','#4E342E')" id="btn-pietil">🦶 RPO</button>
+  </div>
+<div class="panel" id="panel-ith" style="display:block"><div class="idx-box" style="border-left:5px solid #E65100"><div class="idx-head"><span class="idx-sig" style="color:#E65100">🐄 ITH</span><span class="idx-nom">Índice de Temperatura y Humedad Bovino</span></div><p class="idx-dsc">Evalúa el estrés calórico en bovinos de leche y carne. Afecta directamente la producción de leche, la fertilidad y la ganancia de peso. Es el indicador de bienestar animal más utilizado mundialmente.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>ITH = T<sub>bs</sub> − (0.55 − 0.0055 × HR) × (T<sub>bs</sub> − 14.5) donde T<sub>bs</sub> = temperatura de bulbo seco (°C) y HR = humedad relativa (%).</div><div class="cat-box"><b>Categorías:</b> &lt;72 Sin estrés · 72–79 Leve · 80–89 Moderado · 90–99 Severo · &gt;100 Extremo</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_ith.png" alt="Estación Ataques — Índice de Temperatura y Humedad Bovino" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_ith.png" alt="Minas de Corrales — Índice de Temperatura y Humedad Bovino" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_ith.png" alt="Moirones — Índice de Temperatura y Humedad Bovino" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_ith.png" alt="Paso Ataques — Índice de Temperatura y Humedad Bovino" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_ith.png" alt="Paso La Puente — Índice de Temperatura y Humedad Bovino" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_ith.png" alt="Pueblo Nuevo — Índice de Temperatura y Humedad Bovino" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_ith.png" alt="Rivera Centro — Índice de Temperatura y Humedad Bovino" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_ith.png" alt="Rivera Chico — Índice de Temperatura y Humedad Bovino" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_ith.png" alt="Tranqueras — Índice de Temperatura y Humedad Bovino" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_ith.png" alt="Villa Vichadero — Índice de Temperatura y Humedad Bovino" loading="lazy"></div></div><div class="panel" id="panel-utci" style="display:none"><div class="idx-box" style="border-left:5px solid #6A1B9A"><div class="idx-head"><span class="idx-sig" style="color:#6A1B9A">🐑 UTCI-OC</span><span class="idx-nom">Estrés Térmico en Ovinos y Caprinos</span></div><p class="idx-dsc">El Índice Universal de Estrés Térmico Climático (UTCI) adaptado para ovinos y caprinos evalúa el confort térmico considerando temperatura del aire, radiación solar, viento y humedad. Clave para manejo reproductivo y productivo de estas especies.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>UTCI = T<sub>a</sub> + f(T<sub>mrt</sub>, v<sub>10m</sub>, HR) donde T<sub>a</sub> = temperatura del aire (°C), T<sub>mrt</sub> = temperatura media radiante (°C), v<sub>10m</sub> = velocidad del viento a 10 m (m/s).</div><div class="cat-box"><b>Categorías:</b> &lt;9 °C Estrés frío · 9–26 Confort · 26–32 Calor moderado · &gt;32 Estrés severo</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_utci.png" alt="Estación Ataques — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_utci.png" alt="Minas de Corrales — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_utci.png" alt="Moirones — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_utci.png" alt="Paso Ataques — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_utci.png" alt="Paso La Puente — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_utci.png" alt="Pueblo Nuevo — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_utci.png" alt="Rivera Centro — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_utci.png" alt="Rivera Chico — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_utci.png" alt="Tranqueras — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_utci.png" alt="Villa Vichadero — Estrés Térmico en Ovinos y Caprinos" loading="lazy"></div></div><div class="panel" id="panel-empaste" style="display:none"><div class="idx-box" style="border-left:5px solid #1B5E20"><div class="idx-head"><span class="idx-sig" style="color:#1B5E20">🌿 IRE</span><span class="idx-nom">Índice de Riesgo de Empaste</span></div><p class="idx-dsc">Estima el riesgo de timpanismo espumoso (empaste) en bovinos en pastoreo de leguminosas. La alta humedad y temperaturas moderadas favorecen el crecimiento acelerado de pasturas con alta solubilidad proteica.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>IRE = f(T, HR, Nubosidad, Lluvia acumulada). Umbrales críticos: T 10–22 °C · HR &gt;70 % · Nubosidad &gt;50 %.</div><div class="cat-box"><b>Categorías:</b> 0–30 Bajo · 31–60 Moderado · 61–80 Alto · &gt;80 Muy alto</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_empaste.png" alt="Estación Ataques — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_empaste.png" alt="Minas de Corrales — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_empaste.png" alt="Moirones — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_empaste.png" alt="Paso Ataques — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_empaste.png" alt="Paso La Puente — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_empaste.png" alt="Pueblo Nuevo — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_empaste.png" alt="Rivera Centro — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_empaste.png" alt="Rivera Chico — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_empaste.png" alt="Tranqueras — Índice de Riesgo de Empaste" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_empaste.png" alt="Villa Vichadero — Índice de Riesgo de Empaste" loading="lazy"></div></div><div class="panel" id="panel-garrapata" style="display:none"><div class="idx-box" style="border-left:5px solid #BF360C"><div class="idx-head"><span class="idx-sig" style="color:#BF360C">🦟 IRGG</span><span class="idx-nom">Índice de Riesgo Generacional de Garrapata</span></div><p class="idx-dsc">Estima el número de generaciones anuales de Rhipicephalus (Boophilus) microplus y las condiciones de supervivencia larval en vida libre. Permite anticipar picos de infestación y planificar tratamientos estratégicos.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>Modelo de días grado con T<sub>base</sub> = 12 °C. 1 generación ≈ 450–600 días·grado. HR &gt;80 % aplica factor ×1.2 sobre supervivencia larval. T óptima desarrollo 27 °C.</div><div class="cat-box"><b>Categorías:</b> N° de generaciones estimadas por año y probabilidad de infestación activa</div></div><div class="loc-row"><h3>Estación Ataques</h3><img src="indices_graficos/Estación_Ataques_garrapata.png" alt="Estación Ataques — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Minas de Corrales</h3><img src="indices_graficos/Minas_de_Corrales_garrapata.png" alt="Minas de Corrales — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Moirones</h3><img src="indices_graficos/Moirones_garrapata.png" alt="Moirones — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Paso Ataques</h3><img src="indices_graficos/Paso_Ataques_garrapata.png" alt="Paso Ataques — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Paso La Puente</h3><img src="indices_graficos/Paso_La_Puente_garrapata.png" alt="Paso La Puente — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Pueblo Nuevo</h3><img src="indices_graficos/Pueblo_Nuevo_garrapata.png" alt="Pueblo Nuevo — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Rivera Centro</h3><img src="indices_graficos/Rivera_Centro_garrapata.png" alt="Rivera Centro — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Rivera Chico</h3><img src="indices_graficos/Rivera_Chico_garrapata.png" alt="Rivera Chico — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Tranqueras</h3><img src="indices_graficos/Tranqueras_garrapata.png" alt="Tranqueras — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div><div class="loc-row"><h3>Villa Vichadero</h3><img src="indices_graficos/Villa_Vichadero_garrapata.png" alt="Villa Vichadero — Índice de Riesgo Generacional de Garrapata" loading="lazy"></div></div><div class="panel" id="panel-bano_biologico" style="display:none"><div class="idx-box" style="border-left:5px solid #880E4F"><div class="idx-head"><span class="idx-sig" style="color:#880E4F">💊 CBG</span><span class="idx-nom">Condiciones para Baño con Biológicos contra Garrapata</span></div><p class="idx-dsc">Indica las condiciones meteorológicas óptimas para aplicar formulaciones biológicas (hongos entomopatógenos como Beauveria bassiana) contra garrapatas. La humedad y temperatura son críticas para la germinación y virulencia del hongo.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>CBG = f(T, HR, Lluvia 48h, Viento). Condiciones óptimas: T = 20–30 °C · HR &gt;80 % · sin lluvia fuerte en 48h · viento &lt;20 km/h.</div><div class="cat-box"><b>Categorías:</b> No apto &nbsp;·&nbsp; Marginal &nbsp;·&nbsp; Apto &nbsp;·&nbsp; Óptimo</div></div><div class="prep"><div style="font-size:2em">🔧</div><h3>Datos en preparación</h3><p>Este índice estará disponible próximamente en el sistema.</p></div></div><div class="panel" id="panel-pietil" style="display:none"><div class="idx-box" style="border-left:5px solid #4E342E"><div class="idx-head"><span class="idx-sig" style="color:#4E342E">🦶 RPO</span><span class="idx-nom">Índice de Riesgo de Pietín Ovino</span></div><p class="idx-dsc">Estima el riesgo de podredumbre del casco (pietín) causado por Dichelobacter nodosus en ovinos. El suelo húmedo y temperaturas moderadas favorecen la supervivencia del patógeno y la susceptibilidad del animal.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>RPO = f(Lluvia acumulada 7d, T<sub>media</sub>, HR). Factores de riesgo: lluvia &gt;50 mm/semana · T = 10–20 °C · HR &gt;75 %.</div><div class="cat-box"><b>Categorías:</b> Bajo · Moderado · Alto · Muy alto</div></div><div class="prep"><div style="font-size:2em">🔧</div><h3>Datos en preparación</h3><p>Este índice estará disponible próximamente en el sistema.</p></div></div>
+</div>
+<footer style="text-align:center;padding:22px 16px;color:#888;font-size:.8em;line-height:1.8">Open-Meteo API · QGIS 4.x<br>Ing. Agro. Gerardo Díaz Romeo · División de Desarrollo Rural · Dirección de Desarrollo Económico Productivo · Intendencia de Rivera</footer>
+<script>
+function showTab(id,color){
+  document.querySelectorAll('.panel').forEach(p=>p.style.display='none');
+  document.querySelectorAll('.tab').forEach(b=>{
+    b.classList.remove('active');
+    b.style.background='';b.style.color='';b.style.borderColor='';
+  });
+  document.getElementById('panel-'+id).style.display='block';
+  var b=document.getElementById('btn-'+id);
+  b.classList.add('active');
+  b.style.background=color;b.style.color='white';b.style.borderColor=color;
+}
+</script>
+</body>
+</html>

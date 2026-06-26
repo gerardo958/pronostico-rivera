@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indicadores Hídricos — Rivera</title>
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333}
+header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);
+       color:white;padding:20px 28px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
+header h1{font-size:1.6em;margin-bottom:4px}
+header .sub{opacity:.85;font-size:.9em;margin-bottom:8px}
+nav.top{display:flex;align-items:center;flex-wrap:wrap;gap:6px;
+         margin-top:10px;font-size:.82em;opacity:.85}
+nav.top a{color:white;text-decoration:none;background:rgba(255,255,255,.15);
+           padding:4px 10px;border-radius:12px;transition:background .2s}
+nav.top a:hover{background:rgba(255,255,255,.3)}
+
+.container{width:100%;padding:0 16px;margin:20px 0}
+.back{display:inline-flex;align-items:center;gap:6px;margin-bottom:18px;
+       color:#1565C0;text-decoration:none;font-size:.93em;
+       background:white;padding:8px 14px;border-radius:8px;
+       box-shadow:0 1px 5px rgba(0,0,0,.1);transition:box-shadow .2s}
+.back:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.tab{background:white;border:2px solid #ccc;color:#555;padding:9px 18px;
+      border-radius:10px;cursor:pointer;font-size:.93em;font-weight:600;
+      transition:all .2s}
+.tab:hover{box-shadow:0 3px 10px rgba(0,0,0,.12)}
+.tab.active{box-shadow:0 3px 12px rgba(0,0,0,.15)}
+.idx-box{background:white;border-radius:10px;padding:20px 24px;
+           margin-bottom:18px;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.idx-head{display:flex;align-items:baseline;gap:12px;margin-bottom:10px;flex-wrap:wrap}
+.idx-sig{font-size:1.35em;font-weight:800}
+.idx-nom{font-size:1.05em;font-weight:600;color:#333}
+.idx-dsc{font-size:.94em;line-height:1.7;color:#444;margin-bottom:12px}
+.form-box{background:#f5f7fa;border-radius:7px;padding:12px 16px;
+            font-size:.88em;line-height:1.65;margin-bottom:8px}
+.cat-box{font-size:.88em;color:#555;padding:6px 0}
+.loc-row{background:white;border-radius:10px;padding:14px 18px;
+           margin-bottom:14px;box-shadow:0 2px 7px rgba(0,0,0,.07)}
+.loc-row h3{font-size:.95em;color:#1565C0;margin-bottom:10px;
+              padding-bottom:7px;border-bottom:2px solid #e3f2fd}
+.loc-row img{width:100%;display:block;border-radius:6px}
+.prep{background:white;border-radius:10px;padding:40px;text-align:center;
+       color:#999;margin-bottom:14px;box-shadow:0 2px 7px rgba(0,0,0,.07)}
+.prep h3{margin:10px 0 6px;color:#666}
+.prep p{font-size:.9em}
+@media(max-width:600px){header h1{font-size:1.25em}}
+</style>
+</head>
+<body>
+<header>
+  <h1>💧 Indicadores Hídricos</h1>
+  <p class="sub">Departamento de Rivera · Generado el 2026-06-26 · Fuente: Open-Meteo</p>
+  <div class="inst" style="font-size:.76em;opacity:.78;line-height:1.85"><strong>Ing. Agro. Gerardo Díaz Romeo</strong> &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Dirección de Desarrollo Económico Productivo &nbsp;·&nbsp; Intendencia de Rivera</div>
+  <nav class="top"><a href="index.html">🏠 Inicio</a>&nbsp;·&nbsp; <a href="localidades.html">📍 Localidades</a> &nbsp;·&nbsp; <a href="agricultura.html">🌾 Agricultura</a> &nbsp;·&nbsp; <a href="ganaderia.html">🐄 Ganadería</a> &nbsp;·&nbsp; <a href="hidricos.html">💧 Hídricos</a></nav>
+</header>
+<div class="container">
+  <a href="index.html" class="back">← Inicio</a>
+  <div class="tabs">
+<button class="tab active" style="background:#0277BD;color:white;border-color:#0277BD" onclick="showTab('etr','#0277BD')" id="btn-etr">💧 ETR / ETP</button>
+<button class="tab "  onclick="showTab('spei','#01579B')" id="btn-spei">📊 SPEI</button>
+<button class="tab "  onclick="showTab('recarga','#0097A7')" id="btn-recarga">🏔️ REA</button>
+<button class="tab "  onclick="showTab('balance_hidrico','#00695C')" id="btn-balance_hidrico">⚖️ BH</button>
+  </div>
+<div class="panel" id="panel-etr" style="display:block"><div class="idx-box" style="border-left:5px solid #0277BD"><div class="idx-head"><span class="idx-sig" style="color:#0277BD">💧 ETR / ETP</span><span class="idx-nom">Evapotranspiración Real vs Potencial</span></div><p class="idx-dsc">Compara la evapotranspiración real del suelo-cultivo (ETR) con la potencial de referencia (ETP FAO-56). La diferencia indica el déficit hídrico actual y la demanda insatisfecha de los cultivos.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>ETP Penman-Monteith FAO: ET₀ = [0.408Δ(R<sub>n</sub>−G) + γ(900/(T+273))·u₂·(e<sub>s</sub>−e<sub>a</sub>)] / [Δ+γ(1+0.34·u₂)]. ETR = ET₀ × Kc × Ks.</div><div class="cat-box"><b>Categorías:</b> ETR/ETP &lt;0.5 Estrés severo · 0.5–0.75 Estrés moderado · &gt;0.75 Sin estrés</div></div><div class="prep"><div style="font-size:2em">🔧</div><h3>Datos en preparación</h3><p>Este índice estará disponible próximamente en el sistema.</p></div></div><div class="panel" id="panel-spei" style="display:none"><div class="idx-box" style="border-left:5px solid #01579B"><div class="idx-head"><span class="idx-sig" style="color:#01579B">📊 SPEI</span><span class="idx-nom">Índice Estandarizado de Precipitación y Evapotranspiración</span></div><p class="idx-dsc">Indicador de sequía que combina déficit de precipitación y demanda evapotranspirativa. Permite identificar y comparar sequías a distintas escalas temporales (1, 3, 6, 12 meses) y es el más usado en análisis de cambio climático.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>SPEI = f(P − ETP) estandarizado con distribución log-logística (Vicente-Serrano et al., 2010). Escala Z estándar normalizada.</div><div class="cat-box"><b>Categorías:</b> &gt;2 Muy húmedo · 1–2 Húmedo · −1 a 1 Normal · −2 a −1 Seco · &lt;−2 Sequía extrema</div></div><div class="prep"><div style="font-size:2em">🔧</div><h3>Datos en preparación</h3><p>Este índice estará disponible próximamente en el sistema.</p></div></div><div class="panel" id="panel-recarga" style="display:none"><div class="idx-box" style="border-left:5px solid #0097A7"><div class="idx-head"><span class="idx-sig" style="color:#0097A7">🏔️ REA</span><span class="idx-nom">Recarga Estimada de Acuíferos</span></div><p class="idx-dsc">Estima la fracción de la precipitación que percola hacia los acuíferos superficiales y profundos. Fundamental para la gestión del agua subterránea del Sistema Acuífero Guaraní, presente en el departamento de Rivera.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>REA = P − ETR − Escorrentía superficial − ΔS. Balance hídrico con Ksat del suelo y capacidad de campo. Se expresa en mm/día y mm acumulado mensual.</div><div class="cat-box"><b>Categorías:</b> Positivo = recarga activa · Negativo = descarga del acuífero</div></div><div class="prep"><div style="font-size:2em">🔧</div><h3>Datos en preparación</h3><p>Este índice estará disponible próximamente en el sistema.</p></div></div><div class="panel" id="panel-balance_hidrico" style="display:none"><div class="idx-box" style="border-left:5px solid #00695C"><div class="idx-head"><span class="idx-sig" style="color:#00695C">⚖️ BH</span><span class="idx-nom">Balance y Déficit Hídrico</span></div><p class="idx-dsc">Cuantifica la diferencia diaria entre precipitación y evapotranspiración potencial, indicando períodos de superávit (recarga) o déficit hídrico (estrés). Es la base operativa para el manejo del riego y la planificación agrícola departamental.</p><div class="form-box"><b>Fórmula / Metodología:</b><br>BH = P − ETP (diario y acumulado mensual). Superávit: BH &gt;0 → recarga y posible escorrentía. Déficit: BH &lt;0 → demanda hídrica insatisfecha.</div><div class="cat-box"><b>Categorías:</b> Superávit · Equilibrio · Déficit leve · Déficit severo</div></div><div class="prep"><div style="font-size:2em">🔧</div><h3>Datos en preparación</h3><p>Este índice estará disponible próximamente en el sistema.</p></div></div>
+</div>
+<footer style="text-align:center;padding:22px 16px;color:#888;font-size:.8em;line-height:1.8">Open-Meteo API · QGIS 4.x<br>Ing. Agro. Gerardo Díaz Romeo · División de Desarrollo Rural · Dirección de Desarrollo Económico Productivo · Intendencia de Rivera</footer>
+<script>
+function showTab(id,color){
+  document.querySelectorAll('.panel').forEach(p=>p.style.display='none');
+  document.querySelectorAll('.tab').forEach(b=>{
+    b.classList.remove('active');
+    b.style.background='';b.style.color='';b.style.borderColor='';
+  });
+  document.getElementById('panel-'+id).style.display='block';
+  var b=document.getElementById('btn-'+id);
+  b.classList.add('active');
+  b.style.background=color;b.style.color='white';b.style.borderColor=color;
+}
+</script>
+</body>
+</html>
