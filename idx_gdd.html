@@ -67,7 +67,7 @@ function descargarJPG(src, nombre) {
 <div class="info-box">
   <h2>Grados Dia de Crecimiento (GDD)</h2>
   <p class="desc">Cuantifica la acumulacion de calor disponible para el desarrollo de los cultivos. Permite predecir etapas fenologicas con mayor precision que el calendario.</p>
-  <div class="formula">Calculo: GDD diario = max(0, (Tmax + Tmin) / 2 - Tbase)  [Tbase maiz: 10 C  |  Tbase trigo: 0 C]</div>
+  <div class="formula">Calculo: GDD diario = suma horaria de max(0, T - Tbase) dividida entre 24  [Tbase maiz: 10 C  |  Tbase trigo: 0 C  |  Tbase sandia: 10 C]</div>
   <p class="interp">Interpretacion: Ref. maiz - siembra a floracion: ~850 GDD. Ref. trigo - emergencia a espigado: ~1.600 GDD.</p>
 </div>
 <div class="graf-card">
