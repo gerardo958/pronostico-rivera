@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Condiciones para la Infeccion Fungica en Cucurbitaceas - Rivera</title>
+<style>*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333}
+header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);color:white;
+       padding:18px 24px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
+header h1{font-size:1.5em;margin-bottom:4px}
+header p{opacity:.85;font-size:.88em;margin-bottom:6px}
+nav a{color:white;opacity:.8;text-decoration:none;font-size:.85em;margin-right:14px}
+nav a:hover{opacity:1;text-decoration:underline}
+.container{max-width:1100px;margin:20px auto;padding:0 16px}
+.info-box{background:white;border-radius:10px;padding:18px 22px;
+           margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.info-box h2{color:#1565C0;font-size:1.1em;margin-bottom:10px}
+.desc{font-size:.9em;line-height:1.7;color:#444;margin-bottom:10px}
+.formula{font-family:'Courier New',monospace;font-size:.82em;background:#e8f4fd;
+          padding:10px 14px;border-left:4px solid #1565C0;border-radius:4px;
+          margin-bottom:8px;color:#0D47A1;white-space:pre-wrap}
+.interp{font-size:.83em;color:#555;font-style:italic;line-height:1.6}
+.graf-card{background:white;border-radius:10px;padding:14px 18px;
+            margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.graf-card h3{color:#1565C0;font-size:.95em;margin-bottom:10px;
+               border-bottom:2px solid #e3f2fd;padding-bottom:6px}
+.graf-card img{width:100%;border-radius:6px;display:block}
+.btn-dl{display:inline-block;margin-top:10px;padding:6px 18px;
+         background:#1565C0;color:white;border-radius:20px;
+         font-size:.82em;font-weight:600;cursor:pointer;
+         border:none;font-family:'Segoe UI',sans-serif}
+.btn-dl:hover{background:#0D47A1}
+footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}</style>
+</head>
+<body>
+<header>
+  <h1>Condiciones para la Infeccion Fungica en Cucurbitaceas</h1>
+  <p>Departamento de Rivera &nbsp;·&nbsp; 2026-07-01</p>
+  <nav>
+    <a href="index.html">← Inicio</a>
+    <a href="agricultura.html">← Indices para la Agricultura</a>
+  </nav>
+</header>
+
+<script>
+function descargarJPG(src, nombre) {
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function() {
+        var canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+        var a = document.createElement('a');
+        a.download = nombre;
+        a.href = canvas.toDataURL('image/jpeg', 0.95);
+        a.click();
+    };
+    img.src = src;
+}
+</script>
+<div class="container">
+<div class="info-box">
+  <h2>Condiciones para la Infeccion Fungica en Cucurbitaceas</h2>
+  <p class="desc">Herramienta de apoyo basada en modelo calibrado en Indiana, en proceso de calibracion por la Division de Desarrollo Rural. El EFI (Environmental Favorability Index) del modelo MELCAST (Latin & Egel, Purdue 2001) mide la favorabilidad diaria de las condiciones meteorologicas para que ocurra infeccion fungica en sandia. Las enfermedades objetivo son Alternaria cucumerina (mancha foliar), Colletotrichum orbiculare (antracnosis) y Didymella bryoniae (Gummy stem blight). IMPORTANTE: Este indice tiene relevancia agronomica unicamente cuando hay plantas en el campo. En Rivera el ciclo tipico es: almacigo en julio, trasplante en agosto, crecimiento vegetativo en setiembre-octubre, floracion y cuaje en noviembre-enero, cosecha en febrero-marzo. Fuera de ese calendario el EFI expresa condiciones meteorologicas pero no implica riesgo real de enfermedad. El mojado foliar se estima a partir de HR >= 90% o precipitacion > 0,1 mm.</p>
+  <div class="formula">Calculo: EFI = 0,73 x LW^0,7 x exp(-((T_mojado - 23)^2) / 32)  [LW = horas de mojado foliar | T_mojado = temperatura media durante mojado] | Calibracion: 13h a 23 C -> EFI = 5,0 (Latin & Egel 2001)</div>
+  <p class="interp">Interpretacion: EFI < 3: Bajo  |  3-5: Moderado  |  5-7: Alto  |  > 7: Muy alto — condiciones ideales para infeccion</p>
+</div>
+<div class="graf-card">
+  <h3>📍 Estación Ataques</h3>
+  <img src="indices/graficos/Estación_Ataques_melcast_efi.png" alt="Estación Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Estación_Ataques_melcast_efi.png','Estación_Ataques_melcast_efi_2026-07-01.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Minas de Corrales</h3>
+  <img src="indices/graficos/Minas_de_Corrales_melcast_efi.png" alt="Minas de Corrales">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Minas_de_Corrales_melcast_efi.png','Minas_de_Corrales_melcast_efi_2026-07-01.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Moirones</h3>
+  <img src="indices/graficos/Moirones_melcast_efi.png" alt="Moirones">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Moirones_melcast_efi.png','Moirones_melcast_efi_2026-07-01.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Paso Ataques</h3>
+  <img src="indices/graficos/Paso_Ataques_melcast_efi.png" alt="Paso Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_Ataques_melcast_efi.png','Paso_Ataques_melcast_efi_2026-07-01.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Paso La Puente</h3>
+  <img src="indices/graficos/Paso_La_Puente_melcast_efi.png" alt="Paso La Puente">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_La_Puente_melcast_efi.png','Paso_La_Puente_melcast_efi_2026-07-01.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Pueblo Nuevo</h3>
+  <img src="indices/graficos/Pueblo_Nuevo_melcast_efi.png" alt="Pueblo Nuevo">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Pueblo_Nuevo_melcast_efi.png','Pueblo_Nuevo_melcast_efi_2026-07-01.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Rivera Centro</h3>
+  <img src="indices/graficos/Rivera_Centro_melcast_efi.png" alt="Rivera Centro">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Centro_melcast_efi.png','Rivera_Centro_melcast_efi_2026-07-01.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Rivera Chico</h3>
+  <img src="indices/graficos/Rivera_Chico_melcast_efi.png" alt="Rivera Chico">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Chico_melcast_efi.png','Rivera_Chico_melcast_efi_2026-07-01.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Tranqueras</h3>
+  <img src="indices/graficos/Tranqueras_melcast_efi.png" alt="Tranqueras">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Tranqueras_melcast_efi.png','Tranqueras_melcast_efi_2026-07-01.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Villa Vichadero</h3>
+  <img src="indices/graficos/Villa_Vichadero_melcast_efi.png" alt="Villa Vichadero">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Villa_Vichadero_melcast_efi.png','Villa_Vichadero_melcast_efi_2026-07-01.jpg')">⬇ Descargar JPG</button>
+</div>
+</div>
+<footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>
+</body>
+</html>
