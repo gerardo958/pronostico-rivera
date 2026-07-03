@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Previsión de Condiciones Ambientales para Corderos Recién Nacidos - Rivera</title>
+<style>*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333}
+header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);color:white;
+       padding:18px 24px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
+header h1{font-size:1.5em;margin-bottom:4px}
+header p{opacity:.85;font-size:.88em;margin-bottom:6px}
+nav a{color:white;opacity:.8;text-decoration:none;font-size:.85em;margin-right:14px}
+nav a:hover{opacity:1;text-decoration:underline}
+.container{max-width:1100px;margin:20px auto;padding:0 16px}
+.info-box{background:white;border-radius:10px;padding:18px 22px;
+           margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.info-box h2{color:#1565C0;font-size:1.1em;margin-bottom:10px}
+.desc{font-size:.9em;line-height:1.7;color:#444;margin-bottom:10px}
+.formula{font-family:'Courier New',monospace;font-size:.82em;background:#e8f4fd;
+          padding:10px 14px;border-left:4px solid #1565C0;border-radius:4px;
+          margin-bottom:8px;color:#0D47A1;white-space:pre-wrap}
+.interp{font-size:.83em;color:#555;font-style:italic;line-height:1.6}
+.graf-card{background:white;border-radius:10px;padding:14px 18px;
+            margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.graf-card h3{color:#1565C0;font-size:.95em;margin-bottom:10px;
+               border-bottom:2px solid #e3f2fd;padding-bottom:6px}
+.graf-card img{width:100%;border-radius:6px;display:block}
+.btn-dl{display:inline-block;margin-top:10px;padding:6px 18px;
+         background:#1565C0;color:white;border-radius:20px;
+         font-size:.82em;font-weight:600;cursor:pointer;
+         border:none;font-family:'Segoe UI',sans-serif}
+.btn-dl:hover{background:#0D47A1}
+.bano-resumen{background:#f3f8f2;border:1px solid #c8e6c9;border-radius:8px;
+              padding:10px 12px;margin:4px 0 12px}
+.bano-vacio{background:#fbeeee;border-color:#f0c9c9;color:#8a4b4b;font-size:.82em}
+.bano-tit{font-size:.85em;font-weight:700;color:#1B5E20;margin-bottom:6px}
+.bano-tabla{width:100%;border-collapse:collapse;font-size:.8em}
+.bano-tabla th{text-align:left;color:#555;border-bottom:1px solid #cfe0cf;
+               padding:4px 6px;font-weight:600}
+.bano-tabla td{padding:4px 6px;border-bottom:1px solid #e6efe6}
+.br-dia{white-space:nowrap;font-weight:600;color:#333}
+.br-niv{font-weight:700;white-space:nowrap}
+.br-fr{color:#444}
+.br-sc{text-align:right;color:#666;white-space:nowrap}
+.bano-nota{font-size:.74em;color:#5c6b5c;margin-top:6px;line-height:1.5}
+footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}</style>
+</head>
+<body>
+<header>
+  <h1>Previsión de Condiciones Ambientales para Corderos Recién Nacidos</h1>
+  <p>Departamento de Rivera &nbsp;·&nbsp; 2026-07-03</p>
+  <nav>
+    <a href="index.html">← Inicio</a>
+    <a href="ganaderia.html">← Índices para la Ganadería</a>
+  </nav>
+</header>
+
+<script>
+function descargarJPG(src, nombre) {
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function() {
+        var canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+        var a = document.createElement('a');
+        a.download = nombre;
+        a.href = canvas.toDataURL('image/jpeg', 0.95);
+        a.click();
+    };
+    img.src = src;
+}
+</script>
+<div class="container">
+<div class="info-box">
+  <h2>Previsión de Condiciones Ambientales para Corderos Recién Nacidos</h2>
+  <p class="desc">Índice de Enfriamiento (Chill Index) para el riesgo de sobrevivencia de corderos recién nacidos en las primeras 72 horas de vida y de ovinos pos-esquila. Estima la pérdida potencial de calor combinando temperatura, viento y precipitación diarios. Metodología INIA-SUL-FAgro-FVet: Secretariado Uruguayo de la Lana (SUL), Facultades de Agronomía y Veterinaria (UdelaR) e INIA (GRAS). Referencias: Nixon-Smith 1972; Donnelly 1984.</p>
+  <div class="formula">Cálculo: CI = (11,7 + 3,1 x VV^0,5) x (40 - Ta) + 481 + R   |   R = 418 x (1 - e^(-0,04 x P))   [Ta: temp. media diaria (C) | VV: viento medio diario a 2 m (m/s) | P: precipitación diaria (mm)]. Resultado en kJ/m2/h.</div>
+  <p class="interp">Interpretación: < 900: Sin riesgo (mortalidad < 13%)  |  900-1000: Bajo (13-28%)  |  1000-1100: Medio (28-51%)  |  1100-1200: Alto (51-73%)  |  > 1200: Crítico (> 73%)</p>
+</div>
+<div class="graf-card">
+  <h3>📍 Estación Ataques</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🐑 Índice de Enfriamiento diario (corderos)</div>
+  <table class="bano-tabla">
+    <tr><th>Día</th><th>CI (kJ/m²/h)</th><th>Nivel de riesgo</th></tr>
+<tr><td class="br-dia">vie 2026-07-03</td><td class="br-sc">1062</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">sáb 2026-07-04</td><td class="br-sc">1012</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">dom 2026-07-05</td><td class="br-sc">972</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">lun 2026-07-06</td><td class="br-sc">999</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">mar 2026-07-07</td><td class="br-sc">1022</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mié 2026-07-08</td><td class="br-sc">962</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">jue 2026-07-09</td><td class="br-sc">908</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+  </table>
+  <div class="bano-nota">Riesgo de sobrevivencia en las primeras 72 h de vida. Metodología INIA-SUL-FAgro-FVet (Chill Index; Nixon-Smith 1972, Donnelly 1984).</div>
+</div>
+  <img src="indices/graficos/Estación_Ataques_corderos.png" alt="Estación Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Estación_Ataques_corderos.png','Estación_Ataques_corderos_2026-07-03.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Minas de Corrales</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🐑 Índice de Enfriamiento diario (corderos)</div>
+  <table class="bano-tabla">
+    <tr><th>Día</th><th>CI (kJ/m²/h)</th><th>Nivel de riesgo</th></tr>
+<tr><td class="br-dia">vie 2026-07-03</td><td class="br-sc">1089</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">sáb 2026-07-04</td><td class="br-sc">1022</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">dom 2026-07-05</td><td class="br-sc">989</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">lun 2026-07-06</td><td class="br-sc">1008</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mar 2026-07-07</td><td class="br-sc">1019</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mié 2026-07-08</td><td class="br-sc">964</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">jue 2026-07-09</td><td class="br-sc">900</td><td class="br-niv" style="color:#2E7D32">Sin riesgo</td></tr>
+  </table>
+  <div class="bano-nota">Riesgo de sobrevivencia en las primeras 72 h de vida. Metodología INIA-SUL-FAgro-FVet (Chill Index; Nixon-Smith 1972, Donnelly 1984).</div>
+</div>
+  <img src="indices/graficos/Minas_de_Corrales_corderos.png" alt="Minas de Corrales">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Minas_de_Corrales_corderos.png','Minas_de_Corrales_corderos_2026-07-03.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Moirones</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🐑 Índice de Enfriamiento diario (corderos)</div>
+  <table class="bano-tabla">
+    <tr><th>Día</th><th>CI (kJ/m²/h)</th><th>Nivel de riesgo</th></tr>
+<tr><td class="br-dia">vie 2026-07-03</td><td class="br-sc">1112</td><td class="br-niv" style="color:#EF6C00">Alto</td></tr>
+<tr><td class="br-dia">sáb 2026-07-04</td><td class="br-sc">1042</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">dom 2026-07-05</td><td class="br-sc">996</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">lun 2026-07-06</td><td class="br-sc">1025</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mar 2026-07-07</td><td class="br-sc">1046</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mié 2026-07-08</td><td class="br-sc">1004</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">jue 2026-07-09</td><td class="br-sc">936</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+  </table>
+  <div class="bano-nota">Riesgo de sobrevivencia en las primeras 72 h de vida. Metodología INIA-SUL-FAgro-FVet (Chill Index; Nixon-Smith 1972, Donnelly 1984).</div>
+</div>
+  <img src="indices/graficos/Moirones_corderos.png" alt="Moirones">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Moirones_corderos.png','Moirones_corderos_2026-07-03.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Paso Ataques</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🐑 Índice de Enfriamiento diario (corderos)</div>
+  <table class="bano-tabla">
+    <tr><th>Día</th><th>CI (kJ/m²/h)</th><th>Nivel de riesgo</th></tr>
+<tr><td class="br-dia">vie 2026-07-03</td><td class="br-sc">1065</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">sáb 2026-07-04</td><td class="br-sc">1017</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">dom 2026-07-05</td><td class="br-sc">977</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">lun 2026-07-06</td><td class="br-sc">999</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">mar 2026-07-07</td><td class="br-sc">1020</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mié 2026-07-08</td><td class="br-sc">968</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">jue 2026-07-09</td><td class="br-sc">904</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+  </table>
+  <div class="bano-nota">Riesgo de sobrevivencia en las primeras 72 h de vida. Metodología INIA-SUL-FAgro-FVet (Chill Index; Nixon-Smith 1972, Donnelly 1984).</div>
+</div>
+  <img src="indices/graficos/Paso_Ataques_corderos.png" alt="Paso Ataques">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_Ataques_corderos.png','Paso_Ataques_corderos_2026-07-03.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Paso La Puente</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🐑 Índice de Enfriamiento diario (corderos)</div>
+  <table class="bano-tabla">
+    <tr><th>Día</th><th>CI (kJ/m²/h)</th><th>Nivel de riesgo</th></tr>
+<tr><td class="br-dia">vie 2026-07-03</td><td class="br-sc">1103</td><td class="br-niv" style="color:#EF6C00">Alto</td></tr>
+<tr><td class="br-dia">sáb 2026-07-04</td><td class="br-sc">1041</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">dom 2026-07-05</td><td class="br-sc">994</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">lun 2026-07-06</td><td class="br-sc">1019</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mar 2026-07-07</td><td class="br-sc">1043</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mié 2026-07-08</td><td class="br-sc">1011</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">jue 2026-07-09</td><td class="br-sc">936</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+  </table>
+  <div class="bano-nota">Riesgo de sobrevivencia en las primeras 72 h de vida. Metodología INIA-SUL-FAgro-FVet (Chill Index; Nixon-Smith 1972, Donnelly 1984).</div>
+</div>
+  <img src="indices/graficos/Paso_La_Puente_corderos.png" alt="Paso La Puente">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_La_Puente_corderos.png','Paso_La_Puente_corderos_2026-07-03.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Pueblo Nuevo</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🐑 Índice de Enfriamiento diario (corderos)</div>
+  <table class="bano-tabla">
+    <tr><th>Día</th><th>CI (kJ/m²/h)</th><th>Nivel de riesgo</th></tr>
+<tr><td class="br-dia">vie 2026-07-03</td><td class="br-sc">1060</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">sáb 2026-07-04</td><td class="br-sc">1016</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">dom 2026-07-05</td><td class="br-sc">972</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">lun 2026-07-06</td><td class="br-sc">999</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">mar 2026-07-07</td><td class="br-sc">1016</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mié 2026-07-08</td><td class="br-sc">962</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">jue 2026-07-09</td><td class="br-sc">907</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+  </table>
+  <div class="bano-nota">Riesgo de sobrevivencia en las primeras 72 h de vida. Metodología INIA-SUL-FAgro-FVet (Chill Index; Nixon-Smith 1972, Donnelly 1984).</div>
+</div>
+  <img src="indices/graficos/Pueblo_Nuevo_corderos.png" alt="Pueblo Nuevo">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Pueblo_Nuevo_corderos.png','Pueblo_Nuevo_corderos_2026-07-03.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Rivera Centro</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🐑 Índice de Enfriamiento diario (corderos)</div>
+  <table class="bano-tabla">
+    <tr><th>Día</th><th>CI (kJ/m²/h)</th><th>Nivel de riesgo</th></tr>
+<tr><td class="br-dia">vie 2026-07-03</td><td class="br-sc">1057</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">sáb 2026-07-04</td><td class="br-sc">1026</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">dom 2026-07-05</td><td class="br-sc">972</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">lun 2026-07-06</td><td class="br-sc">994</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">mar 2026-07-07</td><td class="br-sc">1020</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mié 2026-07-08</td><td class="br-sc">968</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">jue 2026-07-09</td><td class="br-sc">900</td><td class="br-niv" style="color:#2E7D32">Sin riesgo</td></tr>
+  </table>
+  <div class="bano-nota">Riesgo de sobrevivencia en las primeras 72 h de vida. Metodología INIA-SUL-FAgro-FVet (Chill Index; Nixon-Smith 1972, Donnelly 1984).</div>
+</div>
+  <img src="indices/graficos/Rivera_Centro_corderos.png" alt="Rivera Centro">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Centro_corderos.png','Rivera_Centro_corderos_2026-07-03.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Rivera Chico</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🐑 Índice de Enfriamiento diario (corderos)</div>
+  <table class="bano-tabla">
+    <tr><th>Día</th><th>CI (kJ/m²/h)</th><th>Nivel de riesgo</th></tr>
+<tr><td class="br-dia">vie 2026-07-03</td><td class="br-sc">1057</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">sáb 2026-07-04</td><td class="br-sc">1026</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">dom 2026-07-05</td><td class="br-sc">972</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">lun 2026-07-06</td><td class="br-sc">994</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">mar 2026-07-07</td><td class="br-sc">1020</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mié 2026-07-08</td><td class="br-sc">968</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">jue 2026-07-09</td><td class="br-sc">900</td><td class="br-niv" style="color:#2E7D32">Sin riesgo</td></tr>
+  </table>
+  <div class="bano-nota">Riesgo de sobrevivencia en las primeras 72 h de vida. Metodología INIA-SUL-FAgro-FVet (Chill Index; Nixon-Smith 1972, Donnelly 1984).</div>
+</div>
+  <img src="indices/graficos/Rivera_Chico_corderos.png" alt="Rivera Chico">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Chico_corderos.png','Rivera_Chico_corderos_2026-07-03.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Tranqueras</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🐑 Índice de Enfriamiento diario (corderos)</div>
+  <table class="bano-tabla">
+    <tr><th>Día</th><th>CI (kJ/m²/h)</th><th>Nivel de riesgo</th></tr>
+<tr><td class="br-dia">vie 2026-07-03</td><td class="br-sc">1058</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">sáb 2026-07-04</td><td class="br-sc">1013</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">dom 2026-07-05</td><td class="br-sc">980</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">lun 2026-07-06</td><td class="br-sc">999</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">mar 2026-07-07</td><td class="br-sc">1018</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mié 2026-07-08</td><td class="br-sc">950</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">jue 2026-07-09</td><td class="br-sc">892</td><td class="br-niv" style="color:#2E7D32">Sin riesgo</td></tr>
+  </table>
+  <div class="bano-nota">Riesgo de sobrevivencia en las primeras 72 h de vida. Metodología INIA-SUL-FAgro-FVet (Chill Index; Nixon-Smith 1972, Donnelly 1984).</div>
+</div>
+  <img src="indices/graficos/Tranqueras_corderos.png" alt="Tranqueras">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Tranqueras_corderos.png','Tranqueras_corderos_2026-07-03.jpg')">⬇ Descargar JPG</button>
+</div>
+<div class="graf-card">
+  <h3>📍 Villa Vichadero</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🐑 Índice de Enfriamiento diario (corderos)</div>
+  <table class="bano-tabla">
+    <tr><th>Día</th><th>CI (kJ/m²/h)</th><th>Nivel de riesgo</th></tr>
+<tr><td class="br-dia">vie 2026-07-03</td><td class="br-sc">1106</td><td class="br-niv" style="color:#EF6C00">Alto</td></tr>
+<tr><td class="br-dia">sáb 2026-07-04</td><td class="br-sc">1015</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">dom 2026-07-05</td><td class="br-sc">980</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+<tr><td class="br-dia">lun 2026-07-06</td><td class="br-sc">1018</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mar 2026-07-07</td><td class="br-sc">1044</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">mié 2026-07-08</td><td class="br-sc">1006</td><td class="br-niv" style="color:#F9A825">Medio</td></tr>
+<tr><td class="br-dia">jue 2026-07-09</td><td class="br-sc">935</td><td class="br-niv" style="color:#9E9D24">Bajo</td></tr>
+  </table>
+  <div class="bano-nota">Riesgo de sobrevivencia en las primeras 72 h de vida. Metodología INIA-SUL-FAgro-FVet (Chill Index; Nixon-Smith 1972, Donnelly 1984).</div>
+</div>
+  <img src="indices/graficos/Villa_Vichadero_corderos.png" alt="Villa Vichadero">
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Villa_Vichadero_corderos.png','Villa_Vichadero_corderos_2026-07-03.jpg')">⬇ Descargar JPG</button>
+</div>
+</div>
+<footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>
+</body>
+</html>
