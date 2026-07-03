@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Estres Termico Ganado Bovino y Ovino - Rivera</title>
+<title>Estrés Térmico Ganado Bovino y Ovino - Rivera</title>
 <style>*{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333}
 header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);color:white;
@@ -31,15 +31,28 @@ nav a:hover{opacity:1;text-decoration:underline}
          font-size:.82em;font-weight:600;cursor:pointer;
          border:none;font-family:'Segoe UI',sans-serif}
 .btn-dl:hover{background:#0D47A1}
+.bano-resumen{background:#f3f8f2;border:1px solid #c8e6c9;border-radius:8px;
+              padding:10px 12px;margin:4px 0 12px}
+.bano-vacio{background:#fbeeee;border-color:#f0c9c9;color:#8a4b4b;font-size:.82em}
+.bano-tit{font-size:.85em;font-weight:700;color:#1B5E20;margin-bottom:6px}
+.bano-tabla{width:100%;border-collapse:collapse;font-size:.8em}
+.bano-tabla th{text-align:left;color:#555;border-bottom:1px solid #cfe0cf;
+               padding:4px 6px;font-weight:600}
+.bano-tabla td{padding:4px 6px;border-bottom:1px solid #e6efe6}
+.br-dia{white-space:nowrap;font-weight:600;color:#333}
+.br-niv{font-weight:700;white-space:nowrap}
+.br-fr{color:#444}
+.br-sc{text-align:right;color:#666;white-space:nowrap}
+.bano-nota{font-size:.74em;color:#5c6b5c;margin-top:6px;line-height:1.5}
 footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}</style>
 </head>
 <body>
 <header>
-  <h1>Estres Termico Ganado Bovino y Ovino</h1>
+  <h1>Estrés Térmico Ganado Bovino y Ovino</h1>
   <p>Departamento de Rivera &nbsp;·&nbsp; 2026-07-03</p>
   <nav>
     <a href="index.html">← Inicio</a>
-    <a href="ganaderia.html">← Indices para la Ganaderia</a>
+    <a href="ganaderia.html">← Índices para la Ganadería</a>
   </nav>
 </header>
 
@@ -65,10 +78,10 @@ function descargarJPG(src, nombre) {
 </script>
 <div class="container">
 <div class="info-box">
-  <h2>Estres Termico Ganado Bovino y Ovino</h2>
-  <p class="desc">Indices de estres termico calculados con promedios diarios de temperatura, humedad, viento y radiacion solar. El grafico muestra los tres sistemas productivos comparativamente. ITH LECHERO (Valtorta y Gallardo 1996, INIA): temperatura y humedad. Las vacas lecheras de alta produccion son las mas sensibles al calor. ITH CARNE AJUSTADO (Mader y col. 2006, INIA): incorpora el efecto del viento (reduce el estres) y la radiacion solar (lo aumenta). OVINO (adaptacion DDR - no INIA): se muestra la temperatura media diaria con los umbrales termicos propios de los ovinos, que no tienen un indice ITH especifico validado por INIA. Umbrales: confort 10-26 C, estres leve 26-30 C, estres severo 30-35 C, riesgo de mortalidad > 35 C.</p>
-  <div class="formula">Calculo: ITH lechero = (1,8xTa+32) - (0,55 - 0,55xHR/100) x (1,8xTa-26) | ITH carne ajustado = 6,8 + ITH lechero - (3,075xVV) + (0,0114xRAD) | VV en m/s | RAD en W/m2 | Ovino: temperatura media diaria (C)</div>
-  <p class="interp">Interpretacion: Lechero INIA: <68 sin riesgo | 68-72 alerta | 72-79 peligro | >=79 emergencia | Carne INIA: <69 sin riesgo | 69-75 alerta | 75-79 peligro | >=79 emergencia | Ovino DDR: <26 C confort | 26-30 estres leve | 30-35 severo | >35 mortalidad</p>
+  <h2>Estrés Térmico Ganado Bovino y Ovino</h2>
+  <p class="desc">Índices de estrés térmico calculados con promedios diarios de temperatura, humedad, viento y radiación solar. El gráfico muestra los tres sistemas productivos comparativamente. ITH LECHERO (Valtorta y Gallardo 1996, INIA): temperatura y humedad. Las vacas lecheras de alta producción son las más sensibles al calor. ITH CARNE AJUSTADO (Mader y col. 2006, INIA): incorpora el efecto del viento (reduce el estrés) y la radiación solar (lo aumenta). OVINO (adaptación DDR - no INIA): se muestra la temperatura media diaria con los umbrales térmicos propios de los ovinos, que no tienen un índice ITH específico validado por INIA. Umbrales: confort 10-26 C, estrés leve 26-30 C, estrés severo 30-35 C, riesgo de mortalidad > 35 C.</p>
+  <div class="formula">Cálculo: ITH lechero = (1,8xTa+32) - (0,55 - 0,55xHR/100) x (1,8xTa-26) | ITH carne ajustado = 6,8 + ITH lechero - (3,075xVV) + (0,0114xRAD) | VV en m/s | RAD en W/m2 | Ovino: temperatura media diaria (C)</div>
+  <p class="interp">Interpretación: Lechero INIA: <68 sin riesgo | 68-72 alerta | 72-79 peligro | >=79 emergencia | Carne INIA: <69 sin riesgo | 69-75 alerta | 75-79 peligro | >=79 emergencia | Ovino DDR: <26 C confort | 26-30 estrés leve | 30-35 severo | >35 mortalidad</p>
 </div>
 <div class="graf-card">
   <h3>📍 Estación Ataques</h3>

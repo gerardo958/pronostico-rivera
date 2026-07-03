@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grados Dia de Crecimiento (GDD) - Rivera</title>
+<title>Grados Día de Crecimiento (GDD) - Rivera</title>
 <style>*{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333}
 header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);color:white;
@@ -31,15 +31,28 @@ nav a:hover{opacity:1;text-decoration:underline}
          font-size:.82em;font-weight:600;cursor:pointer;
          border:none;font-family:'Segoe UI',sans-serif}
 .btn-dl:hover{background:#0D47A1}
+.bano-resumen{background:#f3f8f2;border:1px solid #c8e6c9;border-radius:8px;
+              padding:10px 12px;margin:4px 0 12px}
+.bano-vacio{background:#fbeeee;border-color:#f0c9c9;color:#8a4b4b;font-size:.82em}
+.bano-tit{font-size:.85em;font-weight:700;color:#1B5E20;margin-bottom:6px}
+.bano-tabla{width:100%;border-collapse:collapse;font-size:.8em}
+.bano-tabla th{text-align:left;color:#555;border-bottom:1px solid #cfe0cf;
+               padding:4px 6px;font-weight:600}
+.bano-tabla td{padding:4px 6px;border-bottom:1px solid #e6efe6}
+.br-dia{white-space:nowrap;font-weight:600;color:#333}
+.br-niv{font-weight:700;white-space:nowrap}
+.br-fr{color:#444}
+.br-sc{text-align:right;color:#666;white-space:nowrap}
+.bano-nota{font-size:.74em;color:#5c6b5c;margin-top:6px;line-height:1.5}
 footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}</style>
 </head>
 <body>
 <header>
-  <h1>Grados Dia de Crecimiento (GDD)</h1>
+  <h1>Grados Día de Crecimiento (GDD)</h1>
   <p>Departamento de Rivera &nbsp;·&nbsp; 2026-07-03</p>
   <nav>
     <a href="index.html">← Inicio</a>
-    <a href="agricultura.html">← Indices para la Agricultura</a>
+    <a href="agricultura.html">← Índices para la Agricultura</a>
   </nav>
 </header>
 
@@ -65,10 +78,10 @@ function descargarJPG(src, nombre) {
 </script>
 <div class="container">
 <div class="info-box">
-  <h2>Grados Dia de Crecimiento (GDD)</h2>
-  <p class="desc">Cuantifica la acumulacion de calor disponible para el desarrollo de los cultivos. Permite predecir etapas fenologicas con mayor precision que el calendario.</p>
-  <div class="formula">Calculo: GDD diario = suma horaria de max(0, T - Tbase) dividida entre 24  [Tbase maiz: 10 C  |  Tbase trigo: 0 C  |  Tbase sandia: 10 C]</div>
-  <p class="interp">Interpretacion: Ref. maiz - siembra a floracion: ~850 GDD. Ref. trigo - emergencia a espigado: ~1.600 GDD.</p>
+  <h2>Grados Día de Crecimiento (GDD)</h2>
+  <p class="desc">Cuantifica la acumulación de calor disponible para el desarrollo de los cultivos. Permite predecir etapas fenológicas con mayor precisión que el calendario.</p>
+  <div class="formula">Cálculo: GDD diario = suma horaria de max(0, T - Tbase) dividida entre 24  [Tbase maíz: 10 C  |  Tbase trigo: 0 C  |  Tbase sandía: 10 C]</div>
+  <p class="interp">Interpretación: Ref. maíz - siembra a floración: ~850 GDD. Ref. trigo - emergencia a espigado: ~1.600 GDD.</p>
 </div>
 <div class="graf-card">
   <h3>📍 Estación Ataques</h3>
