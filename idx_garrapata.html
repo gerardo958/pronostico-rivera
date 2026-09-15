@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Condiciones para Desarrollo de Garrapata (IRG 7 días) - Rivera</title>
+<title>Condiciones para el Desarrollo de la Garrapata (Rhipicephalus microplus, 7 días) - Rivera</title>
 <style>*{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333}
 header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);color:white;
@@ -54,8 +54,8 @@ footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}<
 </head>
 <body>
 <header>
-  <h1>Condiciones para Desarrollo de Garrapata (IRG 7 días)</h1>
-  <p>Departamento de Rivera &nbsp;·&nbsp; 2026-09-14</p>
+  <h1>Condiciones para el Desarrollo de la Garrapata (Rhipicephalus microplus, 7 días)</h1>
+  <p>Departamento de Rivera &nbsp;·&nbsp; 2026-09-15</p>
   <nav>
     <a href="index.html">← Inicio</a>
     <a href="ganaderia.html">← Índices para la Ganadería</a>
@@ -84,65 +84,67 @@ function descargarJPG(src, nombre) {
 </script>
 <div class="container">
 <div class="info-box">
-  <h2>Condiciones para Desarrollo de Garrapata (IRG 7 días)</h2>
-  <p class="desc">Acumula los grados-día favorables para el desarrollo de la garrapata bovina (Rhipicephalus microplus) durante el periodo de pronóstico de 7 días. Temperatura base: 14,5 C. La humedad actúa como multiplicador. Nota: el ciclo generacional completo requiere aprox. 580 grados-día acumulados a lo largo de semanas o meses.</p>
-  <div class="formula">Cálculo: IRG horario = max(0, T - 14,5) x factor_HR  [HR >= 70%: 1,0  |  HR 50-70%: 0,5  |  HR < 50%: 0]</div>
-  <p class="interp">Interpretación: < 17: Bajo  |  17-34: Moderado  |  34-60: Alto  |  > 60: Muy alto  (umbrales calibrados para 7 días)</p>
+  <h2>Condiciones para el Desarrollo de la Garrapata (Rhipicephalus microplus, 7 días)</h2>
+  <p class="desc">Acumula la energía térmica disponible para el desarrollo de la fase libre de la garrapata bovina (huevo y larva sobre el pasto), la parte del ciclo que depende del clima. Temperatura umbral de desarrollo: 15,5 °C, medida sobre la temperatura del suelo a 0 cm, que es donde se incuba el huevo. La humedad actúa como condición limitante, porque la desecación es la principal causa de muerte de huevos y larvas. Se aplica además una penalización por frío nocturno: por debajo de 5 °C de mínima el aporte del día se anula y entre 5 y 14 °C se reduce, porque el enfriamiento mata los huevos. Referencia biológica: la incubación de una tanda de huevos requiere alrededor de 275 grados-día sobre 15,5 °C; una semana aporta una fracción de ese total.</p>
+  <div class="formula">Cálculo: IRG horario = máx(0, T_suelo0cm - 15,5) x factor_HR  [HR >= 70%: 1,0  |  HR 50-70%: 0,5  |  HR < 50%: 0]. Acumulado semanal = suma de las 168 horas / 24 (grados-día), con penalización por frío según la mínima diaria.</div>
+  <p class="desc">El IRG estima, semana a semana, qué tan favorables son la temperatura y la humedad para el desarrollo del huevo de la garrapata en el pasto. Usa la temperatura del suelo a 0 cm, donde el huevo se incuba, y mide esa etapa del ciclo que ocurre a la intemperie; no mide la cantidad de garrapatas sobre el animal. Su utilidad principal es como señal de estación: Rivera está en el límite sur del área donde la garrapata puede establecerse de forma permanente, y aquí el frío del otoño y el invierno frena el desarrollo del huevo y define cuándo se abre y se cierra la ventana en que puede haber eclosión. Conviene leer la tendencia entre semanas (que suba hacia la primavera, que baje en invierno) más que el color de una semana aislada. También ayuda a anticipar el momento de la primera generación, a fines del invierno y principios de la primavera, que es la de mayor peso porque origina las camadas grandes de verano y otoño y es el blanco del control estratégico. El índice no indica cuántas garrapatas hay sobre los animales ni reemplaza el conteo a campo: la decisión de tratar se toma por ese conteo (del orden de 30 hembras por animal) y por el estado de resistencia, dentro del esquema de control estratégico. Los umbrales de color son provisionales y deben ajustarse con datos locales de infestación.</p>
+  <p class="interp">Interpretación: < 17: Bajo  |  17-34: Moderado  |  34-60: Alto  |  > 60: Muy alto  (grados-día por semana; umbrales provisionales, a ajustar con datos de infestación)</p>
+  <p style="font-size:.82em;color:#6b6b6b;margin-top:14px;font-style:italic">NOTA: agradecemos los valiosos aportes realizados por Claudio Soto del MGAP de Artigas.</p>
 </div>
 <div class="graf-card">
   <h3>📍 Estación Ataques</h3>
   <img src="indices/graficos/Estación_Ataques_garrapata.png" alt="Estación Ataques">
-  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Estación_Ataques_garrapata.png','Estación_Ataques_garrapata_2026-09-14.jpg')">⬇ Descargar JPG</button>
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Estación_Ataques_garrapata.png','Estación_Ataques_garrapata_2026-09-15.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Las Flores</h3>
   <img src="indices/graficos/Las_Flores_garrapata.png" alt="Las Flores">
-  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Las_Flores_garrapata.png','Las_Flores_garrapata_2026-09-14.jpg')">⬇ Descargar JPG</button>
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Las_Flores_garrapata.png','Las_Flores_garrapata_2026-09-15.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Minas de Corrales</h3>
   <img src="indices/graficos/Minas_de_Corrales_garrapata.png" alt="Minas de Corrales">
-  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Minas_de_Corrales_garrapata.png','Minas_de_Corrales_garrapata_2026-09-14.jpg')">⬇ Descargar JPG</button>
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Minas_de_Corrales_garrapata.png','Minas_de_Corrales_garrapata_2026-09-15.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Moirones</h3>
   <img src="indices/graficos/Moirones_garrapata.png" alt="Moirones">
-  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Moirones_garrapata.png','Moirones_garrapata_2026-09-14.jpg')">⬇ Descargar JPG</button>
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Moirones_garrapata.png','Moirones_garrapata_2026-09-15.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Paso Ataques</h3>
   <img src="indices/graficos/Paso_Ataques_garrapata.png" alt="Paso Ataques">
-  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_Ataques_garrapata.png','Paso_Ataques_garrapata_2026-09-14.jpg')">⬇ Descargar JPG</button>
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_Ataques_garrapata.png','Paso_Ataques_garrapata_2026-09-15.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Paso Lapuente</h3>
   <img src="indices/graficos/Paso_Lapuente_garrapata.png" alt="Paso Lapuente">
-  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_Lapuente_garrapata.png','Paso_Lapuente_garrapata_2026-09-14.jpg')">⬇ Descargar JPG</button>
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_Lapuente_garrapata.png','Paso_Lapuente_garrapata_2026-09-15.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Paso Manuel Díaz</h3>
   <img src="indices/graficos/Paso_Manuel_Díaz_garrapata.png" alt="Paso Manuel Díaz">
-  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_Manuel_Díaz_garrapata.png','Paso_Manuel_Díaz_garrapata_2026-09-14.jpg')">⬇ Descargar JPG</button>
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Paso_Manuel_Díaz_garrapata.png','Paso_Manuel_Díaz_garrapata_2026-09-15.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Rincón de Moraes</h3>
   <img src="indices/graficos/Rincón_de_Moraes_garrapata.png" alt="Rincón de Moraes">
-  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rincón_de_Moraes_garrapata.png','Rincón_de_Moraes_garrapata_2026-09-14.jpg')">⬇ Descargar JPG</button>
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rincón_de_Moraes_garrapata.png','Rincón_de_Moraes_garrapata_2026-09-15.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Rivera Centro</h3>
   <img src="indices/graficos/Rivera_Centro_garrapata.png" alt="Rivera Centro">
-  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Centro_garrapata.png','Rivera_Centro_garrapata_2026-09-14.jpg')">⬇ Descargar JPG</button>
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Rivera_Centro_garrapata.png','Rivera_Centro_garrapata_2026-09-15.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Tranqueras</h3>
   <img src="indices/graficos/Tranqueras_garrapata.png" alt="Tranqueras">
-  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Tranqueras_garrapata.png','Tranqueras_garrapata_2026-09-14.jpg')">⬇ Descargar JPG</button>
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Tranqueras_garrapata.png','Tranqueras_garrapata_2026-09-15.jpg')">⬇ Descargar JPG</button>
 </div>
 <div class="graf-card">
   <h3>📍 Villa Vichadero</h3>
   <img src="indices/graficos/Villa_Vichadero_garrapata.png" alt="Villa Vichadero">
-  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Villa_Vichadero_garrapata.png','Villa_Vichadero_garrapata_2026-09-14.jpg')">⬇ Descargar JPG</button>
+  <button class="btn-dl" onclick="descargarJPG('indices/graficos/Villa_Vichadero_garrapata.png','Villa_Vichadero_garrapata_2026-09-15.jpg')">⬇ Descargar JPG</button>
 </div>
 </div>
 <footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>
