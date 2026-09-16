@@ -1,0 +1,4 @@
+cd /d "C:\Users\G A\Desktop\pronostico-rivera"
+del index.html
+ren index_real.html index.html
+git add -A && git commit -m "Reapertura del sistema" && git push

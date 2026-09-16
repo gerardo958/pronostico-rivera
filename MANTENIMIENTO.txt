@@ -1,0 +1,4 @@
+cd /d "C:\Users\G A\Desktop\pronostico-rivera"
+ren index.html index_real.html
+copy "C:\Users\G A\Downloads\index_mantenimiento.html" index.html
+git add -A && git commit -m "Aviso de mantenimiento" && git push
