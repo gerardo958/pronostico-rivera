@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horas de frío para frutales - Rivera</title>
+<style>*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',sans-serif;background:#f0f4f8;color:#333}
+header{background:linear-gradient(135deg,#0D47A1,#1565C0,#1976D2);color:white;
+       padding:18px 24px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
+header h1{font-size:1.5em;margin-bottom:4px}
+header p{opacity:.85;font-size:.88em;margin-bottom:6px}
+nav a{color:white;opacity:.8;text-decoration:none;font-size:.85em;margin-right:14px}
+nav a:hover{opacity:1;text-decoration:underline}
+.container{max-width:1100px;margin:20px auto;padding:0 16px}
+.info-box{background:white;border-radius:10px;padding:18px 22px;
+           margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.info-box h2{color:#1565C0;font-size:1.1em;margin-bottom:10px}
+.desc{font-size:.9em;line-height:1.7;color:#444;margin-bottom:10px}
+.formula{font-family:'Courier New',monospace;font-size:.82em;background:#e8f4fd;
+          padding:10px 14px;border-left:4px solid #1565C0;border-radius:4px;
+          margin-bottom:8px;color:#0D47A1;white-space:pre-wrap}
+.interp{font-size:.83em;color:#555;font-style:italic;line-height:1.6}
+.graf-card{background:white;border-radius:10px;padding:14px 18px;
+            margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.graf-card h3{color:#1565C0;font-size:.95em;margin-bottom:10px;
+               border-bottom:2px solid #e3f2fd;padding-bottom:6px}
+.graf-card img{width:100%;border-radius:6px;display:block}
+.btn-dl{display:inline-block;margin-top:10px;padding:6px 18px;
+         background:#1565C0;color:white;border-radius:20px;
+         font-size:.82em;font-weight:600;cursor:pointer;
+         border:none;font-family:'Segoe UI',sans-serif}
+.btn-dl:hover{background:#0D47A1}
+.bano-resumen{background:#f3f8f2;border:1px solid #c8e6c9;border-radius:8px;
+              padding:10px 12px;margin:4px 0 12px}
+.bano-vacio{background:#fbeeee;border-color:#f0c9c9;color:#8a4b4b;font-size:.82em}
+.bano-tit{font-size:.85em;font-weight:700;color:#1B5E20;margin-bottom:6px}
+.bano-tabla{width:100%;border-collapse:collapse;font-size:.8em}
+.bano-tabla th{text-align:left;color:#555;border-bottom:1px solid #cfe0cf;
+               padding:4px 6px;font-weight:600}
+.bano-tabla td{padding:4px 6px;border-bottom:1px solid #e6efe6}
+.br-dia{white-space:nowrap;font-weight:600;color:#333}
+.br-niv{font-weight:700;white-space:nowrap}
+.br-fr{color:#444}
+.br-sc{text-align:right;color:#666;white-space:nowrap}
+.bano-nota{font-size:.74em;color:#5c6b5c;margin-top:6px;line-height:1.5}
+.bano-informe{font-size:.8em;color:#33413a;line-height:1.55;background:#eef4ec;
+              border-left:3px solid #2E7D32;border-radius:4px;padding:8px 10px;margin-bottom:8px}
+.br-mot{color:#7a4a4a;font-size:.95em}
+.aviso-hoy{background:#FFF3CD;border:1px solid #FFE08A;border-left:4px solid #E0A800;
+           color:#6b5300;border-radius:6px;padding:10px 14px;margin-bottom:12px;
+           font-size:.9em;font-weight:600}
+footer{text-align:center;padding:20px;color:#888;font-size:.8em;margin-top:8px}</style>
+</head>
+<body>
+<header>
+  <h1>Horas de frío para frutales</h1>
+  <p>Departamento de Rivera &nbsp;·&nbsp; 2026-09-17</p>
+  <nav>
+    <a href="index.html">← Inicio</a>
+    <a href="agricultura.html">← Índices para la Agricultura</a>
+  </nav>
+</header>
+
+<script>
+function descargarJPG(src, nombre) {
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function() {
+        var canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+        var a = document.createElement('a');
+        a.download = nombre;
+        a.href = canvas.toDataURL('image/jpeg', 0.95);
+        a.click();
+    };
+    img.src = src;
+}
+</script>
+<div class="container">
+<div class="info-box">
+  <h2>Horas de frío para frutales</h2>
+  <p class="desc">Para cada localidad, horas de frío acumuladas desde el inicio del reposo invernal (15 de mayo) hasta hoy, y su posición frente al requerimiento de cada especie frutal de hoja caduca. Un acumulado por localidad; cambia el requerimiento de cada especie.</p>
+  <div class="formula">Cálculo: Horas de frío = cantidad de horas con temperatura ≤ 7 °C acumuladas entre el 15 de mayo y hoy, sobre la serie real del año.</div>
+  <p class="interp">Interpretación: Cada especie necesita un rango de horas de frío para romper la dormancia; por debajo del mínimo la brotación puede ser despareja.</p>
+</div>
+<div class="graf-card">
+  <h3>📍 Minas de Corrales</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">❄ Horas de frío acumuladas desde el 2026-05-15</div>
+  <p style="margin:2px 0 8px;"><span style="font-size:1.5em;font-weight:700;">266.0 HF</span><span style="color:#6b6b6b;font-size:.85em;"> hasta hoy</span></p>
+  <table class="bano-tabla">
+    <tr><th>Especie</th><th>Requerido</th><th>Estado</th></tr>
+<tr><td class="br-dia">Almendro</td><td class="br-fr">200–500 HF</td><td><span style="background:#EAF3DE;color:#27500A;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">dentro del rango requerido</span></td></tr>
+<tr><td class="br-dia">Duraznero/Nectarino</td><td class="br-fr">400–700 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Ciruelo</td><td class="br-fr">300–600 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Peral</td><td class="br-fr">800–1000 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Manzano</td><td class="br-fr">800–1200 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Vid</td><td class="br-fr">200–300 HF</td><td><span style="background:#EAF3DE;color:#27500A;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">dentro del rango requerido</span></td></tr>
+  </table>
+  <div class="bano-nota">El acumulado es el mismo para todas las especies (una localidad, una fecha de inicio); cambia el requerimiento de cada una. Horas contadas con T ≤ 7 °C.</div>
+</div>
+</div>
+<div class="graf-card">
+  <h3>📍 Rivera Centro</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">❄ Horas de frío acumuladas desde el 2026-05-15</div>
+  <p style="margin:2px 0 8px;"><span style="font-size:1.5em;font-weight:700;">252.0 HF</span><span style="color:#6b6b6b;font-size:.85em;"> hasta hoy</span></p>
+  <table class="bano-tabla">
+    <tr><th>Especie</th><th>Requerido</th><th>Estado</th></tr>
+<tr><td class="br-dia">Almendro</td><td class="br-fr">200–500 HF</td><td><span style="background:#EAF3DE;color:#27500A;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">dentro del rango requerido</span></td></tr>
+<tr><td class="br-dia">Duraznero/Nectarino</td><td class="br-fr">400–700 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Ciruelo</td><td class="br-fr">300–600 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Peral</td><td class="br-fr">800–1000 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Manzano</td><td class="br-fr">800–1200 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Vid</td><td class="br-fr">200–300 HF</td><td><span style="background:#EAF3DE;color:#27500A;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">dentro del rango requerido</span></td></tr>
+  </table>
+  <div class="bano-nota">El acumulado es el mismo para todas las especies (una localidad, una fecha de inicio); cambia el requerimiento de cada una. Horas contadas con T ≤ 7 °C.</div>
+</div>
+</div>
+<div class="graf-card">
+  <h3>📍 Tranqueras</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">❄ Horas de frío acumuladas desde el 2026-05-15</div>
+  <p style="margin:2px 0 8px;"><span style="font-size:1.5em;font-weight:700;">301.0 HF</span><span style="color:#6b6b6b;font-size:.85em;"> hasta hoy</span></p>
+  <table class="bano-tabla">
+    <tr><th>Especie</th><th>Requerido</th><th>Estado</th></tr>
+<tr><td class="br-dia">Almendro</td><td class="br-fr">200–500 HF</td><td><span style="background:#EAF3DE;color:#27500A;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">dentro del rango requerido</span></td></tr>
+<tr><td class="br-dia">Duraznero/Nectarino</td><td class="br-fr">400–700 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Ciruelo</td><td class="br-fr">300–600 HF</td><td><span style="background:#EAF3DE;color:#27500A;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">dentro del rango requerido</span></td></tr>
+<tr><td class="br-dia">Peral</td><td class="br-fr">800–1000 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Manzano</td><td class="br-fr">800–1200 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Vid</td><td class="br-fr">200–300 HF</td><td><span style="background:#EAF3DE;color:#27500A;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">requerimiento cubierto</span></td></tr>
+  </table>
+  <div class="bano-nota">El acumulado es el mismo para todas las especies (una localidad, una fecha de inicio); cambia el requerimiento de cada una. Horas contadas con T ≤ 7 °C.</div>
+</div>
+</div>
+<div class="graf-card">
+  <h3>📍 Villa Vichadero</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">❄ Horas de frío acumuladas desde el 2026-05-15</div>
+  <p style="margin:2px 0 8px;"><span style="font-size:1.5em;font-weight:700;">274.0 HF</span><span style="color:#6b6b6b;font-size:.85em;"> hasta hoy</span></p>
+  <table class="bano-tabla">
+    <tr><th>Especie</th><th>Requerido</th><th>Estado</th></tr>
+<tr><td class="br-dia">Almendro</td><td class="br-fr">200–500 HF</td><td><span style="background:#EAF3DE;color:#27500A;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">dentro del rango requerido</span></td></tr>
+<tr><td class="br-dia">Duraznero/Nectarino</td><td class="br-fr">400–700 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Ciruelo</td><td class="br-fr">300–600 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Peral</td><td class="br-fr">800–1000 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Manzano</td><td class="br-fr">800–1200 HF</td><td><span style="background:#FAEEDA;color:#633806;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">por debajo del mínimo</span></td></tr>
+<tr><td class="br-dia">Vid</td><td class="br-fr">200–300 HF</td><td><span style="background:#EAF3DE;color:#27500A;font-size:.82em;padding:2px 8px;border-radius:6px;white-space:nowrap;">dentro del rango requerido</span></td></tr>
+  </table>
+  <div class="bano-nota">El acumulado es el mismo para todas las especies (una localidad, una fecha de inicio); cambia el requerimiento de cada una. Horas contadas con T ≤ 7 °C.</div>
+</div>
+</div>
+</div>
+<footer>Ing. Agro. Gerardo Díaz Romeo &nbsp;·&nbsp; División de Desarrollo Rural &nbsp;·&nbsp; Intendencia de Rivera</footer>
+</body>
+</html>
