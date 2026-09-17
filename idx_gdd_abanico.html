@@ -87,7 +87,77 @@ function descargarJPG(src, nombre) {
   <h2>Grados-día acumulados por fecha de siembra</h2>
   <p class="desc">Para cada localidad, muestra los grados-día de crecimiento (GDD) acumulados desde 25 fechas de inicio posibles —un lunes por semana hacia atrás— hasta el día de hoy. El productor elige la fila con el lunes más cercano a cuando sembró o trasplantó y lee el acumulado, para asociarlo a la etapa del cultivo. No requiere cargar la fecha en el sistema.</p>
   <div class="formula">Cálculo: GDD acumulado(desde el lunes L) = suma de los GDD diarios entre L y hoy, sobre la serie real del año (reanálisis empalmado con el pronóstico).</div>
-  <p class="interp">Interpretación: Se compara el acumulado con el requerimiento del cultivo (por ejemplo, grados-día a floración) para estimar en qué etapa se encuentra.</p>
+  <p class="interp">Interpretación: Se compara el acumulado con el requerimiento del cultivo (por ejemplo, grados-día a floración) para estimar en qué etapa se encuentra. Guía para sandía (base 10 °C, cultivar Crimson Sweet; Trentin et al., Rio Grande do Sul, región de clima parecido al de Rivera): desde la siembra, emergencia alrededor de 100–130 grados-día, floración entre 515 y 545, y cosecha entre 1.285 y 1.387. Son valores orientativos de un cultivar y una región; otras variedades y climas cambian las cifras.</p>
+</div>
+<div class="graf-card">
+  <h3>📍 Estación Ataques</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🌱 Grados-día acumulados por fecha de siembra</div>
+  <table class="bano-tabla">
+    <tr><th>Desde</th><th>GDD acumulados (hasta hoy)</th></tr>
+<tr><td class="br-dia">lunes 14 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">12.8</td></tr>
+<tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">31.0</td></tr>
+<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">59.4</td></tr>
+<tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">90.3</td></tr>
+<tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">118.5</td></tr>
+<tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">141.2</td></tr>
+<tr><td class="br-dia">lunes 3 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">176.2</td></tr>
+<tr><td class="br-dia">lunes 27 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">223.3</td></tr>
+<tr><td class="br-dia">lunes 20 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">255.5</td></tr>
+<tr><td class="br-dia">lunes 13 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">304.2</td></tr>
+<tr><td class="br-dia">lunes 6 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">316.0</td></tr>
+<tr><td class="br-dia">lunes 29 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">316.0</td></tr>
+<tr><td class="br-dia">lunes 22 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">316.0</td></tr>
+<tr><td class="br-dia">lunes 15 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">317.6</td></tr>
+<tr><td class="br-dia">lunes 8 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">335.4</td></tr>
+<tr><td class="br-dia">lunes 1 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">363.1</td></tr>
+<tr><td class="br-dia">lunes 25 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">384.9</td></tr>
+<tr><td class="br-dia">lunes 18 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">394.1</td></tr>
+<tr><td class="br-dia">lunes 11 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">408.7</td></tr>
+<tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">452.3</td></tr>
+<tr><td class="br-dia">lunes 27 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">481.3</td></tr>
+<tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">539.7</td></tr>
+<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">613.1</td></tr>
+<tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">672.1</td></tr>
+<tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">755.7</td></tr>
+  </table>
+  <div class="bano-nota">Elija la fila con la fecha en que sembró o trasplantó y lea los grados-día acumulados hasta hoy. Los valores con asterisco (*) tienen días sin dato en el período y son parciales.</div>
+</div>
+</div>
+<div class="graf-card">
+  <h3>📍 Las Flores</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🌱 Grados-día acumulados por fecha de siembra</div>
+  <table class="bano-tabla">
+    <tr><th>Desde</th><th>GDD acumulados (hasta hoy)</th></tr>
+<tr><td class="br-dia">lunes 14 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">11.1</td></tr>
+<tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">25.3</td></tr>
+<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">50.6</td></tr>
+<tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">75.2</td></tr>
+<tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">95.6</td></tr>
+<tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">116.9</td></tr>
+<tr><td class="br-dia">lunes 3 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">149.4</td></tr>
+<tr><td class="br-dia">lunes 27 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">196.8</td></tr>
+<tr><td class="br-dia">lunes 20 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">228.3</td></tr>
+<tr><td class="br-dia">lunes 13 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">276.3</td></tr>
+<tr><td class="br-dia">lunes 6 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">285.5</td></tr>
+<tr><td class="br-dia">lunes 29 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">285.5</td></tr>
+<tr><td class="br-dia">lunes 22 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">285.5</td></tr>
+<tr><td class="br-dia">lunes 15 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">286.9</td></tr>
+<tr><td class="br-dia">lunes 8 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">301.6</td></tr>
+<tr><td class="br-dia">lunes 1 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">330.4</td></tr>
+<tr><td class="br-dia">lunes 25 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">355.2</td></tr>
+<tr><td class="br-dia">lunes 18 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">364.4</td></tr>
+<tr><td class="br-dia">lunes 11 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">376.9</td></tr>
+<tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">417.9</td></tr>
+<tr><td class="br-dia">lunes 27 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">444.1</td></tr>
+<tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">501.4</td></tr>
+<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">573.8</td></tr>
+<tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">631.5</td></tr>
+<tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">712.9</td></tr>
+  </table>
+  <div class="bano-nota">Elija la fila con la fecha en que sembró o trasplantó y lea los grados-día acumulados hasta hoy. Los valores con asterisco (*) tienen días sin dato en el período y son parciales.</div>
+</div>
 </div>
 <div class="graf-card">
   <h3>📍 Minas de Corrales</h3>
@@ -95,31 +165,206 @@ function descargarJPG(src, nombre) {
   <div class="bano-tit">🌱 Grados-día acumulados por fecha de siembra</div>
   <table class="bano-tabla">
     <tr><th>Desde</th><th>GDD acumulados (hasta hoy)</th></tr>
-<tr><td class="br-dia">lunes 14 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">11.9</td></tr>
-<tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">27.7</td></tr>
-<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">53.2</td></tr>
-<tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">80.3</td></tr>
-<tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">104.1</td></tr>
-<tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">126.6</td></tr>
-<tr><td class="br-dia">lunes 3 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">158.8</td></tr>
-<tr><td class="br-dia">lunes 27 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">206.3</td></tr>
-<tr><td class="br-dia">lunes 20 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">238.3</td></tr>
-<tr><td class="br-dia">lunes 13 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">284.4</td></tr>
-<tr><td class="br-dia">lunes 6 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">294.8</td></tr>
-<tr><td class="br-dia">lunes 29 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">294.8</td></tr>
-<tr><td class="br-dia">lunes 22 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">294.8</td></tr>
-<tr><td class="br-dia">lunes 15 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">296.2</td></tr>
-<tr><td class="br-dia">lunes 8 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">312.6</td></tr>
-<tr><td class="br-dia">lunes 1 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">340.8</td></tr>
-<tr><td class="br-dia">lunes 25 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">364.8</td></tr>
-<tr><td class="br-dia">lunes 18 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">374.6</td></tr>
-<tr><td class="br-dia">lunes 11 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">388.0</td></tr>
-<tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">428.7</td></tr>
+<tr><td class="br-dia">lunes 14 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">12.5</td></tr>
+<tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">28.7</td></tr>
+<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">54.6</td></tr>
+<tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">81.7</td></tr>
+<tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">104.4</td></tr>
+<tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">126.7</td></tr>
+<tr><td class="br-dia">lunes 3 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">159.4</td></tr>
+<tr><td class="br-dia">lunes 27 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">207.6</td></tr>
+<tr><td class="br-dia">lunes 20 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">239.6</td></tr>
+<tr><td class="br-dia">lunes 13 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">286.6</td></tr>
+<tr><td class="br-dia">lunes 6 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">296.9</td></tr>
+<tr><td class="br-dia">lunes 29 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">296.9</td></tr>
+<tr><td class="br-dia">lunes 22 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">296.9</td></tr>
+<tr><td class="br-dia">lunes 15 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">298.5</td></tr>
+<tr><td class="br-dia">lunes 8 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">314.9</td></tr>
+<tr><td class="br-dia">lunes 1 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">344.0</td></tr>
+<tr><td class="br-dia">lunes 25 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">368.4</td></tr>
+<tr><td class="br-dia">lunes 18 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">378.6</td></tr>
+<tr><td class="br-dia">lunes 11 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">392.4</td></tr>
+<tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">433.3</td></tr>
+<tr><td class="br-dia">lunes 27 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">460.2</td></tr>
+<tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">519.6</td></tr>
+<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">592.6</td></tr>
+<tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">651.8</td></tr>
+<tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">735.7</td></tr>
+  </table>
+  <div class="bano-nota">Elija la fila con la fecha en que sembró o trasplantó y lea los grados-día acumulados hasta hoy. Los valores con asterisco (*) tienen días sin dato en el período y son parciales.</div>
+</div>
+</div>
+<div class="graf-card">
+  <h3>📍 Moirones</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🌱 Grados-día acumulados por fecha de siembra</div>
+  <table class="bano-tabla">
+    <tr><th>Desde</th><th>GDD acumulados (hasta hoy)</th></tr>
+<tr><td class="br-dia">lunes 14 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">9.9</td></tr>
+<tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">23.1</td></tr>
+<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">46.4</td></tr>
+<tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">70.4</td></tr>
+<tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">91.9</td></tr>
+<tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">112.2</td></tr>
+<tr><td class="br-dia">lunes 3 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">143.4</td></tr>
+<tr><td class="br-dia">lunes 27 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">188.2</td></tr>
+<tr><td class="br-dia">lunes 20 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">218.8</td></tr>
+<tr><td class="br-dia">lunes 13 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">263.6</td></tr>
+<tr><td class="br-dia">lunes 6 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">272.0</td></tr>
+<tr><td class="br-dia">lunes 29 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">272.0</td></tr>
+<tr><td class="br-dia">lunes 22 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">272.0</td></tr>
+<tr><td class="br-dia">lunes 15 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">273.1</td></tr>
+<tr><td class="br-dia">lunes 8 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">286.9</td></tr>
+<tr><td class="br-dia">lunes 1 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">314.0</td></tr>
+<tr><td class="br-dia">lunes 25 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">336.3</td></tr>
+<tr><td class="br-dia">lunes 18 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">344.4</td></tr>
+<tr><td class="br-dia">lunes 11 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">355.6</td></tr>
+<tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">395.4</td></tr>
+<tr><td class="br-dia">lunes 27 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">419.4</td></tr>
+<tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">475.2</td></tr>
+<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">545.5</td></tr>
+<tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">602.5</td></tr>
+<tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">681.5</td></tr>
+  </table>
+  <div class="bano-nota">Elija la fila con la fecha en que sembró o trasplantó y lea los grados-día acumulados hasta hoy. Los valores con asterisco (*) tienen días sin dato en el período y son parciales.</div>
+</div>
+</div>
+<div class="graf-card">
+  <h3>📍 Paso Ataques</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🌱 Grados-día acumulados por fecha de siembra</div>
+  <table class="bano-tabla">
+    <tr><th>Desde</th><th>GDD acumulados (hasta hoy)</th></tr>
+<tr><td class="br-dia">lunes 14 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">12.4</td></tr>
+<tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">29.5</td></tr>
+<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">56.4</td></tr>
+<tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">85.7</td></tr>
+<tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">113.9</td></tr>
+<tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">137.2</td></tr>
+<tr><td class="br-dia">lunes 3 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">171.1</td></tr>
+<tr><td class="br-dia">lunes 27 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">217.8</td></tr>
+<tr><td class="br-dia">lunes 20 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">251.0</td></tr>
+<tr><td class="br-dia">lunes 13 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">297.1</td></tr>
+<tr><td class="br-dia">lunes 6 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">308.4</td></tr>
+<tr><td class="br-dia">lunes 29 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">308.4</td></tr>
+<tr><td class="br-dia">lunes 22 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">308.4</td></tr>
+<tr><td class="br-dia">lunes 15 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">310.0</td></tr>
+<tr><td class="br-dia">lunes 8 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">327.3</td></tr>
+<tr><td class="br-dia">lunes 1 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">355.6</td></tr>
+<tr><td class="br-dia">lunes 25 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">379.9</td></tr>
+<tr><td class="br-dia">lunes 18 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">390.0</td></tr>
+<tr><td class="br-dia">lunes 11 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">404.3</td></tr>
+<tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">446.2</td></tr>
+<tr><td class="br-dia">lunes 27 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">472.9</td></tr>
+<tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">532.1</td></tr>
+<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">605.7</td></tr>
+<tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">664.6</td></tr>
+<tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">748.1</td></tr>
+  </table>
+  <div class="bano-nota">Elija la fila con la fecha en que sembró o trasplantó y lea los grados-día acumulados hasta hoy. Los valores con asterisco (*) tienen días sin dato en el período y son parciales.</div>
+</div>
+</div>
+<div class="graf-card">
+  <h3>📍 Paso Lapuente</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🌱 Grados-día acumulados por fecha de siembra</div>
+  <table class="bano-tabla">
+    <tr><th>Desde</th><th>GDD acumulados (hasta hoy)</th></tr>
+<tr><td class="br-dia">lunes 14 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">10.3</td></tr>
+<tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">24.1</td></tr>
+<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">48.0</td></tr>
+<tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">73.5</td></tr>
+<tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">97.4</td></tr>
+<tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">119.0</td></tr>
+<tr><td class="br-dia">lunes 3 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">151.1</td></tr>
+<tr><td class="br-dia">lunes 27 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">196.8</td></tr>
+<tr><td class="br-dia">lunes 20 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">228.6</td></tr>
+<tr><td class="br-dia">lunes 13 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">273.7</td></tr>
+<tr><td class="br-dia">lunes 6 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">282.8</td></tr>
+<tr><td class="br-dia">lunes 29 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">282.8</td></tr>
+<tr><td class="br-dia">lunes 22 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">282.8</td></tr>
+<tr><td class="br-dia">lunes 15 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">283.8</td></tr>
+<tr><td class="br-dia">lunes 8 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">298.8</td></tr>
+<tr><td class="br-dia">lunes 1 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">326.4</td></tr>
+<tr><td class="br-dia">lunes 25 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">349.4</td></tr>
+<tr><td class="br-dia">lunes 18 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">357.6</td></tr>
+<tr><td class="br-dia">lunes 11 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">369.4</td></tr>
+<tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">409.9</td></tr>
+<tr><td class="br-dia">lunes 27 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">434.9</td></tr>
+<tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">491.6</td></tr>
+<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">563.0</td></tr>
+<tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">621.1</td></tr>
+<tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">701.3</td></tr>
+  </table>
+  <div class="bano-nota">Elija la fila con la fecha en que sembró o trasplantó y lea los grados-día acumulados hasta hoy. Los valores con asterisco (*) tienen días sin dato en el período y son parciales.</div>
+</div>
+</div>
+<div class="graf-card">
+  <h3>📍 Paso Manuel Díaz</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🌱 Grados-día acumulados por fecha de siembra</div>
+  <table class="bano-tabla">
+    <tr><th>Desde</th><th>GDD acumulados (hasta hoy)</th></tr>
+<tr><td class="br-dia">lunes 14 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">12.4</td></tr>
+<tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">28.2</td></tr>
+<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">54.3</td></tr>
+<tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">81.5</td></tr>
+<tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">104.0</td></tr>
+<tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">125.6</td></tr>
+<tr><td class="br-dia">lunes 3 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">158.3</td></tr>
+<tr><td class="br-dia">lunes 27 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">206.1</td></tr>
+<tr><td class="br-dia">lunes 20 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">237.6</td></tr>
+<tr><td class="br-dia">lunes 13 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">285.7</td></tr>
+<tr><td class="br-dia">lunes 6 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">295.6</td></tr>
+<tr><td class="br-dia">lunes 29 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">295.6</td></tr>
+<tr><td class="br-dia">lunes 22 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">295.6</td></tr>
+<tr><td class="br-dia">lunes 15 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">297.3</td></tr>
+<tr><td class="br-dia">lunes 8 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">313.1</td></tr>
+<tr><td class="br-dia">lunes 1 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">340.7</td></tr>
+<tr><td class="br-dia">lunes 25 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">363.1</td></tr>
+<tr><td class="br-dia">lunes 18 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">372.9</td></tr>
+<tr><td class="br-dia">lunes 11 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">386.2</td></tr>
+<tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">427.2</td></tr>
 <tr><td class="br-dia">lunes 27 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">454.4</td></tr>
-<tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">513.1</td></tr>
-<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">585.1</td></tr>
-<tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">643.7</td></tr>
-<tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">726.1</td></tr>
+<tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">512.2</td></tr>
+<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">584.3</td></tr>
+<tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">642.1</td></tr>
+<tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">723.6</td></tr>
+  </table>
+  <div class="bano-nota">Elija la fila con la fecha en que sembró o trasplantó y lea los grados-día acumulados hasta hoy. Los valores con asterisco (*) tienen días sin dato en el período y son parciales.</div>
+</div>
+</div>
+<div class="graf-card">
+  <h3>📍 Rincón de Moraes</h3>
+<div class="bano-resumen">
+  <div class="bano-tit">🌱 Grados-día acumulados por fecha de siembra</div>
+  <table class="bano-tabla">
+    <tr><th>Desde</th><th>GDD acumulados (hasta hoy)</th></tr>
+<tr><td class="br-dia">lunes 14 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">12.8</td></tr>
+<tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">30.4</td></tr>
+<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">58.1</td></tr>
+<tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">87.7</td></tr>
+<tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">111.6</td></tr>
+<tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">132.9</td></tr>
+<tr><td class="br-dia">lunes 3 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">166.8</td></tr>
+<tr><td class="br-dia">lunes 27 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">214.5</td></tr>
+<tr><td class="br-dia">lunes 20 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">245.8</td></tr>
+<tr><td class="br-dia">lunes 13 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">295.3</td></tr>
+<tr><td class="br-dia">lunes 6 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">305.6</td></tr>
+<tr><td class="br-dia">lunes 29 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">305.6</td></tr>
+<tr><td class="br-dia">lunes 22 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">305.6</td></tr>
+<tr><td class="br-dia">lunes 15 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">307.4</td></tr>
+<tr><td class="br-dia">lunes 8 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">324.0</td></tr>
+<tr><td class="br-dia">lunes 1 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">351.4</td></tr>
+<tr><td class="br-dia">lunes 25 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">373.2</td></tr>
+<tr><td class="br-dia">lunes 18 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">382.9</td></tr>
+<tr><td class="br-dia">lunes 11 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">397.2</td></tr>
+<tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">439.7</td></tr>
+<tr><td class="br-dia">lunes 27 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">468.1</td></tr>
+<tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">526.2</td></tr>
+<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">598.7</td></tr>
+<tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">656.9</td></tr>
+<tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">739.9</td></tr>
   </table>
   <div class="bano-nota">Elija la fila con la fecha en que sembró o trasplantó y lea los grados-día acumulados hasta hoy. Los valores con asterisco (*) tienen días sin dato en el período y son parciales.</div>
 </div>
@@ -130,31 +375,31 @@ function descargarJPG(src, nombre) {
   <div class="bano-tit">🌱 Grados-día acumulados por fecha de siembra</div>
   <table class="bano-tabla">
     <tr><th>Desde</th><th>GDD acumulados (hasta hoy)</th></tr>
-<tr><td class="br-dia">lunes 14 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">12.3</td></tr>
-<tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">29.2</td></tr>
-<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">56.7</td></tr>
-<tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">86.4</td></tr>
-<tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">115.0</td></tr>
-<tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">136.4</td></tr>
-<tr><td class="br-dia">lunes 3 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">170.5</td></tr>
-<tr><td class="br-dia">lunes 27 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">214.7</td></tr>
-<tr><td class="br-dia">lunes 20 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">246.4</td></tr>
-<tr><td class="br-dia">lunes 13 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">292.3</td></tr>
-<tr><td class="br-dia">lunes 6 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">304.1</td></tr>
-<tr><td class="br-dia">lunes 29 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">304.1</td></tr>
-<tr><td class="br-dia">lunes 22 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">304.1</td></tr>
-<tr><td class="br-dia">lunes 15 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">305.3</td></tr>
-<tr><td class="br-dia">lunes 8 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">322.1</td></tr>
-<tr><td class="br-dia">lunes 1 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">350.5</td></tr>
-<tr><td class="br-dia">lunes 25 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">372.6</td></tr>
-<tr><td class="br-dia">lunes 18 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">381.4</td></tr>
-<tr><td class="br-dia">lunes 11 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">395.8</td></tr>
-<tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">437.8</td></tr>
-<tr><td class="br-dia">lunes 27 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">465.6</td></tr>
-<tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">523.7</td></tr>
-<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">596.2</td></tr>
-<tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">654.2</td></tr>
-<tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">737.6</td></tr>
+<tr><td class="br-dia">lunes 14 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">12.8</td></tr>
+<tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">31.7</td></tr>
+<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">60.6</td></tr>
+<tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">92.2</td></tr>
+<tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">123.2</td></tr>
+<tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">147.6</td></tr>
+<tr><td class="br-dia">lunes 3 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">183.5</td></tr>
+<tr><td class="br-dia">lunes 27 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">230.2</td></tr>
+<tr><td class="br-dia">lunes 20 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">264.4</td></tr>
+<tr><td class="br-dia">lunes 13 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">312.0</td></tr>
+<tr><td class="br-dia">lunes 6 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">324.6</td></tr>
+<tr><td class="br-dia">lunes 29 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">324.6</td></tr>
+<tr><td class="br-dia">lunes 22 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">324.6</td></tr>
+<tr><td class="br-dia">lunes 15 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">326.0</td></tr>
+<tr><td class="br-dia">lunes 8 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">345.8</td></tr>
+<tr><td class="br-dia">lunes 1 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">374.9</td></tr>
+<tr><td class="br-dia">lunes 25 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">399.6</td></tr>
+<tr><td class="br-dia">lunes 18 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">410.2</td></tr>
+<tr><td class="br-dia">lunes 11 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">425.8</td></tr>
+<tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">469.5</td></tr>
+<tr><td class="br-dia">lunes 27 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">497.3</td></tr>
+<tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">557.7</td></tr>
+<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">632.2</td></tr>
+<tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">692.8</td></tr>
+<tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">778.1</td></tr>
   </table>
   <div class="bano-nota">Elija la fila con la fecha en que sembró o trasplantó y lea los grados-día acumulados hasta hoy. Los valores con asterisco (*) tienen días sin dato en el período y son parciales.</div>
 </div>
@@ -167,7 +412,7 @@ function descargarJPG(src, nombre) {
     <tr><th>Desde</th><th>GDD acumulados (hasta hoy)</th></tr>
 <tr><td class="br-dia">lunes 14 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">12.9</td></tr>
 <tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">31.0</td></tr>
-<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">59.5</td></tr>
+<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">59.4</td></tr>
 <tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">90.1</td></tr>
 <tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">117.2</td></tr>
 <tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">139.5</td></tr>
@@ -187,7 +432,7 @@ function descargarJPG(src, nombre) {
 <tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">451.1</td></tr>
 <tr><td class="br-dia">lunes 27 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">480.2</td></tr>
 <tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">538.7</td></tr>
-<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">612.3</td></tr>
+<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">612.2</td></tr>
 <tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">671.0</td></tr>
 <tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">754.1</td></tr>
   </table>
@@ -201,30 +446,30 @@ function descargarJPG(src, nombre) {
   <table class="bano-tabla">
     <tr><th>Desde</th><th>GDD acumulados (hasta hoy)</th></tr>
 <tr><td class="br-dia">lunes 14 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">9.9</td></tr>
-<tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">22.5</td></tr>
-<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">45.8</td></tr>
-<tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">69.0</td></tr>
-<tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">88.6</td></tr>
-<tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">108.6</td></tr>
-<tr><td class="br-dia">lunes 3 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">140.1</td></tr>
-<tr><td class="br-dia">lunes 27 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">185.1</td></tr>
-<tr><td class="br-dia">lunes 20 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">215.9</td></tr>
-<tr><td class="br-dia">lunes 13 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">261.1</td></tr>
-<tr><td class="br-dia">lunes 6 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">269.4</td></tr>
-<tr><td class="br-dia">lunes 29 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">269.4</td></tr>
-<tr><td class="br-dia">lunes 22 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">269.4</td></tr>
-<tr><td class="br-dia">lunes 15 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">270.5</td></tr>
-<tr><td class="br-dia">lunes 8 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">283.3</td></tr>
-<tr><td class="br-dia">lunes 1 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">311.3</td></tr>
-<tr><td class="br-dia">lunes 25 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">336.1</td></tr>
-<tr><td class="br-dia">lunes 18 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">344.7</td></tr>
-<tr><td class="br-dia">lunes 11 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">355.7</td></tr>
-<tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">396.2</td></tr>
-<tr><td class="br-dia">lunes 27 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">420.7</td></tr>
-<tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">476.8</td></tr>
-<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">547.6</td></tr>
-<tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">604.3</td></tr>
-<tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">683.3</td></tr>
+<tr><td class="br-dia">lunes 7 de septiembre</td><td class="br-sc" style="color:#1B5E20;font-weight:700">23.2</td></tr>
+<tr><td class="br-dia">lunes 31 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">46.9</td></tr>
+<tr><td class="br-dia">lunes 24 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">70.9</td></tr>
+<tr><td class="br-dia">lunes 17 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">92.0</td></tr>
+<tr><td class="br-dia">lunes 10 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">112.7</td></tr>
+<tr><td class="br-dia">lunes 3 de agosto</td><td class="br-sc" style="color:#1B5E20;font-weight:700">144.5</td></tr>
+<tr><td class="br-dia">lunes 27 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">190.4</td></tr>
+<tr><td class="br-dia">lunes 20 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">221.8</td></tr>
+<tr><td class="br-dia">lunes 13 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">267.2</td></tr>
+<tr><td class="br-dia">lunes 6 de julio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">275.6</td></tr>
+<tr><td class="br-dia">lunes 29 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">275.6</td></tr>
+<tr><td class="br-dia">lunes 22 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">275.6</td></tr>
+<tr><td class="br-dia">lunes 15 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">276.7</td></tr>
+<tr><td class="br-dia">lunes 8 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">290.6</td></tr>
+<tr><td class="br-dia">lunes 1 de junio</td><td class="br-sc" style="color:#1B5E20;font-weight:700">319.1</td></tr>
+<tr><td class="br-dia">lunes 25 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">344.6</td></tr>
+<tr><td class="br-dia">lunes 18 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">353.7</td></tr>
+<tr><td class="br-dia">lunes 11 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">365.1</td></tr>
+<tr><td class="br-dia">lunes 4 de mayo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">406.1</td></tr>
+<tr><td class="br-dia">lunes 27 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">430.8</td></tr>
+<tr><td class="br-dia">lunes 20 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">488.0</td></tr>
+<tr><td class="br-dia">lunes 13 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">559.5</td></tr>
+<tr><td class="br-dia">lunes 6 de abril</td><td class="br-sc" style="color:#1B5E20;font-weight:700">617.4</td></tr>
+<tr><td class="br-dia">lunes 30 de marzo</td><td class="br-sc" style="color:#1B5E20;font-weight:700">697.3</td></tr>
   </table>
   <div class="bano-nota">Elija la fila con la fecha en que sembró o trasplantó y lea los grados-día acumulados hasta hoy. Los valores con asterisco (*) tienen días sin dato en el período y son parciales.</div>
 </div>
